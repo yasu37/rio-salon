@@ -1,0 +1,92 @@
+main {
+  padding-top: 5rem;
+}
+
+body {
+  background: #f4f6f4;
+}
+
+#question {
+  padding-top: 5rem;
+}
+
+#question ul {
+  list-style: none;
+  text-align: left;
+}
+
+#question li {
+  margin-bottom: 8rem;
+}
+
+#question .q_ttl {
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  text-align: left;
+  padding: 10px;
+  color: #008475;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-right: 20px;
+  padding-left: 3.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  font-size: 2rem;
+  counter-reset: number 0;
+}
+
+#question .q_ttl:before {
+  counter-increment: number 1;
+  content: "Q";
+  background: #008475;
+  height: 3.5em;
+  width: 3.5em;
+  color: white;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0px, -50%);
+  -ms-transform: translate(0px, -50%);
+  transform: translate(0px, -50%);
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 280px;
+}
+
+#question .answer {
+  padding-left: 4.3em;
+  color: #888;
+  font-family: "Noto Sans Japanese", "メイリオ", Meiryo, sans-serif;
+  font-size: 1.5rem;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+  #question .section_title {
+    padding-top: 0;
+  }
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+  #question {
+    padding-top: 0;
+  }
+
+  #question .section_title {
+    padding: 3rem 0;
+  }
+}

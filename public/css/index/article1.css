@@ -1,0 +1,176 @@
+/*記事1*/
+/* ~コンセプト紹介 ~ */
+header .logo {
+  width: 140px;
+  margin: 0.5rem auto 0;
+  font-size: 1.5em;
+}
+
+header .logo a {
+  width: 100%;
+}
+
+header .logo a img {
+  display: inline-block;
+}
+
+#concept .container {
+  max-width: 950px;
+}
+
+#concept .concept_img {
+  width: 90%;
+  width: auto;
+  margin: auto;
+  margin: 0;
+}
+
+#concept .concept_img img {
+  z-index: 3;
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-top: -5rem;
+}
+
+#concept .explanation {
+  z-index: 7;
+  position: relative;
+  width: 55%;
+  margin-top: -4%;
+  padding: 3rem;
+  padding: 2rem 4rem;
+  background: #e9f7eb;
+  background: #B2DAD5;
+  background: #99CDC7;
+  background: #CCE6E3;
+}
+
+#concept .explanation h3 {
+  color: #666;
+  font-weight: normal;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  text-align: right;
+  line-height: 4.5rem;
+}
+
+#concept .explanation p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0.8rem;
+  margin-right: -30px;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+#concept .button5 a {
+  width: 45%;
+  font-size: 2rem;
+  padding: 1rem 0;
+  background: #e9f7f2;
+  background: #e9f7eb;
+  background: #CCE6E3;
+  background: #E5F2F1;
+  background: #B2DAD5;
+  background: #99CDC7;
+  background: #ebffeb;
+}
+
+#concept .concept_button a:after {
+  width: 25px;
+  height: 19px;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+
+  #concept .button5 a {
+    font-size: 1.6rem;
+  }
+
+  #concept .concept_button a:after {
+    width: 17px;
+    height: 12.5px;
+  }
+
+  #concept .explanation h3 {
+    letter-spacing: 0.8rem;
+  }
+
+  #concept .explanation p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.7rem;
+  }
+
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+
+  #concept {
+    padding-top: 2rem;
+  }
+
+  #concept .explanation {
+    width: auto;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  #concept .explanation h3 {
+    letter-spacing: 0.5rem;
+  }
+}
+
+/*サイトの横幅が450px以下*/
+@media screen and (max-width: 450px) {
+
+  #concept .explanation p {
+    letter-spacing: 0.4rem;
+    font-size: 1.4rem;
+  }
+
+  #concept .button5 a {
+    width: 65%;
+  }
+}
+
+/*サイトの横幅が380px以下*/
+@media screen and (max-width: 380px) {
+
+  #concept .explanation {
+    padding: 2rem;
+  }
+
+  #concept .explanation p {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+
+  #concept .explanation h3 {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+  }
+
+  #concept .button5 a {
+    font-size: 1.4rem;
+  }
+
+}
+
+/*サイトの横幅が330px以下*/
+@media screen and (max-width: 330px) {
+
+  #concept .explanation h3 {
+    letter-spacing: 0.2rem;
+    padding-bottom: 1rem;
+  }
+
+  #concept .explanation p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}

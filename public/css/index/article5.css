@@ -1,0 +1,156 @@
+/*記事5*/
+/* ~ お問い合わせ情報 ~ */
+#reserved .container {
+  width: auto;
+  padding: 10rem 5rem 10rem;
+  background-color: #f6f6f6;
+  max-width: 600px;
+}
+
+#reserved .infomation {
+  text-align: center;
+}
+
+#reserved .number {
+  font-size: 5.5rem;
+  letter-spacing: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 5rem;
+  color: #666;
+}
+
+#reserved .number span {
+  font-size: 2.5rem;
+}
+
+#reserved .date {
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#reserved .ibanavi {
+  display: inline-block;
+  font-size: 2rem;
+  color: #99CDC7;
+  color: #d4ab37;
+}
+
+#reserved .ibanavi span {
+  font-size: 2.3rem;
+  color: #666;
+  color: #008475;
+  font-weight: bold;
+}
+
+
+#reserved .button5 a {
+  width: 40%;
+  margin-top: 7rem;
+  background-color: #ebffeb;
+  font-size: 2rem;
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+
+  #reserved .container {
+    background-color: #f6f6f6;
+    padding: 5rem 2.5rem 5rem;
+    width: auto;
+  }
+
+  #reserved .number {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 1rem;
+  }
+
+  #reserved .number span {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+
+  #reserved .date {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  #reserved .ibanavi {
+    font-size: 1.7rem;
+  }
+
+  #reserved .ibanavi span {
+    font-size: 2rem;
+  }
+
+  #reserved .button5 a {
+    width: 50%;
+    background: #ebffeb;
+    font-size: 1.3rem;
+  }
+
+}
+
+/*サイトの横幅が450px以下*/
+@media screen and (max-width: 450px) {
+
+  #reserved .ibanavi {
+    font-size: 1.6rem;
+  }
+
+  #reserved .ibanavi span {
+    font-size: 1.9rem;
+  }
+
+}
+
+/*サイトの横幅が380px以下*/
+@media screen and (max-width: 380px) {
+
+  #reserved .number {
+    line-height: 3rem;
+    letter-spacing: 0.5rem;
+  }
+
+  #reserved .number span {
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+  }
+
+
+  #reserved .date {
+    font-size: 1.1rem;
+  }
+
+  #reserved .ibanavi {
+    font-size: 1.5rem;
+  }
+
+  #reserved .ibanavi span {
+    font-size: 1.8rem;
+  }
+
+  #reserved .button5 a {
+    background: #ebffeb;
+    font-size: 1.2rem;
+  }
+
+}
+
+/*サイトの横幅が330px以下*/
+@media screen and (max-width: 330px) {
+  #reserved .number {
+    letter-spacing: 0.3rem;
+  }
+
+  #reserved .ibanavi {
+    font-size: 1.4rem;
+  }
+
+  #reserved .ibanavi span {
+    font-size: 1.7rem;
+  }
+}

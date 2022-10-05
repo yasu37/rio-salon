@@ -1,0 +1,311 @@
+/*サイトの横幅が781px以上*/
+@media screen and (min-width: 781px) {
+  .is_pc {
+    display: block !important;
+    visibility: visible;
+  }
+
+  header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    z-index: 999;
+    margin: 0;
+  }
+
+  .logo {
+    width: 140px;
+    max-width: 140px;
+    margin: 0.5rem auto 0;
+    font-size: 1.5em;
+  }
+
+  header h2 {
+    width: 140px;
+    max-width: 140px;
+    margin: 0.5rem auto 0;
+  }
+
+  header h2 a {
+    width: 100%;
+  }
+
+  header h2 a img {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  header .logo2 {
+    display: none !important;
+    visibility: collapse;
+  }
+
+  header .reservation {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  header .reservation .tel_number {
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    padding: 1.5rem 0;
+  }
+
+  header .reservation .tel_number span {
+    font-size: 1.3rem;
+    position: relative;
+    top: -3px;
+  }
+
+  header .reservation .number {
+    font-size: 1.8rem;
+    position: relative;
+    top: -3px;
+  }
+
+  header .header_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: none;
+    position: static;
+    width: auto;
+    text-align: center;
+  }
+
+  header .header_menu ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  header ul>li {
+    padding: 2px;
+  }
+
+  header ul>li>a {
+    display: block;
+    padding: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 0.2rem;
+  }
+
+  header .sns {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  header .sns li {
+    height: 4rem;
+    width: 3rem;
+  }
+
+  header .sns a {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  header .sns img {
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.6;
+  }
+
+  header .pull_down,
+  .pull_check {
+    display: none !important;
+    visibility: visible;
+  }
+}
+
+/*サイトの横幅が1000px以上*/
+@media screen and (min-width: 1000px) {
+  header ul>li>a {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+header .header_menu ul {
+  list-style: none;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+
+  header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    z-index: 999;
+    height: 51px;
+  }
+
+  header h2 {
+    width: 140px;
+    margin: 0.5rem auto 1.5rem;
+    max-width: 140px;
+  }
+
+  header h2 a {
+    width: 100%;
+  }
+
+  header img {
+    opacity: 0.7;
+  }
+
+  header .logo1 {
+    display: none !important;
+    visibility: collapse;
+  }
+
+  header .content {
+    display: none !important;
+    visibility: collapse;
+  }
+
+  header .is_pc {
+    display: none !important;
+    visibility: collapse;
+  }
+
+  header .pull_down {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    z-index: 9999;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  header .pull_down span {
+    border-top: 1px solid #666;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 100%;
+    transition: 0.25s ease;
+  }
+
+  header .pull_down .pull1 {
+    top: 3px;
+  }
+
+  header .pull_down .pull2 {
+    top: 50%;
+  }
+
+  header .pull_down .pull3 {
+    top: calc(100% - 4px)
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .header_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    z-index: 9000;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100vh;
+  }
+
+  #menu:checked+.header_menu {
+    display: block;
+  }
+
+  .header_menu ul {
+    padding-top: 5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .header_menu li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .header_menu ul li a {
+    display: inline-block;
+    height: 100%;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #008475;
+    color: #666;
+    padding: 1.5rem 0;
+    padding: 1rem 0;
+    background: #ebffeb;
+    border: 1px solid #008475;
+    letter-spacing: 0.2rem;
+    border-radius: 0.5rem;
+  }
+
+}
+
+@media screen and (max-width:450px) {
+
+  .header_menu li {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .header_menu ul li a {
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+    letter-spacing: 0.1rem;
+  }
+}
+
+/*サイトの横幅が380px以下*/
+@media screen and (max-width:380px) {
+
+  .header_menu {
+    width: 70%;
+  }
+
+  .header_menu li {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .header_menu ul li a {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+  }
+}

@@ -1,0 +1,146 @@
+/* 参考文献：https: //ics.media/entry/220901/ */
+
+details {
+  margin: 1.5rem auto 0;
+  width: 80%;
+  max-width: 900px;
+}
+
+summary {
+  cursor: pointer;
+  /* display: list-item;以外を指定してデフォルトの三角形アイコンを消します */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border: 1.5px solid #dee2e6;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+summary::-webkit-details-marker {
+  /* Safariで表示されるデフォルトの三角形アイコンを消します */
+  display: none;
+}
+
+summary h2 {
+  font-size: 1.8rem;
+}
+
+/* アイコン作成 */
+.icon {
+  display: block;
+  position: relative;
+  width: 24px;
+  margin-left: 6px;
+  flex-shrink: 0;
+  transform-origin: center 43%;
+  transition: transform 0.4s;
+}
+
+/* アコーディオンが開いた時のスタイル */
+details[open] .icon {
+  transform: rotate(180deg);
+}
+
+/* アイコンのバーのスタイル */
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 14.5px;
+  height: 2px;
+  background-color: #99CDC7;
+}
+
+.icon::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.icon::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+details .content {
+  background-color: #f6f6f6;
+  padding: 24px 48px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 16px;
+}
+
+details .content p {
+  margin-top: 0.5rem;
+}
+
+.frame {
+  border: 1px solid rgba(19, 15, 7, .1);
+}
+
+.frame_name {
+  padding: 1rem;
+  text-align: center;
+}
+
+.frame_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(19, 15, 7, .1);
+}
+
+.content1 {
+  display: flex;
+  width: 100%;
+}
+
+.price {
+  margin-left: auto;
+}
+
+.button5 a {
+  width: 16rem;
+  margin-left: 1.5rem;
+  color: #fff;
+  background-color: #4CA89E;
+}
+
+.menu_concept,
+.treatment_flow,
+.frame_name {
+  font-weight: bold;
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 700px) {
+
+  summary h2 {
+    font-size: 1.6rem;
+  }
+
+  details .content {
+    font-size: 1.3rem;
+    padding: 24px 24px;
+  }
+
+  .frame_content {
+    flex-flow: column;
+  }
+
+  .button5 {
+    width: 100%;
+  }
+
+  .button5 a {
+    width: auto;
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,158 @@
+main {
+  padding-top: 5rem;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+  #inquiry .section_title {
+    padding-top: 0;
+  }
+}
+
+/*予約方法*/
+
+#inquiry ul {
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#inquiry ul li {
+  width: auto;
+  background: #B2DAD5;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+  color: #666;
+}
+
+#inquiry ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 0;
+  color: #666;
+}
+
+#inquiry .date {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+  #inquiry ul li {
+    font-size: 1.5rem;
+  }
+}
+
+/*サイトの横幅が450px以下*/
+@media screen and (max-width: 450px) {
+  #inquiry ul li {
+    font-size: 1.4rem;
+  }
+}
+
+/*サイトの横幅が330px以下*/
+@media screen and (max-width: 380px) {
+  #inquiry ul li {
+    font-size: 1rem;
+  }
+}
+
+
+/*SNS紹介*/
+#rio_sns {
+  margin-top: 10rem;
+}
+
+#rio_sns p {
+  font-size: 2rem;
+}
+
+#rio_sns ul {
+  width: 90%;
+  margin: 2rem auto 0;
+  margin-top: 2rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#rio_sns ul li {
+  width: 31%;
+  background: #B2DAD5;
+  border-radius: 0.5rem;
+}
+
+#rio_sns ul li a {
+  display: block;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  color: #666;
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+
+  #inquiry .caution {
+    font-size: 1.5rem;
+  }
+
+  #rio_sns {
+    margin: 7rem 0;
+  }
+
+  #rio_sns p {
+    font-size: 1.5rem;
+  }
+
+  #rio_sns ul li a {
+    font-size: 1.5rem;
+  }
+}
+
+/*サイトの横幅が450px以下*/
+@media screen and (max-width: 450px) {
+
+  #inquiry .caution {
+    font-size: 1.3rem;
+  }
+
+  #rio_sns {
+    margin: 5rem 0;
+  }
+
+  #rio_sns p {
+    font-size: 1.4rem;
+  }
+
+  #rio_sns ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+/*サイトの横幅が380px以下*/
+@media screen and (max-width: 380px) {
+  #inquiry .caution {
+    font-size: 1.1rem;
+  }
+
+}
+
+/*サイトの横幅が330px以下*/
+@media screen and (max-width: 330px) {
+
+  #inquiry .caution {
+    font-size: 1rem;
+  }
+
+  #rio_sns p {
+    font-size: 1.3rem;
+  }
+
+  #rio_sns ul li a {
+    font-size: 1.3rem;
+  }
+}

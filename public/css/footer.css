@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+footer {
+  margin-top: 10rem;
+  background-color: #c3e2de;
+  color: #666;
+  text-align: center;
+  padding: 2rem 0 1rem;
+  position: relative;
+}
+
+footer .number {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  line-height: 1.3;
+  color: #666;
+}
+
+footer .number span {
+  font-size: 1.5rem;
+}
+
+footer .number .number_color {
+  font-size: 3.5rem;
+}
+
+footer .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+footer .date li+li {
+  margin-left: 2rem;
+}
+
+footer .sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+footer .sns li {
+  height: 4rem;
+  width: 2.5rem;
+}
+
+footer .sns a {
+  height: 2rem;
+  width: 2rem;
+}
+
+footer .sns img {
+  height: 2rem;
+  width: 2rem;
+  opacity: 0.6;
+}
+
+footer .copyright {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}

@@ -1,0 +1,159 @@
+/*記事4*/
+/* ~ ニュース ~ */
+
+#news {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+#news .container {
+  max-width: 850px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#news .items {
+  margin: auto;
+}
+
+#news .item {
+  width: 55%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 8px;
+  border-bottom: 3px solid #eee;
+}
+
+#news .item a {
+  display: flex;
+  flex-flow: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 8px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+#news .item_body {
+  width: calc(100% - 60px);
+  padding: 0 16px;
+  font-size: 1.8rem;
+}
+
+#news .date {
+  color: #aaa;
+  font-style: italic;
+}
+
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+
+  #news .item_body {
+    font-size: 1.6rem;
+  }
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width:600px) {
+
+  #news .item a {
+    padding: 0;
+  }
+
+  #news .item_body {
+    width: auto;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  #news .item {
+    border-bottom: 2px solid #eee;
+  }
+
+}
+
+/*サイトの横幅が450px以下*/
+@media screen and (max-width: 450px) {
+  #news .item {
+    border-bottom: 1.5px solid #eee;
+  }
+}
+
+
+/*SNS紹介*/
+#rio_sns {
+  margin-top: 10rem;
+}
+
+#rio_sns p {
+  font-size: 2rem;
+}
+
+#rio_sns ul {
+  width: 90%;
+  margin: 2rem auto 0;
+  margin-top: 2rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#rio_sns ul li {
+  width: 31%;
+  background: #B2DAD5;
+  border-radius: 0.5rem;
+}
+
+#rio_sns ul li a {
+  display: block;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  color: #666;
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+  #rio_sns {
+    margin: 7rem 0;
+  }
+
+  #rio_sns p {
+    font-size: 1.5rem;
+  }
+
+  #rio_sns ul li a {
+    font-size: 1.5rem;
+  }
+}
+
+/*サイトの横幅が450px以下*/
+@media screen and (max-width: 450px) {
+  #rio_sns {
+    margin: 5rem 0;
+  }
+
+  #rio_sns p {
+    font-size: 1.4rem;
+  }
+
+  #rio_sns ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+/*サイトの横幅が330px以下*/
+@media screen and (max-width: 330px) {
+
+  #rio_sns p {
+    font-size: 1.3rem;
+  }
+
+  #rio_sns ul li a {
+    font-size: 1.3rem;
+  }
+}

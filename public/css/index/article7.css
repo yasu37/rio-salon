@@ -1,0 +1,114 @@
+/*記事6*/
+/* ~ 店舗情報 ~ */
+#location {
+  margin-bottom: 8rem;
+}
+
+#location .container {
+  max-width: 890px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#location .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+
+#location .box {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#location .img {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#location .google_map {
+  width: 100%;
+  height: 120%;
+}
+
+#location .infomation {
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+#location .infomation ul {
+  list-style: none;
+  margin-top: 7rem;
+  margin-left: 7rem;
+}
+
+#location li {
+  margin-bottom: 1.5rem;
+}
+
+#location .button5 a {
+  background: #f6f6f6;
+  background: #ebffeb;
+  width: 60%;
+  margin-left: 0;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+  #location .infomation ul {
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+  #location .section_title {
+    margin-bottom: 1rem;
+  }
+
+  #location .button5 a {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+
+  #location .infomation ul {
+    margin-left: 3rem;
+  }
+
+  #location li {
+    font-size: 1.3rem;
+  }
+}
+
+/*サイトの横幅が450px以下*/
+@media screen and (max-width: 450px) {}
+
+
+/*サイトの横幅が380px以下*/
+@media screen and (max-width: 380px) {
+
+  #location li {
+    font-size: 1.2rem;
+  }
+
+  #location .button5 a {
+    font-size: 1.2rem;
+  }
+
+}
+
+/*サイトの横幅が330px以下*/
+@media screen and (max-width: 330px) {
+  #location li {
+    font-size: 1rem;
+  }
+
+  #location .button5 a {
+    width: auto;
+  }
+}

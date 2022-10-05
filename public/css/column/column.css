@@ -1,0 +1,224 @@
+main {
+  text-align: center;
+  margin: 0 auto;
+  padding: 6rem 3rem 0;
+  max-width: 750px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN-W6", Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, 游ゴシック, "Yu Gothic", 游ゴシック体, YuGothic, "Meiryo UI", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+section {
+  text-align: left;
+}
+
+section p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  letter-spacing: 0.04rem;
+  padding-bottom: 1rem !important;
+}
+
+h1 {
+  margin: 0 0 2rem;
+  line-height: 1.4;
+  padding: 0 4rem 1.5rem 4rem;
+  border-bottom: 1px dashed #B1791D;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #343434;
+}
+
+/*目次*/
+.contents {
+  padding: 3rem;
+  margin: 4rem auto;
+  max-width: 600px;
+  border: 1px solid #aaa;
+}
+
+.contents p {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.contents ol {
+  margin-left: 3rem;
+}
+
+.contents li {
+  margin: 0.25em 0;
+}
+
+.contents a {
+  color: #666;
+}
+
+/*大見出し*/
+.headline {
+  margin-bottom: 3rem !important;
+}
+
+.headline h2 {
+  border-bottom: 0.2rem solid #008475;
+  font-size: 2rem;
+  line-height: 1.4;
+  padding: 0 0.2rem 0.8rem;
+  margin-bottom: 2rem !important;
+}
+
+.headline .image {
+  max-width: 100%;
+  margin: 0 auto;
+  margin: 0 0 8%;
+  width: 60%;
+}
+
+.headline .top-image {
+  width: 90%;
+}
+
+.headline .BA-image {
+  width: 40%;
+}
+
+.headline .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*小見出し*/
+.subheading {
+  margin-bottom: 1rem !important;
+  margin-top: 3rem !important;
+  margin-left: 0.8rem;
+}
+
+.subheading h3 {
+  border-left: 0.4rem solid #008475;
+  padding: 0 0 0.2rem 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+/*効果アイテム*/
+.point1 {
+  box-shadow: 0px 0px 3px silver;
+  border: solid 1px whitesmoke;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+  background: #fafafa;
+  width: 50%;
+}
+
+.point1 li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+}
+
+.point1 li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0da";
+  position: absolute;
+  left: 1em;
+  /*左端からのアイコンまで*/
+  color: gray;
+  /*アイコン色*/
+}
+
+.point2 {
+  background: #fcfcfc;
+  /*背景色*/
+  padding: 0.5em 0.5em 0.5em 2em;
+  /*ボックス内の余白*/
+}
+
+.point2 li {
+  line-height: 1;
+  /*文の行高*/
+  padding: 0.5em 0;
+  /*前後の文との余白*/
+}
+
+/*予約誘導ボタン*/
+.button {
+  text-align: center;
+}
+
+.button a {
+  background: #009886;
+  border-radius: 5px;
+  color: #fff !important;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 15px 20px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 80%;
+}
+
+/*口コミ*/
+.review {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.review .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.review .faceicon img {
+  width: 100%;
+  height: auto;
+  border: solid 3px #ebffeb;
+  border-radius: 50%;
+}
+
+.review .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #ebffeb;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #ebffeb;
+}
+
+.says blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.review span {
+  font-size: 1.2rem;
+  line-height: 0.2;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+  .headline .image {
+    width: 100%;
+  }
+}

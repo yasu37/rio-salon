@@ -1,0 +1,163 @@
+/*メニュー1 ~美容鍼灸~ */
+
+body {
+  background: #f4f6f4;
+  background: #fff;
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto 15rem;
+  margin-right: auto;
+  padding: 5rem 0 0 0;
+  position: relative;
+  padding-top: 5rem;
+}
+
+/*サイトの横幅が781px以上*/
+@media screen and (min-width: 781px) {
+  main {
+    padding-top: 10rem;
+  }
+}
+
+/* メニューリスト */
+#menu_list {
+  padding: 0;
+}
+
+#menu_list .container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 950px;
+}
+
+#menu_list .menu_course ul {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 0;
+  list-style: none;
+}
+
+#menu_list .menu_course li {
+  width: 30%;
+  margin: 0.6%;
+  height: 72px;
+}
+
+#menu_list .menu_course a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9f7eb;
+  background: #99CDC7;
+  background: #B2DAD5;
+  color: #fff;
+  color: inherit;
+  color: #666;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 780px) {
+  #menu_list {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #menu_list {
+    padding-top: 2rem;
+  }
+
+  #menu_list .menu_course {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  #menu_list .menu_course {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  #menu_list .menu_course li {
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #menu_list .menu_course {
+    font-size: 1rem;
+  }
+
+  #menu_list .menu_course li {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+
+  #menu_list .menu_course li {
+    height: 38px;
+  }
+}
+
+/* メニュー概要 */
+.menu_overview {
+  max-width: 900px;
+  padding: 0;
+}
+
+.menu_overview .container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu_overview .menu_overview_left,
+.menu_overview .menu_overview_right {
+  width: 50%;
+}
+
+.menu_overview .menu_overview_right h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.menu_overview .text_area {
+  text-align: left;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  background: #CCE6E3;
+}
+
+.menu_overview .text_area p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width: 600px) {
+
+  .menu_overview .menu_overview_left,
+  .menu_overview .menu_overview_right {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+}
+
+.menu_course {
+  margin-top: 5rem;
+  padding: 0;
+}

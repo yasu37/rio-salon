@@ -1,0 +1,54 @@
+#news .container {
+  max-width: 950px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news_list {
+  margin: auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.news_list li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.news_item {
+  padding: 8px;
+}
+
+.news_list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 8px 0;
+}
+
+.news_detail {
+  width: calc(100% - 60px);
+  padding: 0 16px;
+}
+
+.date {
+  color: #aaa;
+  font-style: italic;
+}
+
+#news li {
+  margin-bottom: 5rem;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+  #news .section_title {
+    padding-top: 0;
+  }
+}

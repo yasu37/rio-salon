@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+menu,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: auto;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  display: block;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  color: #666;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  width: auto;
+}
+
+p,
+div,
+header {
+  display: block;
+}
+
+main {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  margin: auto;
+}
+
+@media screen and (min-width:1px) and (max-width: 768px) {
+  main {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.container {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.number_color {
+  color: #666;
+}
+
+/*ボタンデザイン3*/
+.button03 a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 35%;
+  padding: 2rem 2rem;
+  color: #2285b1;
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 70rem;
+}
+
+.button03 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #2285b1;
+  border-right: 3px solid #2285b1;
+  transform: rotate(45deg);
+}
+
+.button03 a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #ebffeb;
+  background-color: #a0c4d3;
+}
+
+.button03 a:hover::after {
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+}
+
+/*ボタンデザイン2*/
+.button02 a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+  color: #2285b1;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.button02 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #2285b1;
+  border-right: 3px solid #2285b1;
+  transform: rotate(45deg);
+}
+
+.button02 a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #ebffeb;
+  background-color: #a0c4d3;
+}
+
+.button02 a:hover::after {
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+}
+
+.button5 a {
+  margin: auto;
+  width: 214px;
+  padding: 1rem 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #008475;
+  font-size: 1.6rem;
+  line-height: 1;
+  border: 1px solid #008475;
+  border-radius: 0.3rem;
+  font-weight: 400;
+}
+
+.button5 a:after {
+  content: "";
+  display: block;
+  margin-left: 8px;
+  width: 17px;
+  height: 12.5px;
+  background: url(../img/flower_color.png) no-repeat center/cover;
+}
+
+/*コースボタン*/
+.button_course a {
+  margin: auto;
+  width: 212px;
+  padding: 14px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 400;
+  border-radius: 0.3rem;
+}
+
+
+/*タイトルデザイン*/
+.section_title {
+  padding: 5rem 0;
+}
+
+.section_title h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  color: #d4ab37;
+}
+
+.section_title h2 {
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  color: #d4ab37;
+}
+
+.section_title p {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+
+/*サイトの横幅が600px以下*/
+@media screen and (max-width:600px) {
+
+  section {
+    padding-top: 3rem;
+  }
+
+  .section_title {
+    padding-bottom: 3rem;
+  }
+
+}
+
+/*サイトの横幅が330px以下*/
+@media screen and (max-width:330px) {
+
+  .section_title p {
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+  }
+
+}
