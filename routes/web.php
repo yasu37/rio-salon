@@ -36,3 +36,5 @@ Route::get('news', [PageController::class, 'news']);
 Route::get('reserve', [PageController::class, 'reserve']);
 /*コラム */
 Route::get('column/column1', [PageController::class, 'column1']);
+/*サイトマップ*/
+Route::get('sitemap', [PageController::class, 'sitemap']);

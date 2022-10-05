@@ -64,4 +64,9 @@ class PageController extends Controller
     public function column1() {
         return view('column.column1');
     }
+
+    //サイトマップ
+    public function sitemap() {
+        return view('sitemap');
+    }
 }
