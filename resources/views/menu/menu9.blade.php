@@ -34,55 +34,57 @@
     <section class="menu_course">
       <x-menu.accordion>
         <x-slot name="menu_name">スペシャル1Dayコース 180分</x-slot>
-        <x-slot name="menu_concept">【結婚式・撮影に向けて最高に綺麗になりたい方におすすめ！】</x-slot>
-        <x-slot name="menu_description"></x-slot>
-        <x-slot name="treatment">・シェービング(電動シェービング) 30分<br>
-          部位：顔・首筋・襟足・背中(肩甲骨下部ライン)<br>
-          ・経絡オイルトリートメント 60分<br>
-          下腿、ウエスト、二の腕、デコルテのリンパ流しと絞り出し<br>
-          ・美肌再生美容鍼 90分<br>
-          ①クレンジング ②お顔鍼 ③デコルテ・フェイシャルマッサージ ④毛穴吸引 ⑤ビタミンC誘導体のイオン導入 ⑥パック ⑦お仕上げ<br><br>
-          ［オプションメニュー］<br>
-          ・ボディ、背中パック3000円<br>
-          ・漢方薬3500円</x-slot>
+        <x-slot name="menu_concept">【挙短期中集中ケア。ご来店から3時間でお仕上げコース】</x-slot>
+        <x-slot name="menu_description">「酵素」と「クレイ」の作用でお肌に負担なく角質ケア。<br>鍼でツボや経路を刺激することで、表情筋の凝りほぐし肌のターンオーバーを促進し、肌の内部にアプローチします。最後に、高濃度美容液マスクでお肌に栄養成分を吸収させます。<br>姿勢矯正は理想の肩甲骨・鎖骨クッキリ、猫背改善、スタイルアップ効果などなりたい姿へ導きます。</x-slot>
+        <x-slot name="treatment">素肌美人美容鍼コース120分 × 姿勢矯正オイルトリートメント60分<br><br>
+          ※シェービングご希望のお客様別途5000円(税込)
+        </x-slot>
         <x-slot name="time">180分</x-slot>
-        <x-slot name="price">￥25,500</x-slot>
+        <x-slot name="price">￥24,000</x-slot>
       </x-menu.accordion>
+      <x-menu.accordion_menu_description>
+        <x-slot name="menu_name">1ヶ月集中ケア : 4回コース</x-slot>
+        <x-slot name="menu_concept">【結婚式・撮影に向けて最高に綺麗になりたい方におすすめ！】</x-slot>
+        <x-slot name="menu_description">
+          ・1回目<br>
+          【美容鍼灸70分】<br><br>
+          ・2回目<br>
+          【姿勢矯正トリートメント60分 × 漢方浴40分】<br><br>
+          ・3回目<br>
+          【美容鍼灸70分 × 姿勢矯正トリートメント30分】<br><br>
+          ・4回目<br>
+          【素肌美人美容鍼灸120分】<br><br>
+          ※シェービングご希望のお客様別途5000円(税込)
+        </x-slot>
+        <x-slot name="time">4回コース</x-slot>
+        <x-slot name="price">￥49,800</x-slot>
+      </x-menu.accordion_menu_description>
       <x-menu.accordion_menu_description>
         <x-slot name="menu_name">挙式2~3ヶ月前 : 8回コース</x-slot>
         <x-slot name="menu_concept">【結婚式・撮影に向けて最高に綺麗になりたい方におすすめ！】</x-slot>
         <x-slot name="menu_description">
           ・1回目<br>
-          【美容鍼灸90分】<br>
-          施術時間:90分<br>
-          料金:13,000円→11,000円<br><br>
+          【美容鍼灸70分】<br><br>
           ・2回目<br>
-          【ALEXハーブピーリング × 美容鍼灸90分】<br>
-          施術時間:90分<br>
-          料金:22,000円→19,000円<br><br>
-          ・3、4回目<br>
-          【美容鍼90分 × オイルトリートメント30分 × 漢方浴40分】<br>
-          施術時間:160分<br>
-          料金:(13,000円→11,000円)+3500円+3000円　計:17,500円<br><br>
+          【美容鍼灸90分 × ALEXハーブピーリング】<br><br>
+          ・3回目<br>
+          【美容鍼灸90分 × 姿勢矯正オイルトリートメント40分 × 漢方浴40分】<br><br>
+          ・4回目<br>
+          【美容鍼灸90分 × 姿勢矯正オイルトリートメント40分 × 漢方浴40分】<br><br>
           ・5回目<br>
-          【カーボキシ―高濃度炭酸パックコース60分 × オイルトリートメント30分】<br>
-          施術時間:90分<br>
-          料金:10,000円+3,500円　計:13,500円<br><br>
+          【カーボキシ―高濃度炭酸パックコース60分 × 姿勢矯正オイルトリートメント60分】<br><br>
           ・6回目<br>
-          【素肌美人美容鍼コース 120分】<br>
-          施術時間:120分<br>
-          料金:17,500円→15,500円<br><br>
+          【海藻プレミアムフェイシャル60分 × 姿勢矯正オイルトリートメント60分】<br><br>
           ・7回目<br>
-          【海藻パックプレミアムコース60分 × オイルトリートメント30分】<br>
-          施術時間:90分<br>
-          料金:10,000円+3,500円　計:13,500円<br><br>
+          【素肌美人美容鍼灸120分】<br><br>
           ・8回目<br>
-          【美容鍼灸美肌再生コース(顔＋全身)120分 × VOSパック × シェービング(顔＋首＋肩＋背中)30分】<br>
-          施術時間:150分<br>
-          料金:(17,000円→15,000円)+(2500円→500円)+5000円　計:20,500円<br><br>
+          【美容鍼灸美肌再生コース(顔＋全身)120分 × VOS(鍼)パック】<br><br>
+          ◆－早割特典有－◆<br>
+          ・3ヶ月前にご予約のお客様は20%引き！ 149,000円→126,650円<br>
+          ・2ヶ月前にご予約のお客様は15%引き！ 149,000円→134,100円
         </x-slot>
-        <x-slot name="time">950分</x-slot>
-        <x-slot name="price">￥128,000</x-slot>
+        <x-slot name="time">8回コース</x-slot>
+        <x-slot name="price">￥149,000</x-slot>
       </x-menu.accordion_menu_description>
     </section>
     <x-menu.menu_overview>
@@ -97,7 +99,7 @@
         <x-slot name="menu_name">漢方浴 40分</x-slot>
         <x-slot name="menu_concept">【芯から温まりたい方におすすめ】</x-slot>
         <x-slot name="time">40分</x-slot>
-        <x-slot name="price">￥3,500</x-slot>
+        <x-slot name="price">￥3,800</x-slot>
       </x-menu.accordion_simple>
     </section>
   </main>

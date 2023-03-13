@@ -40,7 +40,7 @@
         <x-slot name="menu_description">身体の不調、痛み、体質改善を鍼灸ともみほぐしで改善していきます。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥6,500</x-slot>
+        <x-slot name="price">￥7,200</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 90分</x-slot>
@@ -48,7 +48,7 @@
         <x-slot name="menu_description">身体の不調、痛み、体質改善を鍼灸ともみほぐしで改善していきます。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥9,500</x-slot>
+        <x-slot name="price">￥10,500</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 120分</x-slot>
@@ -56,7 +56,7 @@
         <x-slot name="menu_description">身体の不調、痛み、体質改善を鍼灸ともみほぐしで改善していきます。<br>鍼灸もみほぐし以外にストレッチ、オイルトリートメントなどのメニューとの組み合わせも出来ます。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥12,500</x-slot>
+        <x-slot name="price">￥13,800</x-slot>
       </x-menu.accordion>
     </section>
     <x-menu.menu_overview>
@@ -76,7 +76,7 @@
         <x-slot name="menu_name">高麗手指鍼灸 60分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥6,500</x-slot>
+        <x-slot name="price">￥7,200</x-slot>
       </x-menu.accordion_simple>
     </section>
     <x-menu.menu_overview>
@@ -94,13 +94,13 @@
         <x-slot name="menu_name">育毛治療 90分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥9,000</x-slot>
+        <x-slot name="price">￥9,900</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">育毛治療(ショート) 40分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
         <x-slot name="time">40分</x-slot>
-        <x-slot name="price">￥6,000</x-slot>
+        <x-slot name="price">￥6,600</x-slot>
       </x-menu.accordion_simple>
     </section>
   </main>

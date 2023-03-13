@@ -37,21 +37,28 @@
         <x-slot name="menu_concept">【全身の毒素排出】</x-slot>
         <x-slot name="menu_description">うつ伏せ上半身、下半身、デコルテにカッピングを行います。その後、オイルマッサージを行い、更に血行を促進していきます。</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥6,500</x-slot>
+        <x-slot name="price">￥7,200</x-slot>
       </x-menu.accordion_menu_description>
       <x-menu.accordion_menu_description>
         <x-slot name="menu_name">オイルカッピング 90分</x-slot>
         <x-slot name="menu_concept">【デトックス術で内臓機能向上】</x-slot>
         <x-slot name="menu_description">うつ伏せ上半身、下半身、仰向け下半身、デコルテにカッピングを行います。その後、オイルマッサージを行い、更に血行を促進していきます。</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥9,500</x-slot>
+        <x-slot name="price">￥10,500</x-slot>
       </x-menu.accordion_menu_description>
       <x-menu.accordion_menu_description>
         <x-slot name="menu_name">オイルカッピング 120分</x-slot>
         <x-slot name="menu_concept">【脂肪燃焼！新陳代謝UP】</x-slot>
         <x-slot name="menu_description">うつ伏せ上半身、下半身、仰向け下半身、お腹、デコルテにカッピングを行います。その後、オイルマッサージを行い、更に血行を促進していきます。</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥12,500</x-slot>
+        <x-slot name="price">￥13,800</x-slot>
+      </x-menu.accordion_menu_description>
+      <x-menu.accordion_menu_description>
+        <x-slot name="menu_name">腸もみカッピング 50分</x-slot>
+        <x-slot name="menu_concept">【脂肪燃焼】</x-slot>
+        <x-slot name="menu_description">お腹カッピング＋腸つぼマッサージ＋腸リンパオイルトリートメント</x-slot>
+        <x-slot name="time">50分</x-slot>
+        <x-slot name="price">￥6,600</x-slot>
       </x-menu.accordion_menu_description>
     </section>
   </main>

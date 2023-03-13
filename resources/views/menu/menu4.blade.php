@@ -38,19 +38,19 @@
         <x-slot name="menu_name">全身もみほぐし 60分</x-slot>
         <x-slot name="menu_concept">【全身の慢性こり改善！】</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥6,000</x-slot>
+        <x-slot name="price">￥6,600</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 90分</x-slot>
         <x-slot name="menu_concept">【体をゆっくり休めたい方へ】</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥9,000</x-slot>
+        <x-slot name="price">￥9,900</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 120分</x-slot>
         <x-slot name="menu_concept">【ご自身へのご褒美コース】</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥12,000</x-slot>
+        <x-slot name="price">￥13,200</x-slot>
       </x-menu.accordion_simple>
     </section>
   </main>

@@ -36,25 +36,25 @@
         <x-slot name="menu_name">リンパオイルマッサージ 60分</x-slot>
         <x-slot name="menu_concept">【全身の疲れ・むくみ改善】</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥6,500</x-slot>
+        <x-slot name="price">￥7,200</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">リンパオイルマッサージ 90分</x-slot>
         <x-slot name="menu_concept">【デトックス術で全身の老廃物を排出】</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥9,500</x-slot>
+        <x-slot name="price">￥10,500</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">リンパオイルマッサージ 120分</x-slot>
         <x-slot name="menu_concept">【極上×デトックスで新陳代謝UP】</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥12,500</x-slot>
+        <x-slot name="price">￥13,800</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
-        <x-slot name="menu_name">足リンパオイルマッサージ 45分</x-slot>
+        <x-slot name="menu_name">足リンパオイルマッサージ 50分</x-slot>
         <x-slot name="menu_concept">【足のむくみ・ほっそり美脚へ】</x-slot>
-        <x-slot name="time">45分</x-slot>
-        <x-slot name="price">￥5,000</x-slot>
+        <x-slot name="time">50分</x-slot>
+        <x-slot name="price">￥6,000</x-slot>
       </x-menu.accordion_simple>
     </section>
     <x-menu.menu_overview>
@@ -77,7 +77,7 @@
         <x-slot name="menu_description">うつ伏せ上半身、下半身をホットストーンで温めながら、ゆっくりとオイルマッサージを行います。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ上半身・下半身をホットストーンで温める ③オイルマッサージ</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥6,500</x-slot>
+        <x-slot name="price">￥7,200</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">ホットストーンボディオイル 90分</x-slot>
@@ -85,7 +85,7 @@
         <x-slot name="menu_description">うつ伏せ上半身、下半身、お腹、デコルテをホットストーンで温めながら、ゆっくりとオイルマッサージを行います。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ上半身、下半身、お腹、デコルテをホットストーンで温める ③オイルマッサージ</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥9,500</x-slot>
+        <x-slot name="price">￥10,500</x-slot>
       </x-menu.accordion>
     </section>
   </main>

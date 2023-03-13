@@ -38,7 +38,7 @@
         <x-slot name="menu_description"></x-slot>
         <x-slot name="treatment">①クレンジング ②デコルテマッサージ ③フェイシャルマッサージ ④毛穴吸引⑤パック ⑥お仕上げ</x-slot>
         <x-slot name="time">70分</x-slot>
-        <x-slot name="price">￥7,500</x-slot>
+        <x-slot name="price">￥8,200</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">プレミアムコース 90分</x-slot>
@@ -46,7 +46,7 @@
         <x-slot name="menu_description"></x-slot>
         <x-slot name="treatment">①クレンジング ②デコルテマッサージ ③フェイシャルマッサージ ④毛穴吸引 ⑤ビタミンC誘導体イオン導入 ⑥VOSパック(鍼パック) ⑦お仕上げ</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥10,000</x-slot>
+        <x-slot name="price">￥11,000</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">ホットストーンフェイシャル 70分</x-slot>
@@ -54,7 +54,7 @@
         <x-slot name="menu_description"></x-slot>
         <x-slot name="treatment">①クレンジング ②デコルテ(ハンド&温石) ③フェイシャルトリートメント(ハンド&温石) ④パック ⑤お仕上げ</x-slot>
         <x-slot name="time">70分</x-slot>
-        <x-slot name="price">￥7,500</x-slot>
+        <x-slot name="price">￥8,200</x-slot>
       </x-menu.accordion>
     </section>
     <x-menu.menu_overview>
@@ -107,7 +107,7 @@
         <x-slot name="menu_description">カーボキシー高濃度炭酸70,000ppmは、通常炭酸パックの7倍の強さの効果！</x-slot>
         <x-slot name="treatment">①クレンジング ②カーボキシー炭酸パック ③デコルテマッサージ ④フェイシャルマッサージ ⑤お仕上げ</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥10,000</x-slot>
+        <x-slot name="price">￥11,000</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">カーボキシー高濃度炭酸パック×美容鍼灸(顔+全身) 100分</x-slot>
@@ -115,7 +115,7 @@
         <x-slot name="menu_description">カーボキシー高濃度炭酸パックと美容鍼灸の組み合わせることにより、相乗効果抜群！</x-slot>
         <x-slot name="treatment">①ボディ鍼(背面)･マッサージ ②ボディ鍼(正面)･マッサージ ③クレンジング ④お顔鍼&電気 ⑤カーボキシー高濃度パック ⑥デコルテマッサージ ⑦フェイシャルマッサージ ⑧お仕上げ</x-slot>
         <x-slot name="time">100分</x-slot>
-        <x-slot name="price">￥15,000</x-slot>
+        <x-slot name="price">￥16,500</x-slot>
       </x-menu.accordion>
     </section>
   </main>
