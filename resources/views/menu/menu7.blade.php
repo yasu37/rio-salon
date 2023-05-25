@@ -41,12 +41,14 @@
         <x-slot name="time">60分</x-slot>
         <x-slot name="price">￥8,200</x-slot>
       </x-menu.accordion_simple>
-      <x-slot name="menu_name">プライムストレッチ 90分</x-slot>
+      <x-menu.accordion_simple>
+        <x-slot name="menu_name">プライムストレッチ 90分</x-slot>
         <x-slot name="menu_concept">【深層部の筋肉までアプローチ】</x-slot>
         <x-slot name="time">90分</x-slot>
         <x-slot name="price">￥12,000</x-slot>
       </x-menu.accordion_simple>
-      <x-slot name="menu_name">プライムストレッチ 120分</x-slot>
+      <x-menu.accordion_simple>  
+        <x-slot name="menu_name">プライムストレッチ 120分</x-slot>
         <x-slot name="menu_concept">【深層部の筋肉までアプローチ】</x-slot>
         <x-slot name="time">120分</x-slot>
         <x-slot name="price">￥16,500</x-slot>
