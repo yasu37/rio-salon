@@ -13,102 +13,72 @@
 
 #location .content {
   display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
   list-style: none;
 }
 
 #location .box {
   width: 50%;
+  font-size: 1.5rem;
   align-items: center;
-  justify-content: center;
-}
-
-#location .img {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-around;
 }
 
 #location .google_map {
   width: 100%;
-  height: 120%;
 }
 
-#location .infomation {
+#location .information {
+  border-collapse: collapse;
+  border-spacing: 0;
+ }
+th {
+  padding: 1.5rem 0.5rem;
+  border: solid 1px #778ca3;
   text-align: left;
-  font-size: 1.8rem;
 }
 
-#location .infomation ul {
+#location .img_box {
+  display: flex;
   list-style: none;
-  margin-top: 7rem;
-  margin-left: 7rem;
+  padding-top: 2rem;
 }
 
-#location li {
-  margin-bottom: 1.5rem;
-}
-
-#location .button5 a {
-  background: #f6f6f6;
-  background: #ebffeb;
-  width: 60%;
-  margin-left: 0;
+#location .img_box li {
+  width: 33%;
 }
 
 /*サイトの横幅が780px以下*/
 @media screen and (max-width: 780px) {
-  #location .infomation ul {
-    margin-top: 5rem;
-    margin-left: 5rem;
+  #location .box {
+    font-size: 1.2rem;
   }
 }
 
 /*サイトの横幅が600px以下*/
 @media screen and (max-width: 600px) {
+  #location .content {
+    display: block;
+  }
   #location .section_title {
     margin-bottom: 1rem;
   }
-
-  #location .button5 a {
-    width: 70%;
-    font-size: 1.3rem;
-  }
-
-  #location .infomation ul {
-    margin-left: 3rem;
-  }
-
-  #location li {
-    font-size: 1.3rem;
+  #location .box {
+    width: 100%;
   }
 }
 
 /*サイトの横幅が450px以下*/
-@media screen and (max-width: 450px) {}
+@media screen and (max-width: 450px) {
 
+}
 
 /*サイトの横幅が380px以下*/
 @media screen and (max-width: 380px) {
-
-  #location li {
-    font-size: 1.2rem;
-  }
-
-  #location .button5 a {
-    font-size: 1.2rem;
-  }
 
 }
 
 /*サイトの横幅が330px以下*/
 @media screen and (max-width: 330px) {
-  #location li {
-    font-size: 1rem;
-  }
 
-  #location .button5 a {
-    width: auto;
-  }
 }

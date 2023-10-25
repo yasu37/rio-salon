@@ -11,9 +11,8 @@
         <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank"><img src="../img/line1.jpg" alt="RIO鍼灸サロンの公式line"></a></li>
       </ul>
       <ul class="reservation">
-        <li class="tel_number">
-          <span>ご予約・ご相談</span>
-          <span class="number">029-279-8639</span>
+      <li class="tel_number">
+          <span><a href="../reserve" target="_self">Web予約はこちら</a></span>
         </li>
       </ul>
     </div>
@@ -30,13 +29,13 @@
         <li class="is_pc">／</li>
         <li><a href="../about" target="_self">リオについて</a></li>
         <li class="is_pc">／</li>
-        <li><a href="../menu/menu1" target="_self">コース＆料金</a></li>
+        <li><a href="../news" target="_self">お知らせ</a></li>
+        <li class="is_pc">／</li>
+        <li><a href="../menu/menu1" target="_self">メニュー&料金</a></li>
+        <li class="is_pc">／</li>
+        <li><a href="../campaign" target="_self">キャンペーン</a></li>
         <li class="is_pc">／</li>
         <li><a href="../question" target="_self">よくある質問</a></li>
-        <li class="is_pc">／</li>
-        <li><a href="../news" target="_self">ニュース</a></li>
-        <li class="is_pc">／</li>
-        <li><a href="../reserve" target="_self">ご予約・お問い合わせ</a></li>
       </ul>
     </nav>
   </div>

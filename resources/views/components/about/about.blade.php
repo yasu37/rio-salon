@@ -21,7 +21,7 @@
     </div>
     <div id="about2">
       <div class="about2_img">
-        <img src="./img/location4.jpg" alt="rio鍼灸サロンの店内写真">
+        <img src="./img/location3.jpg" alt="rio鍼灸サロンの店内写真">
       </div>
       <div class="content1">
         <p><span>東洋医学の分野である</span>

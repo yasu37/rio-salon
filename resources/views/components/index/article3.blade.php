@@ -16,7 +16,7 @@
           <p class="price">70分<br>¥10,000<span>(税込)</span>〜</p>
           <div class="button_course">
             <a href="./menu/menu1" target="_self">コース詳細</a>
-          </div>
+          </div>’
         </div>
       </li>
       <li class="course_box">
