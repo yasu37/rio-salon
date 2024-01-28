@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/campaign.css">
-  <title>ご予約はこちら|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <title>期間限定クーポンページ|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
