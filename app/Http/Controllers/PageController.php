@@ -44,6 +44,9 @@ class PageController extends Controller
     public function menu9() {
         return view('menu.menu9');
     }
+    public function menu10() {
+        return view('menu.menu10');
+    }
 
     //質問
     public function question() {
@@ -58,6 +61,16 @@ class PageController extends Controller
     //予約
     public function reserve() {
         return view('reserve');
+    }
+
+    //キャンペーン（期間限定クーポン）
+    public function term() {
+        return view('campaign.term');
+    }
+
+    //キャンペーン（期間限定クーポン）
+    public function first() {
+        return view('campaign.first');
     }
 
     //コラム

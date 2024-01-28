@@ -14,10 +14,22 @@ main {
   padding-top: 5rem;
 }
 
+main .section_title h1 {
+  font-size: 2.7rem;
+}
+
+/*ブライダルメニュー*/
+.bridal_img {
+  margin-top: 10rem;
+}
+
 /*サイトの横幅が781px以上*/
 @media screen and (min-width: 781px) {
   main {
     padding-top: 10rem;
+  }
+  main .section_title h1 {
+    font-size: 3.5rem;
   }
 }
 
@@ -47,7 +59,7 @@ main {
 #menu_list .menu_course li {
   width: 30%;
   margin: 0.6%;
-  height: 72px;
+  height: 6rem;
 }
 
 #menu_list .menu_course a {
@@ -56,13 +68,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e9f7eb;
-  background: #99CDC7;
-  background: #B2DAD5;
-  color: #fff;
-  color: inherit;
+  background: #fff;
   color: #666;
   font-weight: bold;
+  border: 2px solid #B2DAD5;
+  box-sizing: border-box;
   border-radius: 0.3rem;
 }
 
@@ -85,7 +95,7 @@ main {
 @media screen and (max-width: 450px) {
 
   #menu_list .menu_course {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.2;
   }
 

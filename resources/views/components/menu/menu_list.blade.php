@@ -6,15 +6,16 @@
     </div>
     <div class="menu_course">
       <ul>
-        <li><a href="./menu1">美容鍼灸</a></li>
-        <li><a href="./menu2">鍼灸治療</a></li>
-        <li><a href="./menu3">フェイシャルエステ<br>ハーブピーリング</a></li>
-        <li><a href="./menu4">もみほぐし</a></li>
-        <li><a href="./menu5">オイルマッサージ<br>ホットストーン</a></li>
-        <li><a href="./menu6">オイルカッピング</a></li>
-        <li><a href="./menu7">パーソナルストレッチ</a></li>
-        <li><a href="./menu8">タイ古式マッサージ</a></li>
-        <li><a href="./menu9">ブライダル<br>黄土漢方浴</a></li>
+        <li><a href="./menu1" class="button_menu1">美容鍼灸</a></li>
+        <li><a href="./menu2" class="button_menu2">鍼灸治療</a></li>
+        <li><a href="./menu3" class="button_menu3">漢方浴</a></li>
+        <li><a href="./menu4" class="button_menu4">フェイシャルエステ</a></li>
+        <li><a href="./menu5" class="button_menu5">姿勢矯正リンパオイル</a></li>
+        <li><a href="./menu6" class="button_menu6">オイルトリートメント</a></li>
+        <li><a href="./menu7" class="button_menu7">カッピング</a></li>
+        <li><a href="./menu8" class="button_menu8">もみほぐし</a></li>
+        <li><a href="./menu9" class="button_menu9">マタニティ</a></li>
+        <li><a href="./menu10" class="button_menu10">ブライダル鍼灸</a></li>
       </ul>
     </div>
   </div>

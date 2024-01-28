@@ -28,12 +28,16 @@ Route::get('menu/menu6', [PageController::class, 'menu6']);
 Route::get('menu/menu7', [PageController::class, 'menu7']);
 Route::get('menu/menu8', [PageController::class, 'menu8']);
 Route::get('menu/menu9', [PageController::class, 'menu9']);
+Route::get('menu/menu10', [PageController::class, 'menu10']);
 /*質問 */
 Route::get('question', [PageController::class, 'question']);
 /*ニュース */
 Route::get('news', [PageController::class, 'news']);
 /*予約 */
 Route::get('reserve', [PageController::class, 'reserve']);
+/*キャンペーン */
+Route::get('campaign/term', [PageController::class, 'term']);
+Route::get('campaign/first', [PageController::class, 'first']);
 /*コラム */
 Route::get('column/column1', [PageController::class, 'column1']);
 /*サイトマップ*/

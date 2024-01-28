@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="../css/menu/menu.css">
   <link rel="stylesheet" href="../css/components/accordion.css">
   <title>鍼灸治療＆高麗手指鍼灸＆育毛治療メニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <style>
+    #menu_list .menu_course .button_menu2 {
+      background: #B2DAD5;
+    }
+  </style>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -29,7 +34,7 @@
       <x-slot name="image_src">"../img/course4.jpg"</x-slot>
       <x-slot name="image_alt">"鍼灸治療の施術写真"</x-slot>
       <x-slot name="menu_explanation">【鍼灸治療について】</x-slot>
-      <x-slot name="menu_description">鍼灸とは、全身に点在するツボを鍼や灸で刺激して、筋肉をほぐしたり、血行や代謝を促すことで、人が本来備わっている病気を治す力(免疫料)を高め、痛みやつらい症状を改善し、健康へと導く治療法です。br>
+      <x-slot name="menu_description">鍼灸とは、全身に点在するツボを鍼や灸で刺激して、筋肉をほぐしたり、血行や代謝を促すことで、人が本来備わっている病気を治す力(免疫料)を高め、痛みやつらい症状を改善し、健康へと導く治療法です。<br>
         使用する鍼は、安全性と衛生面を考慮し、使い捨ての「ディスポーサブル鍼」を使用しています。<br>
         ＊鍼の長さは約15mm～90mm、太さ直径約0.10mm～0.30mmとあり、刺す場所や症状に応じて、使う鍼の長さ、太さは変わります。</x-slot>
     </x-menu.menu_overview>

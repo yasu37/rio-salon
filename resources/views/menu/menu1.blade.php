@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="../css/components/accordion.css">
 
   <title>美容鍼灸メニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <style>
+    #menu_list .menu_course .button_menu1 {
+      background: #B2DAD5;
+    }
+  </style>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -34,6 +39,7 @@
         筋肉、リンパ、神経にアプローチし、皮膚代謝を上げ、表情筋の凝りほぐし肌のターンオーバーを促進させ、身体の内側の根本を整えていきます。<br>
         ＊お顔には、0.1㎜程度の細い鍼を使用しております。痛みも抑えられ鍼が初めての方にも受け入れやすい施術です。</x-slot>
     </x-menu.menu_overview>
+    <!-- 美容鍼灸のメニュー -->
     <section class="menu_course">
       <x-menu.accordion>
         <x-slot name="menu_name">美容鍼灸 70分</x-slot>

@@ -1,5 +1,5 @@
 <div>
-  <details>
+  <details open>
     <summary>
       <h2>{{ $menu_name }}</h2><span class="icon"></span>
     </summary>

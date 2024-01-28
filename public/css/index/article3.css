@@ -46,6 +46,7 @@
 }
 
 #course .course_infomation {
+  position: relative;
   width: 42%;
   text-align: left;
 }
@@ -53,7 +54,7 @@
 #course .course_name {
   letter-spacing: 0.2rem;
   position: relative;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 3rem;
   margin-bottom: 1rem;
@@ -71,8 +72,8 @@
 
 #course .price {
   font-size: 1.8rem;
-  letter-spacing: 0.2rem;
   margin-bottom: 0.5rem;
+  text-align: right;
 }
 
 #course .button5 a {
@@ -145,24 +146,27 @@
   #course .button_course a {
     padding: 0.7rem 0;
     font-size: 1.6rem;
-    width: 80%;
+    width: auto;
     margin: 0;
   }
 
   #course .price {
-    font-size: 1.7rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
   }
 
 }
 
 
 /*サイトの横幅が450px以下*/
-@media screen and (max-width: 450px) {}
+@media screen and (max-width: 450px) {
+  #course .course_name {
+    font-size: 1.6rem;
+  }
+}
 
 
 /*サイトの横幅が380px以下*/
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
 
   #course .button_course a {
     padding: 0.7rem 0;
@@ -176,7 +180,7 @@
   }
 
   #course .course_name {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.8rem;
     margin-bottom: 0.8rem;
   }

@@ -1,0 +1,102 @@
+/*キャンペーン紹介*/
+#campaign {
+    padding-bottom: 5rem;
+}
+
+#campaign ul {
+    width: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#campaign ul li {
+    width:48%;
+    background: #B2DAD5;
+    border: 2px solid #B2DAD5;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+  
+#campaign ul li a {
+    display: block;
+    padding: 1rem 0;
+    color: #666;
+}
+
+#campaign .button_first {
+    background: #fff;
+}
+
+/*キャンペーンのデザイン1*/
+
+.design {
+    width: 90%;
+    margin: 3rem auto;
+    border: 1px solid #f6f6f6;
+}
+
+.design .campaign_name {
+    padding: 1rem 0;
+    font-weight: bold;
+    text-align: left;
+    color: #d4ab37;
+}
+
+.design .menu {
+    display: flex;
+    padding: 1rem;
+}
+
+.design .menu_img {
+    width: 30%;
+}
+
+.design .menu_detail {
+    width: 70%;
+    position: relative;
+}
+
+.design .menu_name {
+    text-align: left;
+    padding-left: 2rem;
+    font-weight: bold;
+}
+
+.design .menu_price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #4CA89E;
+}
+
+.design .conditions {
+    background: #f6f6f6;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.design .conditions_text {
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.button5 {
+    width: auto;
+    padding: 0 1rem;
+}
+
+.button5 a {
+    width: auto;
+    color: #fff;
+    background-color: #4CA89E;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 450px) {
+    .design {
+        font-size: 1.4rem;
+    }
+}

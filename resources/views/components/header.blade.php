@@ -33,7 +33,7 @@
         <li class="is_pc">／</li>
         <li><a href="./menu/menu1" target="_self">メニュー&料金</a></li>
         <li class="is_pc">／</li>
-        <li><a href="./campaign" target="_self">キャンペーン</a></li>
+        <li><a href="./campaign/term" target="_self">キャンペーン</a></li>
         <li class="is_pc">／</li>
         <li><a href="./question" target="_self">よくある質問</a></li>
       </ul>
