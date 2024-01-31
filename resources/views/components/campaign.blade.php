@@ -2,7 +2,7 @@
     <p class="campaign_name">【 {{ $campaign_name }} 】</p>
     <div class="menu">
         <div class="menu_img">
-            <img src="../img/course1.jpg" alt="">
+            <img src="{{ $menu_img }}" alt="{{ $menu_alt }}">
         </div>
         <div class="menu_detail">
             <p class="menu_name">{{ $menu_name }}</p>

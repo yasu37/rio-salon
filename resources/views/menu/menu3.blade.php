@@ -32,8 +32,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">黄土漢方浴</x-slot>
-      <x-slot name="image_src">"../img/course19.jpg"</x-slot>
-      <x-slot name="image_alt">"漢方浴の施術写真"</x-slot>
+      <x-slot name="image_src">../img/course19.jpg</x-slot>
+      <x-slot name="image_alt">漢方浴の施術写真</x-slot>
       <x-slot name="menu_explanation">【黄土漢方浴とは？】</x-slot>
       <x-slot name="menu_description">20～30分くらい座っているだけでじっとりと汗が噴き出します。内臓器を十分に温めることによって、手足などの末端まで血液を循環させ、ぽかぽか芯から温まるのが特長です。簡単で気軽に、また健康的なエステとしてお役立ていただけることができます。</x-slot>
     </x-menu.menu_overview>

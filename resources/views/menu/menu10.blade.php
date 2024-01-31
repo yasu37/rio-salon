@@ -31,8 +31,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">ブライダル鍼灸</x-slot>
-      <x-slot name="image_src">"../img/course26.jpg"</x-slot>
-      <x-slot name="image_alt">"指輪の写真"</x-slot>
+      <x-slot name="image_src">../img/course26.jpg</x-slot>
+      <x-slot name="image_alt">花嫁の写真</x-slot>
       <x-slot name="menu_explanation">【ブライダル鍼灸について】</x-slot>
       <x-slot name="menu_description">結婚式に向けて、新婦様が人生で最高によりキレイになっていただくため、美容鍼灸・エステ、漢方浴を組合わせながら、お身体の内側と外側を同時に働きかけ、表面的な美しさはもちろん、内面からの健康美と素肌美を引き出し、お身体全体のコンディションを整えていきます。</x-slot>
     </x-menu.menu_overview>

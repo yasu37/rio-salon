@@ -31,8 +31,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">オイルトリートメント</x-slot>
-      <x-slot name="image_src">"../img/course8.jpg"</x-slot>
-      <x-slot name="image_alt">"オイルマッサージの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course8.jpg</x-slot>
+      <x-slot name="image_alt">オイルマッサージの施術写真</x-slot>
       <x-slot name="menu_explanation">【リンパオイルトリートメント】</x-slot>
       <x-slot name="menu_description">オイルで全身を流していきます。全身のリンパの流れや血行が良くなり、血行促進はもちろん、むくみの解消や疲労の回復の効果も期待できます。</x-slot>
     </x-menu.menu_overview>
@@ -64,8 +64,8 @@
     </section>
     <x-menu.menu_overview>
       <x-slot name="menu_name">ホットストーンボディオイル</x-slot>
-      <x-slot name="image_src">"../img/course9.jpg"</x-slot>
-      <x-slot name="image_alt">"ホットストーンボディオイルの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course9.jpg</x-slot>
+      <x-slot name="image_alt">ホットストーンボディオイルの施術写真</x-slot>
       <x-slot name="menu_explanation">【ホットストーンについて】</x-slot>
       <x-slot name="menu_description">ホットストーン・ストーンセラピーは、50℃～60℃に温めた専用の石を、背中、腰、足、手などに置いたり、オイルを塗布したストーンで筋肉の流れに沿ってトリートメントを行います。<br>
         遠赤外線効果で身体の深部からじっくりと温めるのが最大の特徴です。<br>

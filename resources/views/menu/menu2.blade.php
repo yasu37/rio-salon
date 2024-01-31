@@ -31,8 +31,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">鍼灸治療</x-slot>
-      <x-slot name="image_src">"../img/course4.jpg"</x-slot>
-      <x-slot name="image_alt">"鍼灸治療の施術写真"</x-slot>
+      <x-slot name="image_src">../img/course4.jpg</x-slot>
+      <x-slot name="image_alt">鍼灸治療の施術写真</x-slot>
       <x-slot name="menu_explanation">【鍼灸治療について】</x-slot>
       <x-slot name="menu_description">鍼灸とは、全身に点在するツボを鍼や灸で刺激して、筋肉をほぐしたり、血行や代謝を促すことで、人が本来備わっている病気を治す力(免疫料)を高め、痛みやつらい症状を改善し、健康へと導く治療法です。<br>
         使用する鍼は、安全性と衛生面を考慮し、使い捨ての「ディスポーサブル鍼」を使用しています。<br>
@@ -66,8 +66,8 @@
     </section>
     <x-menu.menu_overview>
       <x-slot name="menu_name">高麗手指鍼灸</x-slot>
-      <x-slot name="image_src">"../img/course17.jpg"</x-slot>
-      <x-slot name="image_alt">"高麗手指鍼灸の施術写真"</x-slot>
+      <x-slot name="image_src">../img/course17.jpg</x-slot>
+      <x-slot name="image_alt">高麗手指鍼灸の施術写真</x-slot>
       <x-slot name="menu_explanation">【高麗手指鍼灸とは？】</x-slot>
       <x-slot name="menu_description">手は『第二の脳』『露出した脳』などと言われ、手と脳は深い関係があります。<br>
         手を使うと、使わないときに比べて脳の血流量がおよそ10％上がると言われている程で、手や指を使うことは認知症予防としてもよく知られています。<br>
@@ -86,8 +86,8 @@
     </section>
     <x-menu.menu_overview>
       <x-slot name="menu_name">育毛治療</x-slot>
-      <x-slot name="image_src">"../img/course21.jpg"</x-slot>
-      <x-slot name="image_alt">"育毛治療の施術写真"</x-slot>
+      <x-slot name="image_src">../img/course21.jpg</x-slot>
+      <x-slot name="image_alt">育毛治療の施術写真</x-slot>
       <x-slot name="menu_explanation">【育毛治療について】</x-slot>
       <x-slot name="menu_description">日本人男性の3人に1人は薄毛を気にしているといわれています。<br>
         近年は、女性の薄毛の悩みも増加する傾向にあり、背景には、ホルモンの影響、遺伝的要素、食生活、ストレスなどの理由が考えられています。<br>

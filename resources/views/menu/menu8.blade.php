@@ -31,8 +31,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">もみほぐし</x-slot>
-      <x-slot name="image_src">"../img/course5.jpg"</x-slot>
-      <x-slot name="image_alt">"もみほぐしの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course5.jpg</x-slot>
+      <x-slot name="image_alt">もみほぐしの施術写真</x-slot>
       <x-slot name="menu_explanation">【もみほぐしについて】</x-slot>
       <x-slot name="menu_description">洋服の上からお身体をもみほぐしていくコース。お客様のご要望や悩みなどお伺いしていきながら施術していきます。<br>
         お着替えのご準備もございますのでお気軽にご来店ください。

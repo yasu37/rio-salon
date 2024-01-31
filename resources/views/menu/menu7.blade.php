@@ -31,8 +31,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">オイルカッピング</x-slot>
-      <x-slot name="image_src">"../img/course12.jpg"</x-slot>
-      <x-slot name="image_alt">"オイルカッピングの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course12.jpg</x-slot>
+      <x-slot name="image_alt">オイルカッピングの施術写真</x-slot>
       <x-slot name="menu_explanation">【オイルカッピングについて】</x-slot>
       <x-slot name="menu_description">カッピング・吸玉療法は、古来より東洋でも西洋でも幅広く行われてきた伝統療法。背中などにカップに乗せ吸引し、カップ内部を一時的に真空状態にした後カップを外す。すると止まっていた血液が一気に流れ、血行改善・血行促進の効果が得られます。</x-slot>
     </x-menu.menu_overview>

@@ -31,8 +31,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">マタニティリンパオイル</x-slot>
-      <x-slot name="image_src">"../img/course_maternity.jpg"</x-slot>
-      <x-slot name="image_alt">"マタニティへのマッサージの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course_maternity.jpg</x-slot>
+      <x-slot name="image_alt">マタニティへのマッサージの施術写真</x-slot>
       <x-slot name="menu_explanation">【マタニティリンパオイル】</x-slot>
       <x-slot name="menu_description">妊娠5ヶ月(妊娠16～19週)から施術を受けることができます。</x-slot>
     </x-menu.menu_overview>

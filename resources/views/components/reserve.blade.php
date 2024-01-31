@@ -10,7 +10,7 @@
       <div class="list">
         <ul>
           <li><a href="https://ibanavi.net/shop/8665/booking/" target="_blank">いばナビ</a></li>
-          <li><a href="https://ibanavi.net/shop/8665/booking/" target="_blank">ホットペッパー</a></li>
+          <li><a href="https://beauty.hotpepper.jp/kr/slnH000577689/" target="_blank">ホットペッパー</a></li>
           <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank">公式Line</a></li>
         </ul>
       </div>

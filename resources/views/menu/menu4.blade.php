@@ -31,8 +31,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">フェイシャルエステ</x-slot>
-      <x-slot name="image_src">"../img/course6.jpg"</x-slot>
-      <x-slot name="image_alt">"フェイシャルエステの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course6.jpg</x-slot>
+      <x-slot name="image_alt">フェイシャルエステの施術写真</x-slot>
       <x-slot name="menu_explanation">【フェイシャルエステについて】</x-slot>
       <x-slot name="menu_description"></x-slot>
     </x-menu.menu_overview>
@@ -64,8 +64,8 @@
     </section>
     <x-menu.menu_overview>
       <x-slot name="menu_name">ALEXハーブピーリング</x-slot>
-      <x-slot name="image_src">"../img/course20.jpg"</x-slot>
-      <x-slot name="image_alt">"ハーブピーリングの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course20.jpg</x-slot>
+      <x-slot name="image_alt">ハーブピーリングの施術写真</x-slot>
       <x-slot name="menu_explanation">【ALEXハーブピーリングについて】</x-slot>
       <x-slot name="menu_description">1945年世界で初めてハーブピーリングを開発したALEXハーブを使用。<br>
         オーガニックハーブをすり込むことで、肌の内側から働きかけ古い角質を取り除き、肌のターンオーバーを加速させ肌の再生を促す施術。<br>
@@ -94,8 +94,8 @@
     </section>
     <x-menu.menu_overview>
       <x-slot name="menu_name">カーボキシー高濃度炭酸パック</x-slot>
-      <x-slot name="image_src">"../img/course24.jpg"</x-slot>
-      <x-slot name="image_alt">"カーボキシ―高濃度炭酸パックの施術写真"</x-slot>
+      <x-slot name="image_src">../img/course24.jpg</x-slot>
+      <x-slot name="image_alt">カーボキシ―高濃度炭酸パックの施術写真</x-slot>
       <x-slot name="menu_explanation">【美容雑誌で話題沸騰】</x-slot>
       <x-slot name="menu_description">各種美容雑誌でも紹介され話題！<br>
         炭酸ガスを皮下組織に注入することで、細胞が酸欠状態になり、大量の酸素を必要とする状態になります。<br>

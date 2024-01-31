@@ -4,7 +4,7 @@
   </div>
   <div class="container">
     <div class="menu_overview_left">
-      <img class="menu_img1" src={{ $image_src }} alt={{ $image_alt }}>
+      <img class="menu_img1" src="{{ $image_src }}" alt="{{ $image_alt }}">
     </div>
     <div class="menu_overview_right">
       <div class="text_area">

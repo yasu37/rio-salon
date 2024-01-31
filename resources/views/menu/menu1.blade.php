@@ -32,8 +32,8 @@
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">美容鍼灸</x-slot>
-      <x-slot name="image_src">"../img/course1.jpg"</x-slot>
-      <x-slot name="image_alt">"美容鍼灸の施術写真"</x-slot>
+      <x-slot name="image_src">../img/course1.jpg</x-slot>
+      <x-slot name="image_alt">美容鍼灸の施術写真</x-slot>
       <x-slot name="menu_explanation">【美容鍼灸とは？】</x-slot>
       <x-slot name="menu_description">美容鍼灸は、美容鍼で顔のツボや経路を刺激します。<br>
         筋肉、リンパ、神経にアプローチし、皮膚代謝を上げ、表情筋の凝りほぐし肌のターンオーバーを促進させ、身体の内側の根本を整えていきます。<br>
