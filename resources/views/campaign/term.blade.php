@@ -37,7 +37,7 @@
     </div>
   </section>
   <x-campaign>
-    <x-slot name="campaign_name">エイジングケアCampaign</x-slot>
+    <x-slot name="campaign_name">エイジングケあCampaign</x-slot>
     <x-slot name="menu_img">../img/course8.jpg</x-slot>
     <x-slot name="menu_alt">オイルトリートメントの施術写真</x-slot>
     <x-slot name="menu_name">美容鍼灸＋全身オイルリンパトリートメント</x-slot>
