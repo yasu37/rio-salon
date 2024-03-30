@@ -37,28 +37,68 @@
     </div>
   </section>
   <x-campaign>
-    <x-slot name="campaign_name">エイジングケアCampaign</x-slot>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
     <x-slot name="menu_img">../img/course8.jpg</x-slot>
-    <x-slot name="menu_alt">オイルトリートメントの施術写真</x-slot>
-    <x-slot name="menu_name">美容鍼灸＋全身オイルリンパトリートメント</x-slot>
+    <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
+    <x-slot name="menu_name">美容鍼灸</x-slot>
+    <x-slot name="menu_price">90分&nbsp;14300円→13500円</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
+    <x-slot name="menu_img">../img/course1.jpg</x-slot>
+    <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
+    <x-slot name="menu_name">美容鍼灸60分+鍼治療60分</x-slot>
     <x-slot name="menu_price">120分&nbsp;18200円→17500円</x-slot>
-    <x-slot name="conditions_text_term">2024年2月1日〜2024年3月31日迄</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">エイジングケアCampaign</x-slot>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
     <x-slot name="menu_img">../img/course1.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
-    <x-slot name="menu_name">美容鍼灸美肌再生コース（顔＋全身）</x-slot>
-    <x-slot name="menu_price">120分&nbsp;18500円→17000円</x-slot>
-    <x-slot name="conditions_text_term">2024年2月1日〜2024年3月31日迄</x-slot>
+    <x-slot name="menu_name">ALEXハーブピーリング</x-slot>
+    <x-slot name="menu_price">90分&nbsp;22000円→20000円</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">エイジングケアCampaign</x-slot>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
     <x-slot name="menu_img">../img/course1.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
-    <x-slot name="menu_name">芸能人も愛用中！セルキュア小顔リフト</x-slot>
-    <x-slot name="menu_price">70分&nbsp;11000円→9800円</x-slot>
-    <x-slot name="conditions_text_term">2024年2月1日〜2024年3月31日迄</x-slot>
+    <x-slot name="menu_name">美容鍼灸カーボキシー高濃度炭酸パック</x-slot>
+    <x-slot name="menu_price">100分&nbsp;16500円→14800円</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
+    <x-slot name="menu_img">../img/course1.jpg</x-slot>
+    <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
+    <x-slot name="menu_name">自律神経鍼＆全身リンパオイル</x-slot>
+    <x-slot name="menu_price">90分&nbsp;10500円→9800円</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
+    <x-slot name="menu_img">../img/course1.jpg</x-slot>
+    <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
+    <x-slot name="menu_name">セルキュア小顔リフト</x-slot>
+    <x-slot name="menu_price">70分&nbsp;11000円→9000円</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
+    <x-slot name="menu_img">../img/course1.jpg</x-slot>
+    <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
+    <x-slot name="menu_name">セルキュア小顔リフト＆全身リンパオイル</x-slot>
+    <x-slot name="menu_price">120分&nbsp;18200円→13900円</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
+    <x-slot name="menu_img">../img/course1.jpg</x-slot>
+    <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
+    <x-slot name="menu_name">全身リンパオイル</x-slot>
+    <x-slot name="menu_price">90分&nbsp;10500円→9800円</x-slot>
+    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
   </x-campaign>
   </main>
   <x-menu.footer></x-menu.footer>
