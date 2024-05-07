@@ -54,12 +54,16 @@
         <x-slot name="price">￥11,000</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
-        <x-slot name="menu_name">ホットストーンフェイシャル 70分</x-slot>
-        <x-slot name="menu_concept">【ゆっくりリラックスしてお顔の疲れをとりたい方におすすめ】</x-slot>
-        <x-slot name="menu_description"></x-slot>
-        <x-slot name="treatment">①クレンジング ②デコルテ(ハンド&温石) ③フェイシャルトリートメント(ハンド&温石) ④パック ⑤お仕上げ</x-slot>
+        <x-slot name="menu_name">美素肌酵素&クレイピーリングマスク 70分</x-slot>
+        <x-slot name="menu_concept">【素肌美人！お肌にとってもスペシャルなコース】</x-slot>
+        <x-slot name="menu_description">美容鍼灸＋角質ケアピーリング&高濃度美容液マスクのコラボ！
+          角質ケアピーリングは、<br>
+         「酵素」と「クレイ」の作用を利用してお肌に無理なく角質ケアをします。<br>
+          その後、毛穴吸引で毛穴の汚れの取残しを吸引し、最後に高濃度美容液マスクをする事で、お肌にとって必要な栄養成分をで吸収させます。<br>
+        </x-slot>
+        <x-slot name="treatment">①クレンジング ②洗顔 ③フェイシャル・デコルテトリートメント ④毛穴吸引 ⑤角質ケアピーリング(3種類選択) ⑥高濃度美容液マスク ⑦お仕上げ</x-slot>
         <x-slot name="time">70分</x-slot>
-        <x-slot name="price">￥8,200</x-slot>
+        <x-slot name="price">￥11000円(税込)</x-slot>
       </x-menu.accordion>
     </section>
     <x-menu.menu_overview>

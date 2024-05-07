@@ -31,22 +31,22 @@
     <x-menu.menu_list></x-menu.menu_list>
     <section class="menu_course">
       <x-menu.accordion_simple>
-        <x-slot name="menu_name">姿勢矯正リンパオイル 60分</x-slot>
+        <x-slot name="menu_name">姿勢矯正リンパオイルトリートメント  60分</x-slot>
         <x-slot name="menu_concept"></x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">7,200円</x-slot>
+        <x-slot name="price">￥7200円／初回 6700円(税込)</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
-        <x-slot name="menu_name">姿勢矯正リンパオイル 90分</x-slot>
+        <x-slot name="menu_name">姿勢矯正リンパオイルトリートメント 90分</x-slot>
         <x-slot name="menu_concept"></x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">10,500円</x-slot>
+        <x-slot name="price">￥10500円／初回 10000円(税込)</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>  
-        <x-slot name="menu_name">姿勢矯正リンパオイル 120分</x-slot>
+        <x-slot name="menu_name">姿勢矯正リンパオイルトリートメント 120分</x-slot>
         <x-slot name="menu_concept"></x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">13,800円</x-slot>
+        <x-slot name="price">￥13800円／初回 13300円(税込)</x-slot>
       </x-menu.accordion_simple>
     </section>
   </main>

@@ -40,8 +40,8 @@
     <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
     <x-slot name="menu_img">../img/course1.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
-    <x-slot name="menu_name">美容鍼灸</x-slot>
-    <x-slot name="menu_price">90分&nbsp;14300円→13500円</x-slot>
+    <x-slot name="menu_name">美容鍼灸&nbsp;90分</x-slot>
+    <x-slot name="menu_price">14300円→13500円</x-slot>
     <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
   </x-campaign>
   <x-campaign>

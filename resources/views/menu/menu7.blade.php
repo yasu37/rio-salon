@@ -59,10 +59,10 @@
         <x-slot name="price">￥13,800</x-slot>
       </x-menu.accordion_menu_description>
       <x-menu.accordion_menu_description>
-        <x-slot name="menu_name">腸もみカッピング 50分</x-slot>
+        <x-slot name="menu_name">腸もみカッピング 45分</x-slot>
         <x-slot name="menu_concept">【脂肪燃焼】</x-slot>
         <x-slot name="menu_description">お腹カッピング＋腸つぼマッサージ＋腸リンパオイルトリートメント</x-slot>
-        <x-slot name="time">50分</x-slot>
+        <x-slot name="time">45分</x-slot>
         <x-slot name="price">￥6,600</x-slot>
       </x-menu.accordion_menu_description>
     </section>

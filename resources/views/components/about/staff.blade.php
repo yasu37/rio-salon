@@ -29,31 +29,5 @@
       </dl>
     </div>
   </div>
-  <div class="information">
-    <div class="staff_information">
-      <div class="name">
-        <h3>飛田 陽子</h3>
-        <p>Tobita Youko</p>
-      </div>
-      <div class="content">
-        <p>指圧とオイルトリートメントを組み合わせ、お一人お一人のお身体に合ったメニューを提案させて頂くことが得意です。指圧では、強揉み、弱揉み、どちらも可能です。</p>
-        <p>お客様の悩みにあった施術ができるようになると、それが私の喜びになり、やりがいになっております。</p>
-        <p>ゴルフ経験が長く(ベストスコア83)、ゴルフ後のメンテナンスも行えますので、ぜひお任せください！</p>
-      </div>
-    </div>
-    <div class="ceo_img">
-      <img src="./img/manager2.jpg" alt="マネージャーの顔写真">
-    </div>
-    <div class="list">
-      <dl>
-        <dt>担当施術</dt>
-        <dd>・もみほぐし<br>・ストレッチ<br>・オイルトリートメント<br>・アロマカッピング<br></dd>
-        <dt>好きなもの</dt>
-        <dd>・ストレッチ<br>・ゴルフ</dd>
-        <dt>施術歴</dt>
-        <dd>15年</dd>
-      </dl>
-    </div>
-  </div>
 </section>
 </main>
