@@ -10,7 +10,6 @@
         <li><a href="./menu2" class="button_menu2">鍼灸治療</a></li>
         <li><a href="./menu3" class="button_menu3">漢方浴</a></li>
         <li><a href="./menu4" class="button_menu4">フェイシャルエステ</a></li>
-        <li><a href="./menu5" class="button_menu5">姿勢矯正リンパオイル</a></li>
         <li><a href="./menu6" class="button_menu6">オイルトリートメント</a></li>
         <li><a href="./menu7" class="button_menu7">カッピング</a></li>
         <li><a href="./menu8" class="button_menu8">もみほぐし</a></li>

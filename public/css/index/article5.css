@@ -29,21 +29,6 @@
   margin-bottom: 3rem;
 }
 
-#reserved .ibanavi {
-  display: inline-block;
-  font-size: 2rem;
-  color: #99CDC7;
-  color: #d4ab37;
-}
-
-#reserved .ibanavi span {
-  font-size: 2.3rem;
-  color: #666;
-  color: #008475;
-  font-weight: bold;
-}
-
-
 #reserved .button5 a {
   width: 40%;
   margin-top: 7rem;
@@ -78,14 +63,6 @@
     letter-spacing: 0.2rem;
   }
 
-  #reserved .ibanavi {
-    font-size: 1.7rem;
-  }
-
-  #reserved .ibanavi span {
-    font-size: 2rem;
-  }
-
   #reserved .button5 a {
     width: 50%;
     background: #ebffeb;
@@ -97,13 +74,6 @@
 /*サイトの横幅が450px以下*/
 @media screen and (max-width: 450px) {
 
-  #reserved .ibanavi {
-    font-size: 1.6rem;
-  }
-
-  #reserved .ibanavi span {
-    font-size: 1.9rem;
-  }
 
 }
 
@@ -125,14 +95,6 @@
     font-size: 1.1rem;
   }
 
-  #reserved .ibanavi {
-    font-size: 1.5rem;
-  }
-
-  #reserved .ibanavi span {
-    font-size: 1.8rem;
-  }
-
   #reserved .button5 a {
     background: #ebffeb;
     font-size: 1.2rem;
@@ -145,12 +107,5 @@
   #reserved .number {
     letter-spacing: 0.3rem;
   }
-
-  #reserved .ibanavi {
-    font-size: 1.4rem;
-  }
-
-  #reserved .ibanavi span {
-    font-size: 1.7rem;
-  }
+  
 }

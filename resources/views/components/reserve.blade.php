@@ -9,7 +9,7 @@
       <p>ご予約方法を3点からお選びください。</p>
       <div class="list">
         <ul>
-          <li><a href="https://ibanavi.net/shop/8665/booking/" target="_blank">いばナビ</a></li>
+          <li><a href="https://squareup.com/appointments/book/m56hqg7x5peigt/LW3NV5ZDJP453/start" target="_blank">公式予約サイト</a></li>
           <li><a href="https://beauty.hotpepper.jp/kr/slnH000577689/" target="_blank">ホットペッパー</a></li>
           <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank">公式Line</a></li>
         </ul>
