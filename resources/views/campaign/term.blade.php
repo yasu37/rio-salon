@@ -37,68 +37,68 @@
     </div>
   </section>
   <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course1.jpg</x-slot>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course28.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
     <x-slot name="menu_name">美容鍼灸&nbsp;90分</x-slot>
     <x-slot name="menu_price">14300円→13500円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course4.jpg</x-slot>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course33.jpg</x-slot>
     <x-slot name="menu_alt">鍼治療の施術写真</x-slot>
-    <x-slot name="menu_name">美容鍼灸60分+鍼治療60分</x-slot>
+    <x-slot name="menu_name">美容鍼灸60分+経路デトックス鍼治療60分</x-slot>
     <x-slot name="menu_price">120分&nbsp;18200円→17500円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course20.jpg</x-slot>
-    <x-slot name="menu_alt">ハーブピーリングの施術写真</x-slot>
-    <x-slot name="menu_name">ALEXハーブピーリング</x-slot>
-    <x-slot name="menu_price">90分&nbsp;22000円→20000円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
-  </x-campaign>
-  <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course24.jpg</x-slot>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course34.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
-    <x-slot name="menu_name">美容鍼灸カーボキシー高濃度炭酸パック</x-slot>
-    <x-slot name="menu_price">100分&nbsp;16500円→14800円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+    <x-slot name="menu_name">ミネラル海藻マスク美容鍼灸90分</x-slot>
+    <x-slot name="menu_price">90分&nbsp;15000円→13500円</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course27.jpg</x-slot>
-    <x-slot name="menu_alt">セルキュアを用いた施術写真</x-slot>
-    <x-slot name="menu_name">セルキュア小顔リフト</x-slot>
-    <x-slot name="menu_price">70分&nbsp;11000円→9000円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course36.jpg</x-slot>
+    <x-slot name="menu_alt">マスクフェイシャルの施術写真</x-slot>
+    <x-slot name="menu_name">ミネラル海藻マスクフェイシャル90分</x-slot>
+    <x-slot name="menu_price">90分&nbsp;11000円→9800円</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course8.jpg</x-slot>
-    <x-slot name="menu_alt">リンパオイルの施術写真</x-slot>
-    <x-slot name="menu_name">全身リンパオイル</x-slot>
-    <x-slot name="menu_price">90分&nbsp;10500円→9800円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
-  </x-campaign>
-  <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course27.jpg</x-slot>
-    <x-slot name="menu_alt">セルキュアを用いた施術写真</x-slot>
-    <x-slot name="menu_name">セルキュア小顔リフト＆全身リンパオイル</x-slot>
-    <x-slot name="menu_price">120分&nbsp;18200円→13900円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
-  </x-campaign>
-  <x-campaign>
-    <x-slot name="campaign_name">肌バリア向上Campaign</x-slot>
-    <x-slot name="menu_img">../img/course3.jpg</x-slot>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course32.jpg</x-slot>
     <x-slot name="menu_alt">鍼治療の施術写真</x-slot>
-    <x-slot name="menu_name">自律神経鍼＆全身リンパオイル</x-slot>
-    <x-slot name="menu_price">90分&nbsp;10500円→9800円</x-slot>
-    <x-slot name="conditions_text_term">2024年4月1日〜2024年5月31日迄</x-slot>
+    <x-slot name="menu_name">漢方浴+経路デトックス鍼治療90分</x-slot>
+    <x-slot name="menu_price">90分&nbsp;14300円→12500円</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course31.jpg</x-slot>
+    <x-slot name="menu_alt">リンパオイルの施術写真</x-slot>
+    <x-slot name="menu_name">自律神経鍼+浮腫リンパオイル90分</x-slot>
+    <x-slot name="menu_price">90分&nbsp;11000円→9900円</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course30.jpg</x-slot>
+    <x-slot name="menu_alt">リンパデトックスオイルの施術写真</x-slot>
+    <x-slot name="menu_name">浮腫リンパデトックスオイル90分</x-slot>
+    <x-slot name="menu_price">90分&nbsp;10500円→9900円</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">デトックスCampaign</x-slot>
+    <x-slot name="menu_img">../img/course29.jpg</x-slot>
+    <x-slot name="menu_alt">リンパオイルの施術写真</x-slot>
+    <x-slot name="menu_name">海藻ミネラルマスクフェイシャル60分+浮腫リンパオイル60分</x-slot>
+    <x-slot name="menu_price">90分&nbsp;18200円→14200円</x-slot>
+    <x-slot name="conditions_text_term">2024年6月1日〜2024年6月30日迄</x-slot>
   </x-campaign>
   </main>
   <x-menu.footer></x-menu.footer>
