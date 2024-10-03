@@ -37,100 +37,84 @@
     </div>
   </section>
   <x-campaign>
-    <x-slot name="campaign_name">美容鍼Campaign</x-slot>
-    <x-slot name="menu_img">../img/course240801.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241001.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼の施術写真</x-slot>
-    <x-slot name="menu_name">アンチエイジング美容鍼(顔＋全身)90分</x-slot>
-    <x-slot name="menu_price">90分&nbsp;14300円→13500円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">素肌美人酵素ピーリング＋全身リンパオイル</x-slot>
+    <x-slot name="menu_price">120分&nbsp;18,200円 → 15,200円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">美容鍼Campaign</x-slot>
-    <x-slot name="menu_img">../img/course240802.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241002.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼の施術写真</x-slot>
-    <x-slot name="menu_name">アンチエイジング美容鍼60分+自律神経鍼60分</x-slot>
-    <x-slot name="menu_price">120分&nbsp;18200円→17500円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">ヘッドスパ鍼＋全身鍼</x-slot>
+    <x-slot name="menu_price">90分&nbsp;12,000円 → 10,000円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">美容鍼Campaign</x-slot>
-    <x-slot name="menu_img">../img/course240803.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241003.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼の施術写真</x-slot>
-    <x-slot name="menu_name">アンチエイジング美容鍼60分+全身むくみリンパオイル60分</x-slot>
-    <x-slot name="menu_price">120分&nbsp;18200円→17500円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">エイジング美容鍼60分+全身むくみリンパ60分</x-slot>
+    <x-slot name="menu_price">120分&nbsp;18,200円 → 17,500円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">美容鍼Campaign</x-slot>
-    <x-slot name="menu_img">../img/course240804.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241004.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼の施術写真</x-slot>
-    <x-slot name="menu_name">自律神経鍼+リンパオイル90分</x-slot>
-    <x-slot name="menu_price">90分&nbsp;12000円→10000円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">腸カッピング+全身リンパオイル</x-slot>
+    <x-slot name="menu_price">100分&nbsp;13,800円 → 11,000円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">美容鍼Campaign</x-slot>
-    <x-slot name="menu_img">../img/course240805.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241005.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼の施術写真</x-slot>
-    <x-slot name="menu_name">ヘットスパ鍼+自律神経鍼90分</x-slot>
-    <x-slot name="menu_price">90分&nbsp;12000円→10000円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">エイジング美容鍼60分+自律神経鍼60分</x-slot>
+    <x-slot name="menu_price">120分&nbsp;18,200円 → 17,500円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">美容鍼Campaign</x-slot>
-    <x-slot name="menu_img">../img/course240806.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241006.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼の施術写真</x-slot>
-    <x-slot name="menu_name">美容鍼+カーボキシー高濃度炭酸パック90分</x-slot>
-    <x-slot name="menu_price">90分&nbsp;16500円→15000円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">リフトアップ小顔美容鍼(顔＋全身)</x-slot>
+    <x-slot name="menu_price">90分&nbsp;14,300円 → 13,800円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">美容鍼Campaign</x-slot>
-    <x-slot name="menu_img">../img/course240807.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241007.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼の施術写真</x-slot>
-    <x-slot name="menu_name">ハーブピーリング+美容鍼90分</x-slot>
-    <x-slot name="menu_price">90分&nbsp;22000円→19000円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">エイジング美容鍼(顔+全身)</x-slot>
+    <x-slot name="menu_price">90分&nbsp;14,300円 → 13,800円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">リラクゼーションCampaign</x-slot>
-    <x-slot name="menu_img">../img/course240808.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241008.jpg</x-slot>
     <x-slot name="menu_alt">フェイシャルの施術写真</x-slot>
-    <x-slot name="menu_name">カーボキシー高濃度炭酸パックフェイシャル80分</x-slot>
-    <x-slot name="menu_price">80分&nbsp;11000円→9900円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">ヘッドスパ+全身リンパオイル</x-slot>
+    <x-slot name="menu_price">100分&nbsp;12,00円 → 10,000円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">リラクゼーションCampaign</x-slot>
-    <x-slot name="menu_img">../img/course240809.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241009.jpg</x-slot>
     <x-slot name="menu_alt">フェイシャルの施術写真</x-slot>
-    <x-slot name="menu_name">セルキュア小顔リフトフェイシャル80分</x-slot>
-    <x-slot name="menu_price">80分&nbsp;11000円→9900円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">セルキュア小顔リフトフェイシャル</x-slot>
+    <x-slot name="menu_price">70分&nbsp;11,000円 → 9,900円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   <x-campaign>
-    <x-slot name="campaign_name">リラクゼーションCampaign</x-slot>
-    <x-slot name="menu_img">../img/course240810.jpg</x-slot>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course241010.jpg</x-slot>
     <x-slot name="menu_alt">リンパオイルの施術写真</x-slot>
-    <x-slot name="menu_name">ヘッドスパ+全身むくみリンパオイル90分</x-slot>
-    <x-slot name="menu_price">90分&nbsp;12000円→10000円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
-  </x-campaign>
-  <x-campaign>
-    <x-slot name="campaign_name">リラクゼーションCampaign</x-slot>
-    <x-slot name="menu_img">../img/course240811.jpg</x-slot>
-    <x-slot name="menu_alt">リンパオイルの施術写真</x-slot>
-    <x-slot name="menu_name">全身+骨盤ストレッチリンパオイル90分</x-slot>
-    <x-slot name="menu_price">90分&nbsp;11000円→10000円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
-  </x-campaign>
-  <x-campaign>
-    <x-slot name="campaign_name">リラクゼーションCampaign</x-slot>
-    <x-slot name="menu_img">../img/course240812.jpg</x-slot>
-    <x-slot name="menu_alt">リンパオイルの施術写真</x-slot>
-    <x-slot name="menu_name">カーボキシー高濃度炭酸パックフェイシャル+全身むくみリンパオイル120分</x-slot>
-    <x-slot name="menu_price">120分&nbsp;18200円→15200円</x-slot>
-    <x-slot name="conditions_text_term">2024年8月1日〜2024年9月30日迄</x-slot>
+    <x-slot name="menu_name">ALEXハーブピーリング</x-slot>
+    <x-slot name="menu_price">70分&nbsp;16,500円 → 13,500円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
   </main>
   <x-menu.footer></x-menu.footer>
