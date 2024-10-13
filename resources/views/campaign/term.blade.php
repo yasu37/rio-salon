@@ -116,6 +116,38 @@
     <x-slot name="menu_price">70分&nbsp;16,500円 → 13,500円</x-slot>
     <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
   </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course6.jpg</x-slot>
+    <x-slot name="menu_alt">ピーリングの施術写真</x-slot>
+    <x-slot name="menu_name">素肌美人酵素ピーリング70分</x-slot>
+    <x-slot name="menu_price">70分&nbsp;11,000円 → 9,900円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course8.jpg</x-slot>
+    <x-slot name="menu_alt">鍼の施術写真</x-slot>
+    <x-slot name="menu_name">自律神経鍼+全身リンパオイル90分</x-slot>
+    <x-slot name="menu_price">90分&nbsp;12,000円 → 10,000円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course1.jpg</x-slot>
+    <x-slot name="menu_alt">鍼の施術写真</x-slot>
+    <x-slot name="menu_name">美容鍼&素肌美人酵素ピーリング120分</x-slot>
+    <x-slot name="menu_price">120分&nbsp;18,500円 → 16,000円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
+  </x-campaign>
+  <x-campaign>
+    <x-slot name="campaign_name">This year's last Campaign</x-slot>
+    <x-slot name="menu_img">../img/course20.jpg</x-slot>
+    <x-slot name="menu_alt">鍼の施術写真</x-slot>
+    <x-slot name="menu_name">美容鍼&ALEXハーブピーリング70分</x-slot>
+    <x-slot name="menu_price">70分&nbsp;22,000円 → 19,000円</x-slot>
+    <x-slot name="conditions_text_term">2024年10月1日〜2024年12月31日迄</x-slot>
+  </x-campaign>
   </main>
   <x-menu.footer></x-menu.footer>
 </body>
