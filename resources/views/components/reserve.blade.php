@@ -6,7 +6,7 @@
       <p>Reserve &amp; Inquiry</p>
     </div>
     <div class="infomation">
-      <p>以下の予約サイトからご予約ください。</p>
+      <p>以下の予約サイトからご予約できます。</p>
       <div class="list">
         <ul>
           <li><a href="https://squareup.com/appointments/book/m56hqg7x5peigt/LW3NV5ZDJP453/start" target="_blank">予約サイト</a></li>
