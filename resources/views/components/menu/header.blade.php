@@ -35,7 +35,9 @@
         <li class="is_pc">／</li>
         <li><a href="../campaign/term" target="_self">キャンペーン</a></li>
         <li class="is_pc">／</li>
-        <li><a href="../question" target="_self">よくある質問</a></li>
+        <li><a href="../question" target="_self">Q&A</a></li>
+        <li class="is_pc">／</li>
+        <li><a href="../reserve" target="_self">予約</a></li>
       </ul>
     </nav>
   </div>
