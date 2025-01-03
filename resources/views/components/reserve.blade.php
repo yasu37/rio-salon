@@ -6,12 +6,10 @@
       <p>Reserve &amp; Inquiry</p>
     </div>
     <div class="infomation">
-      <p>ご予約方法を3点からお選びください。</p>
+      <p>以下の予約サイトからご予約ください。</p>
       <div class="list">
         <ul>
-          <li><a href="https://squareup.com/appointments/book/m56hqg7x5peigt/LW3NV5ZDJP453/start" target="_blank">公式予約サイト</a></li>
-          <li><a href="https://beauty.hotpepper.jp/kr/slnH000577689/" target="_blank">ホットペッパー</a></li>
-          <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank">公式Line</a></li>
+          <li><a href="https://squareup.com/appointments/book/m56hqg7x5peigt/LW3NV5ZDJP453/start" target="_blank">予約サイト</a></li>
         </ul>
       </div>
       <p class="date">営業時間</p>
