@@ -42,10 +42,10 @@
       <x-menu.accordion>
         <x-slot name="menu_name">漢方浴 40分</x-slot>
         <x-slot name="menu_concept">【体の芯から温まりたい方におすすめ！】</x-slot>
-        <x-slot name="menu_description">60分以上のメニューとセットの場合、1回3,500円<br>※回数券の場合、4回で13,200円</x-slot>
+        <x-slot name="menu_description">60分以上のメニューとセットの場合、1回3,500円</x-slot>
         <x-slot name="treatment"></x-slot>
         <x-slot name="time">40分</x-slot>
-        <x-slot name="price">3,800円</x-slot>
+        <x-slot name="price">4,000円</x-slot>
       </x-menu.accordion>
     </section>
   </main>

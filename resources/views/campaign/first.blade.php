@@ -42,7 +42,7 @@
     <x-slot name="menu_img">../img/course1.jpg</x-slot>
     <x-slot name="menu_alt">美容鍼灸の施術写真</x-slot>
     <x-slot name="menu_name">美容鍼灸</x-slot>
-    <x-slot name="menu_price">70分&nbsp;11,000円→10,500円<br>90分&nbsp;14,300円→13,800円</x-slot>
+    <x-slot name="menu_price">70分&nbsp;11,000円→10,500円</x-slot>
     <x-slot name="conditions_text_term">美容鍼灸の施術が初めての方限定</x-slot>
   </x-campaign>
   </main>

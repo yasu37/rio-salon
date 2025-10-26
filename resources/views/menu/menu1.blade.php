@@ -50,7 +50,7 @@
         <x-slot name="menu_description">まずは美容鍼灸試してみたい、忙しくてゆっくり時間がとれない方におすすめです！</x-slot>
         <x-slot name="treatment">①クレンジング ②お顔鍼&電気 ③デコルテマッサージ ④フェイシャルマッサージ ⑤パック ⑥お仕上げ</x-slot>
         <x-slot name="time">70分</x-slot>
-        <x-slot name="price">￥11,000／初回 10000円(税込)</x-slot>
+        <x-slot name="price">￥11,000／初回 10500円(税込)</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">美容鍼灸(顔+全身) 90分</x-slot>
@@ -61,7 +61,7 @@
           本格的な美容鍼灸と体質改善をお望みの方にオススメ！</x-slot>
         <x-slot name="treatment">①ボディ鍼(背面)･マッサージ ②ボディ鍼(正面)･マッサー ③クレンジング ④お顔鍼&電気 ⑤デコルテマッサージ ⑥フェイシャルマッサージ ⑦パック ⑧お仕上げ</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥14,300／初回 13,000円(税込)</x-slot>
+        <x-slot name="price">￥14,300(税込)</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">美容鍼灸美肌再生コース(顔+全身) 120分</x-slot>
@@ -72,7 +72,7 @@
           また、ニキビ肌、オイリー肌、毛穴の開きにお悩みの方にもおすすめです。</x-slot>
         <x-slot name="treatment">①ボディ鍼(背面)･マッサージ ②ボディ鍼(正面)･マッサージ ③クレンジング ④お顔鍼&電気 ⑤デコルテマッサージ ⑥フェイシャルマッサージ ⑦毛穴吸引 ⑧イオン導入 ⑨パック ⑩お仕上げ</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥18,500／初回 16,500円(税込)</x-slot>
+        <x-slot name="price">￥18,500(税込)</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">素肌美人美容鍼コース 120分</x-slot>
@@ -83,7 +83,7 @@
           その後、毛穴吸引で毛穴の汚れの取残しを吸引し、最後に高濃度美容液マスクをする事で、お肌にとって必要な栄養成分をで吸収させます。</x-slot>
         <x-slot name="treatment">①うつ伏せ鍼マッサージ(首・肩) ②クレンジング ③洗顔 ④フェイシャル・デコルテトリートメント ⑤毛穴吸引 ⑥角質ケアピーリング(3種類選択) ⑦お顔鍼 ⑧高濃度美容液マスク ⑨お仕上げ</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥18,500円／初回16,500円(税込)</x-slot>
+        <x-slot name="price">￥18,500円(税込)</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">美容鍼灸＆RIO式美顔筋小顔リリース 70分</x-slot>
@@ -103,7 +103,7 @@
         </x-slot>
         <x-slot name="treatment"></x-slot>
         <x-slot name="time">70分</x-slot>
-        <x-slot name="price">￥11000円／初回10000円(税込)</x-slot>
+        <x-slot name="price">￥11000円(税込)</x-slot>
       </x-menu.accordion>
     </section>
   </main>
