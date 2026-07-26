@@ -1,3 +1,50 @@
+# RIO鍼灸サロン サイト
+
+茨城県水戸市の美容鍼灸サロンのコーポレートサイト。Laravel を Blade テンプレートエンジンとしてのみ利用しており、
+データベース・認証・フォーム送信は使用していない。
+
+## 本番環境で必須の設定
+
+本番サーバーの `.env` は、必ず以下になっていること。
+
+```
+APP_ENV=production
+APP_DEBUG=false
+```
+
+`APP_DEBUG=true` のまま公開すると、例外発生時のエラー画面に `.env` の設定値
+（DB 接続情報などを含む）がそのまま表示される。
+
+`.env` は Git 管理外のため、この値はリポジトリからは確認できない。
+**サーバー上で直接確認すること。**
+
+設定変更後は、キャッシュを反映させるため以下を実行する。
+
+```bash
+php artisan config:clear
+php artisan config:cache
+php artisan route:cache
+php artisan view:clear
+```
+
+## サイトマップ
+
+`public/sitemap.xml` が実体。ページを追加・削除した際は、このファイルと
+`routes/web.php` の両方を更新すること。`/sitemap` は旧 URL 互換のための
+`/sitemap.xml` への 301 リダイレクト。
+
+## 画像
+
+`public/img/` に配置。表示に使う画像は WebP 版を併置し、Blade 側で
+`<picture>` により WebP を優先・元画像をフォールバックとしている。
+画像を追加した場合は、同じ手順で WebP 版も生成すること。
+
+```bash
+cwebp -q 82 -m 6 -mt public/img/example.jpg -o public/img/example.webp
+```
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
