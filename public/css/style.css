@@ -117,6 +117,12 @@ img {
   margin: auto;
 }
 
+/* WebP 配信用の <picture> をレイアウト上は存在しないものとして扱い、
+   既存の「〇〇 img」セレクタと flex 配置がそのまま効くようにする。 */
+picture {
+  display: contents;
+}
+
 @media screen and (min-width:1px) and (max-width: 768px) {
   main {
     padding-top: 5rem;

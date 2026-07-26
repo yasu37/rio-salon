@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -38,7 +38,10 @@
     </x-menu.menu_overview>
     <section class="menu_course">
       <div class="bridal_img">
-        <img src="../img/course_bridal1.jpg" alt="ブライダルメニュー1の画像">
+        <picture>
+          <source srcset="../img/course_bridal1.webp" type="image/webp">
+          <img src="../img/course_bridal1.jpg" alt="ブライダルメニュー1の画像" width="640" height="640" loading="lazy">
+        </picture>
       </div>
       <x-menu.accordion>
         <x-slot name="menu_name">スペシャル1Dayコース 180分</x-slot>
@@ -51,7 +54,10 @@
         <x-slot name="price">￥24,000</x-slot>
       </x-menu.accordion>
       <div class="bridal_img">
-        <img src="../img/course_bridal2.jpg" alt="ブライダルメニュー2の画像">
+        <picture>
+          <source srcset="../img/course_bridal2.webp" type="image/webp">
+          <img src="../img/course_bridal2.jpg" alt="ブライダルメニュー2の画像" width="640" height="640" loading="lazy">
+        </picture>
       </div>
       <x-menu.accordion_menu_description>
         <x-slot name="menu_name">1ヶ月集中ケア : 4回コース</x-slot>
@@ -71,7 +77,10 @@
         <x-slot name="price">￥49,800</x-slot>
       </x-menu.accordion_menu_description>
       <div class="bridal_img">
-        <img src="../img/course_bridal3.jpg"  alt="ブライダルメニュー3の画像">
+        <picture>
+          <source srcset="../img/course_bridal3.webp" type="image/webp">
+          <img src="../img/course_bridal3.jpg" alt="ブライダルメニュー3の画像" width="640" height="905" loading="lazy">
+        </picture>
       </div>
       <x-menu.accordion_menu_description>
         <x-slot name="menu_name">挙式2~3ヶ月前 : 8回コース</x-slot>

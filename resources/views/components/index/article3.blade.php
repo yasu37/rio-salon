@@ -9,7 +9,10 @@
     <ul class="course_list">
       <li class="course_box">
         <div class="course_img">
-          <img class="course_img1" src="./img/course1.jpg" alt="美容鍼灸の施術写真">
+          <picture>
+            <source srcset="./img/course1.webp" type="image/webp">
+            <img class="course_img1" src="./img/course1.jpg" alt="美容鍼灸の施術写真" width="1200" height="800" loading="lazy">
+          </picture>
         </div>
         <div class="course_infomation">
           <p class="course_name">美容鍼灸</p>
@@ -21,7 +24,10 @@
       </li>
       <li class="course_box">
         <div class="course_img">
-          <img class="course_img2" src="./img/course4.jpg" alt="鍼灸治療の施術写真">
+          <picture>
+            <source srcset="./img/course4.webp" type="image/webp">
+            <img class="course_img2" src="./img/course4.jpg" alt="鍼灸治療の施術写真" width="1200" height="800" loading="lazy">
+          </picture>
         </div>
         <div class="course_infomation">
           <p class="course_name">鍼灸治療</p>
@@ -33,7 +39,10 @@
       </li>
       <li class="course_box">
         <div class="course_img">
-          <img class="course_img3" src="./img/course6.jpg" alt="フェイシャルエステの施術写真">
+          <picture>
+            <source srcset="./img/course6.webp" type="image/webp">
+            <img class="course_img3" src="./img/course6.jpg" alt="フェイシャルエステの施術写真" width="1200" height="800" loading="lazy">
+          </picture>
         </div>
         <div class="course_infomation">
           <p class="course_name">フェイシャルエステ</p>
@@ -45,7 +54,10 @@
       </li>
       <li class="course_box">
         <div class="course_img">
-          <img class="course_img4" src="./img/course5.jpg" alt="もみほぐしの施術写真">
+          <picture>
+            <source srcset="./img/course5.webp" type="image/webp">
+            <img class="course_img4" src="./img/course5.jpg" alt="もみほぐしの施術写真" width="1200" height="900" loading="lazy">
+          </picture>
         </div>
         <div class="course_infomation">
           <p class="course_name">もみほぐし</p>
@@ -57,7 +69,10 @@
       </li>
       <li class="course_box">
         <div class="course_img">
-          <img class="course_img1" src="./img/course8.jpg" alt="オイルマッサージの施術写真">
+          <picture>
+            <source srcset="./img/course8.webp" type="image/webp">
+            <img class="course_img1" src="./img/course8.jpg" alt="オイルマッサージの施術写真" width="1200" height="800" loading="lazy">
+          </picture>
         </div>
         <div class="course_infomation">
           <p class="course_name">オイルマッサージ</p>
@@ -69,7 +84,10 @@
       </li>
       <li class="course_box">
         <div class="course_img">
-          <img class="course_img1" src="./img/course12.jpg" alt="オイルカッピングの施術写真">
+          <picture>
+            <source srcset="./img/course12.webp" type="image/webp">
+            <img class="course_img1" src="./img/course12.jpg" alt="オイルカッピングの施術写真" width="1200" height="800" loading="lazy">
+          </picture>
         </div>
         <div class="course_infomation">
           <p class="course_name">オイルカッピング</p>
@@ -81,7 +99,10 @@
       </li>
       <li class="course_box">
         <div class="course_img">
-          <img class="course_img1" src="./img/course26.jpg" alt="花嫁の写真">
+          <picture>
+            <source srcset="./img/course26.webp" type="image/webp">
+            <img class="course_img1" src="./img/course26.jpg" alt="花嫁の写真" width="640" height="427" loading="lazy">
+          </picture>
         </div>
         <div class="course_infomation">
           <p class="course_name">ブライダル鍼灸</p>
