@@ -6,9 +6,9 @@
     </div>
     <div class="list">
       <ul class="sns">
-        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank"><img src="../img/facebook2.png" alt="お店の公式facebook"></a></li>
-        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank"><img src="../img/instagram2.png" alt="お店の公式instagram"></a></li>
-        <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank"><img src="../img/line2.png" alt="お店の公式line"></a></li>
+        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank"><img src="../img/facebook2.png" alt="お店の公式facebook" width="72" height="73" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank"><img src="../img/instagram2.png" alt="お店の公式instagram" width="73" height="73" loading="lazy"></a></li>
+        <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank"><img src="../img/line2.png" alt="お店の公式line" width="72" height="73" loading="lazy"></a></li>
       </ul>
     </div>
   </div>

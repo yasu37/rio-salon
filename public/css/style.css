@@ -113,8 +113,18 @@ section {
 
 img {
   max-width: 100%;
+  /* height: auto は必須。img の width/height 属性は presentational hint として
+     height を固定するため、これが無いと max-width で幅だけが縮み、
+     高さが元画像のピクセル数のまま残って縦に伸びる。 */
+  height: auto;
   vertical-align: bottom;
   margin: auto;
+}
+
+/* WebP 配信用の <picture> をレイアウト上は存在しないものとして扱い、
+   既存の「〇〇 img」セレクタと flex 配置がそのまま効くようにする。 */
+picture {
+  display: contents;
 }
 
 @media screen and (min-width:1px) and (max-width: 768px) {

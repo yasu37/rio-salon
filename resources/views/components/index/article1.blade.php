@@ -1,7 +1,10 @@
 <section id="concept">
   <div class="container">
     <div class="concept_img">
-      <img class="above" src="./img/course6.jpg" alt="美容鍼灸の施術写真" />
+      <picture>
+        <source srcset="./img/course6.webp" type="image/webp">
+        <img class="above" src="./img/course6.jpg" alt="美容鍼灸の施術写真" width="1200" height="800" />
+      </picture>
     </div>
     <div class="explanation">
       <h3>CONCEPT</h3>

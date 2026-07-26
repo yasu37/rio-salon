@@ -43,9 +43,24 @@
       </li>
     </ul>
     <ul class="img_box">
-      <li><img src="./img/location6.jpg"></li>
-      <li><img src="./img/location.jpg"></li>
-      <li><img src="./img/location2.jpg"></li>
+      <li>
+        <picture>
+          <source srcset="./img/location6.webp" type="image/webp">
+          <img src="./img/location6.jpg" alt="rio鍼灸サロンの店内写真" width="1280" height="960" loading="lazy">
+        </picture>
+      </li>
+      <li>
+        <picture>
+          <source srcset="./img/location.webp" type="image/webp">
+          <img src="./img/location.jpg" alt="rio鍼灸サロンの店内写真" width="1200" height="900" loading="lazy">
+        </picture>
+      </li>
+      <li>
+        <picture>
+          <source srcset="./img/location2.webp" type="image/webp">
+          <img src="./img/location2.jpg" alt="rio鍼灸サロンの店内写真" width="640" height="480" loading="lazy">
+        </picture>
+      </li>
     </ul>
   </div>
 </section>
