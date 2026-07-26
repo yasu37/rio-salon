@@ -23,7 +23,9 @@ Route::get('menu/menu1', [PageController::class, 'menu1']);
 Route::get('menu/menu2', [PageController::class, 'menu2']);
 Route::get('menu/menu3', [PageController::class, 'menu3']);
 Route::get('menu/menu4', [PageController::class, 'menu4']);
-Route::get('menu/menu5', [PageController::class, 'menu5']);
+/* menu5（姿勢矯正リンパオイルトリートメント）は 2024-05-07 に提供終了。
+   同一料金帯の後継である menu6（オイルトリートメント）へ恒久リダイレクトする。 */
+Route::redirect('menu/menu5', '/menu/menu6', 301);
 Route::get('menu/menu6', [PageController::class, 'menu6']);
 Route::get('menu/menu7', [PageController::class, 'menu7']);
 Route::get('menu/menu8', [PageController::class, 'menu8']);
@@ -41,4 +43,6 @@ Route::get('campaign/first', [PageController::class, 'first']);
 /*コラム */
 Route::get('column/column1', [PageController::class, 'column1']);
 /*サイトマップ*/
-Route::get('sitemap', [PageController::class, 'sitemap']);
+/* 実体は public/sitemap.xml（静的ファイル）に一元化した。
+   旧 /sitemap を失わないよう恒久リダイレクトのみ残す。 */
+Route::redirect('sitemap', '/sitemap.xml', 301);

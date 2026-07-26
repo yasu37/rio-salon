@@ -29,9 +29,6 @@ class PageController extends Controller
     public function menu4() {
         return view('menu.menu4');
     }
-    public function menu5() {
-        return view('menu.menu5');
-    }
     public function menu6() {
         return view('menu.menu6');
     }
@@ -76,10 +73,5 @@ class PageController extends Controller
     //コラム
     public function column1() {
         return view('column.column1');
-    }
-
-    //サイトマップ
-    public function sitemap() {
-        return view('sitemap');
     }
 }
