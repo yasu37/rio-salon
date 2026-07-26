@@ -6,10 +6,7 @@
   <div>
     <div id="about1">
       <div class="about1_img">
-        <picture>
-          <source srcset="./img/about.webp" type="image/webp">
-          <img src="./img/about.jpg" alt="カウンセリング途中の写真" width="1200" height="800">
-        </picture>
+        <img src="./img/about.jpg" alt="カウンセリング途中の写真">
       </div>
       <div class="content1">
         <p>リオ鍼灸サロンでは、筋肉、神経、リンパなどの西洋医学的な知見と根本治療を目指す東洋医学的知見を組み合わせた治療を、患者様、お客様に提案し、「健康」と「美しさ」を引き出すサポートをして参ります。初めての方でも安心してお越しください。</p>
@@ -20,10 +17,7 @@
     </div>
     <div id="about2">
       <div class="about2_img">
-        <picture>
-          <source srcset="./img/location3.webp" type="image/webp">
-          <img src="./img/location3.jpg" alt="rio鍼灸サロンの店内写真" width="1439" height="1800" loading="lazy">
-        </picture>
+        <img src="./img/location3.jpg" alt="rio鍼灸サロンの店内写真">
       </div>
       <div class="content1">
         <p>東洋医学の分野である鍼灸、漢方、もみほぐしなどは、崩れた身体のバランスを整える事で、体質改善や自然治癒力・自己免疫力を高めるのに効果的です。皆様が気軽に集い、癒され、笑顔と元気になれる場所になるように、スタッフ一同心をこめておもてなしいたします。</p>

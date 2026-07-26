@@ -3,10 +3,7 @@
 <section id="ceo">
   <div class="img">
     <div class="ceo_img">
-      <picture>
-        <source srcset="img/ceo.webp" type="image/webp">
-        <img src="img/ceo.jpg" alt="院長の顔写真" width="1200" height="800" loading="lazy">
-      </picture>
+      <img src="img/ceo.jpg" alt="院長の顔写真">
     </div>
   </div>
   <div class="container">

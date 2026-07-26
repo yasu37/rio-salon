@@ -1,11 +1,6 @@
 <section>
   <div class="headline">
-    <div class="image top-image">
-      <picture>
-        <source srcset="../img/column1/column0.webp" type="image/webp">
-        <img src="../img/column1/column0.jpg" alt="白背景の鍼セット" width="640" height="427">
-      </picture>
-    </div>
+    <div class="image top-image"><img src="../img/column1/column0.jpg" alt="白背景の鍼セット"></div>
     <h1>美容鍼の効果を感じるのは何回目？<br>正しい頻度や通い続けた人の写真などもご紹介！</h1>
     <p>美容鍼の効果を実感できる施術回数や頻度が気になる方も多いいのではないでしょうか。<br>この記事では、美容鍼の効果の持続期間や効率的な頻度などもご紹介します。また、美容鍼を続けた人の結果をビフォーアフター写真を使ってご紹介いしています。水戸市のRIO鍼灸サロンでは、美容鍼の施術も行っておりますので、ぜひチェックしてみてください。</p>
   </div>
@@ -26,41 +21,21 @@
   <div class="column">
     <div id="column1" class="headline">
       <h2>美容鍼の効果を感じるのは何回目？</h2>
-      <div class="image">
-        <picture>
-          <source srcset="../img/column1/column1.webp" type="image/webp">
-          <img src="../img/column1/column1.jpg" alt="顔の美容鍼の施術写真" width="640" height="427" loading="lazy">
-        </picture>
-      </div>
+      <div class="image"><img src="../img/column1/column1.jpg" alt="顔の美容鍼の施術写真"></div>
       <p>美容鍼は即効性がある施術であるため、多くの方がその場で肌のたるみや小顔・リフトアップなどの効果を実感されます。</p>
       <p>個人の症状によっては、初回の施術で効果が実感できない方もいらっしゃいますが、施術を数回受けることで症状が改善されていきます。</p>
     </div>
     <div id="column2" class="headline">
       <h2>美容鍼とは？</h2>
-      <div class="image">
-        <picture>
-          <source srcset="../img/column1/column2.webp" type="image/webp">
-          <img src="../img/column1/column2.jpg" alt="体の鍼灸施術写真" width="640" height="359" loading="lazy">
-        </picture>
-      </div>
+      <div class="image"><img src="../img/column1/column2.jpg" alt="体の鍼灸施術写真"></div>
       <p>美容鍼とは、東洋医学に基づいて、肌の深部へアプローチできる美容法です。エステなどではアプローチできない細胞や表皮層などに直接刺激することができるため、より美容効果が期待できます。</p>
       <p>お顔の肌は「表皮」「真皮」「皮下組織」の3層から成り立っています。お顔の肌に鍼を打ち真皮に微小な傷をつけることで、肌の自然治癒力により「コラーゲン」や「エラスチン」の生成が促進され、お肌のハリを取り戻します。</p>
       <p>また、美容鍼使用する顔に打つ針の太さは、0.14～0.18mmであるため、それほど痛みがありません。</p>
-      <div class="image">
-        <picture>
-          <source srcset="../img/column1/column3.webp" type="image/webp">
-          <img src="../img/column1/column3.jpg" alt="肌の構造画像" width="1400" height="1050" loading="lazy">
-        </picture>
-      </div>
+      <div class="image"><img src="../img/column1/column3.jpg" alt="肌の構造画像"></div>
     </div>
     <div id="column3" class="headline">
       <h2>美容鍼の効果</h2>
-      <div class="image">
-        <picture>
-          <source srcset="../img/column1/column4.webp" type="image/webp">
-          <img src="../img/column1/column4.jpg" alt="顔の美容鍼の施術写真" width="640" height="427" loading="lazy">
-        </picture>
-      </div>
+      <div class="image"><img src="../img/column1/column4.jpg" alt="顔の美容鍼の施術写真"></div>
       <p>美容鍼の特徴は、とにかく即効性があることです！施術を受けた直後から、小顔・リフトアップ、たるみ、ほうれい線、シワなどのお悩みに対する効果を感じられます。</p>
       <div class="subheading">
         <h3>効果①肌の悩み改善</h3>
@@ -89,12 +64,7 @@
     </div>
     <div id="column4" class="headline">
       <h2>美容鍼の効果的な頻度は？</h2>
-      <div class="image">
-        <picture>
-          <source srcset="../img/column1/column5.webp" type="image/webp">
-          <img src="../img/column1/column5.jpg" alt="右肩上がりのグラフ写真" width="640" height="382" loading="lazy">
-        </picture>
-      </div>
+      <div class="image"><img src="../img/column1/column5.jpg" alt="右肩上がりのグラフ写真"></div>
       <p>一般的に、施術を重ねるごとに細胞が活性化されるため、美容鍼の効果の持続時間も長くなる傾向があります。</p>
       <div class="subheading">
         <h3>最初の月は週１回のペースがおすすめ！</h3>
@@ -108,12 +78,7 @@
     </div>
     <div id="column5" class="headline">
       <h2>美容鍼の効果が持続する期間</h2>
-      <div class="image">
-        <picture>
-          <source srcset="../img/column1/column6.webp" type="image/webp">
-          <img src="../img/column1/column6.jpg" alt="時計の写真" width="640" height="427" loading="lazy">
-        </picture>
-      </div>
+      <div class="image"><img src="../img/column1/column6.jpg" alt="時計の写真"></div>
       <p>美容鍼の効果が実感できるタイミングは2度あります。施術後すぐにわかる「直後効果」と、2日後にわかる「事後効果」の2つのタイミングです。</p>
       <div class="subheading">
         <h3>① 施術直後に実感する「直後効果」</h3>
@@ -144,26 +109,13 @@
       <h2>RIO鍼灸サロンで施術を受けた人のビフォーアフター写真</h2>
       <p>RIO鍼灸サロンで美容鍼の施術をお受けになった患者様の症例写真です。</p>
       <p>小顔・リフトアップ、肌のたるみなどの施術事例としてご覧ください。</p>
-      <div class="image BA-image">
-        <picture>
-          <source srcset="../img/column1/column8.webp" type="image/webp">
-          <img src="../img/column1/column8.jpg" alt="ビフォーアフター写真" width="260" height="260" loading="lazy">
-        </picture>
-      </div>
-      <div class="image BA-image">
-        <picture>
-          <source srcset="../img/column1/column9.webp" type="image/webp">
-          <img src="../img/column1/column9.jpg" alt="ビフォーアフター写真" width="640" height="521" loading="lazy">
-        </picture>
-      </div>
+      <div class="image BA-image"><img src="../img/column1/column8.jpg" alt="ビフォーアフター写真"></div>
+      <div class="image BA-image"><img src="../img/column1/column9.jpg" alt="ビフォーアフター写真"></div>
       <div class="subheading">
         <h3>口コミ</h3>
         <div class="review">
           <div class="faceicon">
-            <picture>
-              <source srcset="../img/column1/column10.webp" type="image/webp">
-              <img src="../img/column1/column10.jpg" alt="" width="300" height="300" loading="lazy">
-            </picture><span>ゲストさん<br>(60代/女性)</span>
+            <img src="../img/column1/column10.jpg"><span>ゲストさん<br>(60代/女性)</span>
           </div>
           <div class="chatting">
             <div class="says">
@@ -178,12 +130,7 @@
 
     <div id="column7" class="headline">
       <h2>水戸市で美容鍼を受けるならRIO鍼灸サロンがおすすめ！</h2>
-      <div class="image">
-        <picture>
-          <source srcset="../img/column1/column7.webp" type="image/webp">
-          <img src="../img/column1/column7.jpg" alt="施術者写真" width="1600" height="1067" loading="lazy">
-        </picture>
-      </div>
+      <div class="image"><img src="../img/column1/column7.jpg" alt="施術者写真"></div>
       <p>水戸市のRIO鍼灸サロンは美容鍼灸サロンであり、お客様のお悩みに合わせた施術をご提案いたします。</p>
       <p>水戸市で美容鍼の施術を受けたいという方は、ぜひご相談ください。</p>
     </div>
