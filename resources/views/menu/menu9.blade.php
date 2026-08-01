@@ -9,21 +9,19 @@
   <link rel="stylesheet" href="../css/menu/menu.css">
   <link rel="stylesheet" href="../css/components/accordion.css">
   <title>マタニティメニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <link rel="canonical" href="https://rio-salon.com/menu/menu9">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rio-salon.com/menu/menu9">
+  <meta property="og:title" content="マタニティメニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-">
+  <meta property="og:site_name" content="リオ鍼灸サロン">
+  <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
+  <meta name="twitter:card" content="summary">
   <style>
     #menu_list .menu_course .button_menu9 {
       background: #B2DAD5;
     }
   </style>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WTVF47M');</script>
-  <!-- End Google Tag Manager -->
+  <x-gtm />
 </head>
 <body>
   <x-menu.header></x-menu.header>
