@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <p class="number"><span>ご予約・ご相談</span><br><span class="number_color">029-279-8639</span></p>
-      <p>平日：10:00〜20:00<span>(月曜定休)</span><br>土日祝：10:00〜20:00</p>
+      <p>平日：10:00〜20:00<span>(火曜定休)</span><br>土日祝：10:00〜20:00</p>
     </div>
     <div class="list">
       <ul class="sns">
