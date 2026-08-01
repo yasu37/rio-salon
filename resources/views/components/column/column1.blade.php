@@ -188,7 +188,7 @@
       <p>水戸市で美容鍼の施術を受けたいという方は、ぜひご相談ください。</p>
     </div>
     <div class="button">
-      <a href="https://ibanavi.net/shop/8665/" target="_blank" rel="">ご予約・お問い合わせはこちらから</a>
+      <a href="https://ibanavi.net/shop/8665/" target="_blank" rel="noopener noreferrer">ご予約・お問い合わせはこちらから</a>
     </div>
 
   </div>

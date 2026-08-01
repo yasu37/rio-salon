@@ -6,9 +6,9 @@
     <!--内容-->
     <div class="content">
       <ul class="sns">
-        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank"><img src="../img/facebook1.jpg" alt="RIO鍼灸サロンの公式facebook" width="72" height="73"></a></li>
-        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank"><img src="../img/instagram1.jpg" alt="RIO鍼灸サロンの公式instagram" width="73" height="73"></a></li>
-        <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank"><img src="../img/line1.jpg" alt="RIO鍼灸サロンの公式line" width="72" height="73"></a></li>
+        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank" rel="noopener noreferrer"><img src="../img/facebook1.jpg" alt="RIO鍼灸サロンの公式facebook" width="72" height="73"></a></li>
+        <li><a href="https://www.instagram.com/rio_shinkyu_salon" target="_blank" rel="noopener noreferrer"><img src="../img/instagram1.jpg" alt="RIO鍼灸サロンの公式instagram" width="73" height="73"></a></li>
+        <li><a href="https://line.me/R/ti/p/@834dvkdq" target="_blank" rel="noopener noreferrer"><img src="../img/line1.jpg" alt="RIO鍼灸サロンの公式line" width="72" height="73"></a></li>
       </ul>
       <ul class="reservation">
       <li class="tel_number">

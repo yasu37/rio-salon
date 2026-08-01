@@ -9,7 +9,7 @@
       <p>以下の予約サイトからご予約できます。</p>
       <div class="list">
         <ul>
-          <li><a href="https://squareup.com/appointments/book/m56hqg7x5peigt/LW3NV5ZDJP453/start" target="_blank">予約サイト</a></li>
+          <li><a href="https://squareup.com/appointments/book/m56hqg7x5peigt/LW3NV5ZDJP453/start" target="_blank" rel="noopener noreferrer">予約サイト</a></li>
         </ul>
       </div>
       <p class="date">営業時間</p>
