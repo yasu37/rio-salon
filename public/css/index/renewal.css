@@ -1,0 +1,244 @@
+/*信頼要素*/
+#trust {
+  padding-top: 3rem;
+}
+
+#trust .trust_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+#trust .trust_list li {
+  background: #008475;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*悩み別入口*/
+#concerns .concerns_list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+#concerns .concerns_list a {
+  display: block;
+  background: #fff;
+  border: 1px solid #B2DAD5;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #666;
+}
+
+#concerns .concerns_lead {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#concerns .concerns_menu {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #008475;
+}
+
+/*初めての方におすすめのメニュー*/
+#recommended_menu .recommended_menu_list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#recommended_menu .recommended_menu_list li {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+}
+
+#recommended_menu .recommended_menu_tag {
+  display: inline-block;
+  background: #008475;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#recommended_menu .recommended_menu_name {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+#recommended_menu .recommended_menu_concept {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+#recommended_menu .recommended_menu_time,
+#recommended_menu .recommended_menu_price {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+#recommended_menu .recommended_menu_price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #008475;
+  margin-bottom: 1.5rem;
+}
+
+#recommended_menu .recommended_menu_actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#recommended_menu .recommended_menu_actions a {
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#recommended_menu .recommended_menu_actions a:first-child {
+  border: 1px solid #008475;
+  color: #008475;
+}
+
+#recommended_menu .recommended_menu_actions a:last-child {
+  background: #008475;
+  color: #fff;
+}
+
+#recommended_menu .recommended_menu_more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#recommended_menu .recommended_menu_more a {
+  color: #008475;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*選ばれる理由*/
+#reasons .reasons_list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#reasons .reasons_ttl {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #008475;
+  margin-bottom: 0.8rem;
+}
+
+#reasons .reasons_txt {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+/*初回来店の流れ*/
+#first_visit_flow .flow_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+#first_visit_flow .flow_list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+}
+
+#first_visit_flow .flow_more {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#first_visit_flow .flow_more a {
+  color: #008475;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#first_visit_flow .flow_step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: #008475;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*口コミ*/
+#reviews .reviews_link {
+  text-align: center;
+}
+
+#reviews .reviews_link p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+#reviews .reviews_link a {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border: 1px solid #008475;
+  border-radius: 0.3rem;
+  color: #008475;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*サイトの横幅が780px以下*/
+@media screen and (max-width: 780px) {
+  #concerns .concerns_list {
+    grid-template-columns: 1fr;
+  }
+
+  #recommended_menu .recommended_menu_list {
+    grid-template-columns: 1fr;
+  }
+
+  #reasons .reasons_list {
+    grid-template-columns: 1fr;
+  }
+
+  #first_visit_flow .flow_list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

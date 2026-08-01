@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="水戸市のリオ鍼灸サロンのもみほぐしメニューをご紹介します。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -22,10 +23,12 @@
     }
   </style>
   <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
-  <main>
+  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => 'もみほぐし']]" />
+  <main data-gtm-view="view_menu" data-gtm-menu-name="もみほぐし">
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">もみほぐし</x-slot>
@@ -41,19 +44,19 @@
         <x-slot name="menu_name">全身もみほぐし 60分</x-slot>
         <x-slot name="menu_concept">【全身の慢性こり改善！】</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥7,200</x-slot>
+        <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 90分</x-slot>
         <x-slot name="menu_concept">【体をゆっくり休めたい方へ】</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥10,500</x-slot>
+        <x-slot name="price">10,500円（税込）</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 120分</x-slot>
         <x-slot name="menu_concept">【ご自身へのご褒美コース】</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥13,800</x-slot>
+        <x-slot name="price">13,800円（税込）</x-slot>
       </x-menu.accordion_simple>
     </section>
   </main>

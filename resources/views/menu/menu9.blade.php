@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="水戸市のリオ鍼灸サロンのマタニティリンパオイルメニューをご紹介します。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -22,10 +23,12 @@
     }
   </style>
   <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
-  <main>
+  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => 'マタニティリンパオイル']]" />
+  <main data-gtm-view="view_menu" data-gtm-menu-name="マタニティリンパオイル">
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">マタニティリンパオイル</x-slot>
@@ -38,13 +41,13 @@
       <x-slot name="menu_name">マタニティリンパオイルトリートメント 40分</x-slot>
       <x-slot name="menu_concept"></x-slot>
       <x-slot name="time">40分</x-slot>
-      <x-slot name="price">6,000円</x-slot>
+      <x-slot name="price">6,000円（税込）</x-slot>
     </x-menu.accordion_simple>
     <x-menu.accordion_simple>  
       <x-slot name="menu_name">マタニティリンパオイルトリートメント 60分</x-slot>
       <x-slot name="menu_concept"></x-slot>
       <x-slot name="time">60分</x-slot>
-      <x-slot name="price">7,200円</x-slot>
+      <x-slot name="price">7,200円（税込）</x-slot>
     </x-menu.accordion_simple>
 
   </main>

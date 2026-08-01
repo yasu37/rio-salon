@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="水戸市のリオ鍼灸サロンのブライダル鍼灸メニュー。結婚式に向けたコースをご紹介します。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -22,10 +23,12 @@
     }
   </style>
   <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
-  <main>
+  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => 'ブライダル鍼灸']]" />
+  <main data-gtm-view="view_menu" data-gtm-menu-name="ブライダル鍼灸">
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">ブライダル鍼灸</x-slot>
@@ -44,12 +47,12 @@
       <x-menu.accordion>
         <x-slot name="menu_name">スペシャル1Dayコース 180分</x-slot>
         <x-slot name="menu_concept">【挙短期中集中ケア。ご来店から3時間でお仕上げコース】</x-slot>
-        <x-slot name="menu_description">「酵素」と「クレイ」の作用でお肌に負担なく角質ケア。<br>鍼でツボや経路を刺激することで、表情筋の凝りほぐし肌のターンオーバーを促進し、肌の内部にアプローチします。最後に、高濃度美容液マスクでお肌に栄養成分を吸収させます。<br>姿勢矯正は理想の肩甲骨・鎖骨クッキリ、猫背改善、スタイルアップ効果などなりたい姿へ導きます。</x-slot>
+        <x-slot name="menu_description">「酵素」と「クレイ」の作用でお肌に負担なく角質ケア。<br>鍼でツボや経絡を刺激することで、表情筋の凝りほぐし肌のターンオーバーを促進し、肌の内部にアプローチします。最後に、高濃度美容液マスクでお肌に栄養成分を吸収させます。<br>姿勢矯正は理想の肩甲骨・鎖骨クッキリ、猫背改善、スタイルアップ効果などなりたい姿へ導きます。</x-slot>
         <x-slot name="treatment">素肌美人美容鍼コース120分 × 姿勢矯正オイルトリートメント60分<br><br>
           ※シェービングご希望のお客様別途5000円(税込)
         </x-slot>
         <x-slot name="time">180分</x-slot>
-        <x-slot name="price">￥24,000</x-slot>
+        <x-slot name="price">24,000円（税込）</x-slot>
       </x-menu.accordion>
       <div class="bridal_img">
         <picture>
@@ -72,7 +75,7 @@
           ※シェービングご希望のお客様別途5000円(税込)
         </x-slot>
         <x-slot name="time">4回コース</x-slot>
-        <x-slot name="price">￥49,800</x-slot>
+        <x-slot name="price">49,800円（税込）</x-slot>
       </x-menu.accordion_menu_description>
       <div class="bridal_img">
         <picture>
@@ -105,7 +108,7 @@
           ・2ヶ月前にご予約のお客様は15%引き！ 149,000円→134,100円
         </x-slot>
         <x-slot name="time">8回コース</x-slot>
-        <x-slot name="price">￥149,000</x-slot>
+        <x-slot name="price">149,000円（税込）</x-slot>
       </x-menu.accordion_menu_description>
     </section>
   </main>

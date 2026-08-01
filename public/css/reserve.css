@@ -34,6 +34,16 @@ main {
   color: #666;
 }
 
+#inquiry ul li.reserve_sub {
+  background: none;
+  font-size: 1.4rem;
+}
+
+#inquiry ul li.reserve_sub a {
+  padding: 0.5rem 0;
+  color: #999;
+}
+
 #inquiry .date {
   margin-top: 5rem;
   margin-bottom: 2rem;

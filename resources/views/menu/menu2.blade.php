@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="水戸市のリオ鍼灸サロンの鍼灸治療・高麗手指鍼灸・育毛治療メニュー。身体の不調や痛み、体質のお悩みに合わせて施術をご提案します。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -22,17 +23,19 @@
     }
   </style>
   <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
-  <main>
+  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => '鍼灸治療']]" />
+  <main data-gtm-view="view_menu" data-gtm-menu-name="鍼灸治療">
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">鍼灸治療</x-slot>
       <x-slot name="image_src">../img/course4.jpg</x-slot>
       <x-slot name="image_alt">鍼灸治療の施術写真</x-slot>
       <x-slot name="menu_explanation">【鍼灸治療について】</x-slot>
-      <x-slot name="menu_description">鍼灸とは、全身に点在するツボを鍼や灸で刺激して、筋肉をほぐしたり、血行や代謝を促すことで、人が本来備わっている病気を治す力(免疫料)を高め、痛みやつらい症状を改善し、健康へと導く治療法です。<br>
+      <x-slot name="menu_description">鍼灸とは、全身に点在するツボを鍼や灸で刺激して、筋肉をほぐしたり、血行や代謝を促すことを目的とした治療法です。お一人お一人の体調やお悩みに合わせて施術内容をご提案します。<br>
         使用する鍼は、安全性と衛生面を考慮し、使い捨ての「ディスポーサブル鍼」を使用しています。<br>
         ＊鍼の長さは約15mm～90mm、太さ直径約0.10mm～0.30mmとあり、刺す場所や症状に応じて、使う鍼の長さ、太さは変わります。</x-slot>
     </x-menu.menu_overview>
@@ -40,26 +43,26 @@
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 60分</x-slot>
         <x-slot name="menu_concept">【鍼の初めての人におすすめ！】</x-slot>
-        <x-slot name="menu_description">身体の不調、痛み、体質改善を鍼灸ともみほぐしで改善していきます。</x-slot>
+        <x-slot name="menu_description">身体の不調や痛み、体質のお悩みに合わせて、鍼灸ともみほぐしでケアしていきます。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥7,200</x-slot>
+        <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 90分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
-        <x-slot name="menu_description">身体の不調、痛み、体質改善を鍼灸ともみほぐしで改善していきます。</x-slot>
+        <x-slot name="menu_description">身体の不調や痛み、体質のお悩みに合わせて、鍼灸ともみほぐしでケアしていきます。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥10,500</x-slot>
+        <x-slot name="price">10,500円（税込）</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 120分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
-        <x-slot name="menu_description">身体の不調、痛み、体質改善を鍼灸ともみほぐしで改善していきます。<br>鍼灸もみほぐし以外にストレッチ、オイルトリートメントなどのメニューとの組み合わせも出来ます。</x-slot>
+        <x-slot name="menu_description">身体の不調や痛み、体質のお悩みに合わせて、鍼灸ともみほぐしでケアしていきます。<br>鍼灸もみほぐし以外にストレッチ、オイルトリートメントなどのメニューとの組み合わせも出来ます。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥13,800</x-slot>
+        <x-slot name="price">13,800円（税込）</x-slot>
       </x-menu.accordion>
     </section>
     <x-menu.menu_overview>
@@ -67,11 +70,11 @@
       <x-slot name="image_src">../img/course17.jpg</x-slot>
       <x-slot name="image_alt">高麗手指鍼灸の施術写真</x-slot>
       <x-slot name="menu_explanation">【高麗手指鍼灸とは？】</x-slot>
-      <x-slot name="menu_description">手は『第二の脳』『露出した脳』などと言われ、手と脳は深い関係があります。<br>
-        手を使うと、使わないときに比べて脳の血流量がおよそ10％上がると言われている程で、手や指を使うことは認知症予防としてもよく知られています。<br>
-        手掌・手背（甲）には、全身すべての部位や内臓、経絡、経穴が縮図化して存在しております。<br>
-        手指に鍼やお灸をすることで臓器そのものに刺激を伝えることができ、機能低下している臓器の働きを改善へと導きます。<br>
-        高麗手指鍼灸は内臓疾患・ホルモン疾患・自律神経系の疾患に特に効果があります。
+      <x-slot name="menu_description">手は『第二の脳』『露出した脳』とも言われ、手と脳は深い関係があるとされています。<br>
+        手を使うと使わないときに比べて脳の血流量が上がるとも言われ、手や指を使うことは認知症予防の観点でも注目されています。<br>
+        手掌・手背（甲）には、全身の部位や内臓、経絡、経穴に対応する反応点があるとされています。<br>
+        手指への鍼やお灸によって、その反応点への刺激をご提案する施術です。<br>
+        体調や自律神経の乱れが気になる方にもご相談いただいています。
       </x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
@@ -79,7 +82,7 @@
         <x-slot name="menu_name">高麗手指鍼灸 60分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥7,200</x-slot>
+        <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion_simple>
     </section>
     <x-menu.menu_overview>
@@ -89,7 +92,7 @@
       <x-slot name="menu_explanation">【育毛治療について】</x-slot>
       <x-slot name="menu_description">日本人男性の3人に1人は薄毛を気にしているといわれています。<br>
         近年は、女性の薄毛の悩みも増加する傾向にあり、背景には、ホルモンの影響、遺伝的要素、食生活、ストレスなどの理由が考えられています。<br>
-        鍼治療は、血流改善、自律神経治療など、様々な効果がみられますが、鍼治療の効果を最大限に活かし、頭皮環境を整えます。
+        鍼治療では、頭皮や首肩まわりのツボを用いて施術を行います。感じ方には個人差があります。
       </x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
@@ -97,13 +100,13 @@
         <x-slot name="menu_name">育毛治療 90分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥9,900</x-slot>
+        <x-slot name="price">9,900円（税込）</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">育毛治療(ショート) 40分</x-slot>
         <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
         <x-slot name="time">40分</x-slot>
-        <x-slot name="price">￥6,600</x-slot>
+        <x-slot name="price">6,600円（税込）</x-slot>
       </x-menu.accordion_simple>
     </section>
   </main>

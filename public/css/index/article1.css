@@ -174,3 +174,13 @@ header .logo a img {
     line-height: 1.8rem;
   }
 }
+
+#concept .hero_cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#concept .hero_cta .button5 a {
+  width: 100%;
+}

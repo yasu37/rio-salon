@@ -27,7 +27,7 @@
         <a href="./news" target="_self">
           <div class="item_body">
             <time class="date">2022.1.11</time>
-            <p class="ttl">RIO鍼灸サロンオープン</p>
+            <p class="ttl">リオ鍼灸サロンオープン</p>
           </div>
         </a>
       </li>

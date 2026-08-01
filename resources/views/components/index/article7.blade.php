@@ -17,27 +17,31 @@
         <table>
           <tr>
             <th>店名</th>
-            <th>RIO鍼灸サロン</th>
+            <th>{{ config('salon.name') }}</th>
           </tr>
           <tr>
             <th>住所</th>
-            <th>茨城県水戸市米沢町627</th>
+            <th>{{ config('salon.address.full') }}</th>
           </tr>
           <tr>
             <th>営業時間</th>
-            <th>10:00〜20:00</th>
+            <th>{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}</th>
           </tr>
           <tr>
             <th>定休日</th>
-            <th>火曜日</th>
+            <th>{{ config('salon.business_hours.closed_day') }}</th>
           </tr>
           <tr>
             <th>電話番号</th>
-            <th>029-279-8639</th>
+            <th><a href="tel:{{ config('salon.tel_href') }}">{{ config('salon.tel') }}</a></th>
+          </tr>
+          <tr>
+            <th>駐車場</th>
+            <th>{{ config('salon.parking_spaces') }}台</th>
           </tr>
           <tr>
             <th>決済方法</th>
-            <th>クレジットカード:VISA/MasterCard/JCBなど<br>電子マネー:PayPay/iD/QUIC Pay/Apple Pay</th>
+            <th>現金<br>クレジットカード:{{ implode('/', config('salon.payment.credit_cards')) }}など<br>電子マネー:{{ implode('/', config('salon.payment.e_money')) }}</th>
           </tr>
         </table>
       </li>

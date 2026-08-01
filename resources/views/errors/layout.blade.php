@@ -83,19 +83,19 @@
 </head>
 <body>
   <div class="logo">
-    <a href="/"><img src="/img/logo1.jpg" alt="水戸市の美容鍼灸-RIO鍼灸サロン-" width="664" height="181"></a>
+    <a href="/"><img src="/img/logo1.jpg" alt="水戸市の美容鍼灸-{{ config('salon.name') }}（{{ config('salon.name_en') }}）-" width="664" height="181"></a>
   </div>
   <p class="code">@yield('code')</p>
   <h1>@yield('heading')</h1>
   <div class="message">@yield('message')</div>
   <ul class="links">
     <li><a class="primary" href="/">トップページへ戻る</a></li>
-    <li><a href="/reserve">ご予約はこちら</a></li>
+    <li><a href="/reserve">予約方法を見る</a></li>
     <li><a href="/menu/menu1">メニュー&amp;料金</a></li>
   </ul>
   <p class="contact">
-    ご予約・ご相談：<a href="tel:029-279-8639">029-279-8639</a><br>
-    平日 10:00〜20:00（火曜定休）／土日祝 10:00〜20:00
+    ご予約・ご相談：<a href="tel:{{ config('salon.tel_href') }}">{{ config('salon.tel') }}</a><br>
+    平日 {{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}（{{ config('salon.business_hours.closed_day_label') }}）／土日祝 {{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}
   </p>
 </body>
 </html>

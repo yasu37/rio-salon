@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="リオ鍼灸サロンの期間限定クーポンページです。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -17,9 +18,11 @@
   <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
   <meta name="twitter:card" content="summary">
   <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
+  <x-breadcrumb :items="[['name' => 'キャンペーン']]" />
   <main>
   <section id="campaign">
     <div class="container">
@@ -38,7 +41,7 @@
   <section id="reserved">
     <div class="container">
       <div class="infomation">
-        <p class="text">公式Lineで<br>クーポン配信中</p>
+        <p class="text">公式LINEで<br>クーポン配信中</p>
       </div>
       <div class="button5">
         <a href="https://line.me/R/ti/p/@834dvkdq" target="_blank" rel="noopener noreferrer">クーポンはこちら</a>

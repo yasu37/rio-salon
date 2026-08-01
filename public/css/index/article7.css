@@ -38,13 +38,16 @@ th {
   text-align: left;
 }
 
-#location .img_box {
+#location .img_box,
+#gallery .img_box {
   display: flex;
   list-style: none;
   padding-top: 2rem;
+  gap: 1rem;
 }
 
-#location .img_box li {
+#location .img_box li,
+#gallery .img_box li {
   width: 33%;
 }
 
