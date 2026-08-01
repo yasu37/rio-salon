@@ -31,6 +31,8 @@ Route::get('menu/menu7', [PageController::class, 'menu7']);
 Route::get('menu/menu8', [PageController::class, 'menu8']);
 Route::get('menu/menu9', [PageController::class, 'menu9']);
 Route::get('menu/menu10', [PageController::class, 'menu10']);
+/*初めての方へ */
+Route::get('first-visit', [PageController::class, 'firstVisit']);
 /*質問 */
 Route::get('question', [PageController::class, 'question']);
 /*ニュース */

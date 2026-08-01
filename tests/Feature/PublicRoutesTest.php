@@ -14,6 +14,7 @@ class PublicRoutesTest extends TestCase
         return [
             'top' => ['/'],
             'about' => ['/about'],
+            'first_visit' => ['/first-visit'],
             'news' => ['/news'],
             'question' => ['/question'],
             'reserve' => ['/reserve'],
