@@ -13,3 +13,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+.claude/settings.local.json
+.DS_Store
+/composer.phar
