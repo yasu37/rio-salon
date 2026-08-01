@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="リオ鍼灸サロンのよくある質問。美容鍼灸の効果や痛み、通うペース、施術後の注意点などについてお答えします。">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -16,9 +17,11 @@
   <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
   <meta name="twitter:card" content="summary">
   <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-header></x-header>
+  <x-breadcrumb :items="[['name' => 'よくある質問']]" />
   <main>
     <x-question></x-question>
   </main>

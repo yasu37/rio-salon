@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="リオ鍼灸サロンのご挨拶とスタッフ紹介。筋肉・神経・リンパなどの西洋医学的な知見と東洋医学的な視点を組み合わせた施術をご提案しています。">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -16,9 +17,11 @@
   <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
   <meta name="twitter:card" content="summary">
   <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-header></x-header>
+  <x-breadcrumb :items="[['name' => 'リオについて']]" />
   <main>
     <x-about.about></x-about.about>
     <x-about.staff></x-about.staff>

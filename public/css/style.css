@@ -298,3 +298,64 @@ picture {
   }
 
 }
+
+/*パンくずリスト*/
+.breadcrumb {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 9.5rem 1.5rem 0;
+}
+
+@media screen and (max-width: 780px) {
+  .breadcrumb {
+    padding-top: 5.5rem;
+  }
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "/";
+  margin: 0 0.6rem;
+  color: #999;
+}
+
+.breadcrumb a {
+  color: #008475;
+  text-decoration: underline;
+}
+
+.breadcrumb li[aria-current="page"] {
+  color: #666;
+}
+
+/*アクセシビリティ: フォーカス表示とアニメーション抑制*/
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #008475;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
