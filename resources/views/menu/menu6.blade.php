@@ -35,7 +35,11 @@
       <x-slot name="image_src">../img/course8.jpg</x-slot>
       <x-slot name="image_alt">オイルマッサージの施術写真</x-slot>
       <x-slot name="menu_explanation">【リンパオイルトリートメント】</x-slot>
-      <x-slot name="menu_description">オイルを使い、全身をゆっくりとほぐしていく施術です。むくみや疲れが気になる方に選ばれています。感じ方には個人差があります。</x-slot>
+      <x-slot name="menu_description">立ち仕事や座りっぱなしの毎日で、気づけば脚がパンパン。そんな方へ、オイルを使い全身をゆっくりとほぐしていく施術です。<br>
+        □むくみが気になる方に<br>
+        □日々の疲れをゆっくりケアしたい方に<br>
+        □リラックスする時間を持ちたい方に<br>
+        効果の感じ方は人それぞれです。</x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
       <x-menu.accordion_simple>

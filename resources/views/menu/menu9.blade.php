@@ -35,17 +35,20 @@
       <x-slot name="image_src">../img/course_maternity.jpg</x-slot>
       <x-slot name="image_alt">マタニティへのマッサージの施術写真</x-slot>
       <x-slot name="menu_explanation">【マタニティリンパオイル】</x-slot>
-      <x-slot name="menu_description">妊娠5ヶ月(妊娠16～19週)から施術を受けることができます。</x-slot>
+      <x-slot name="menu_description">妊娠中のむくみや腰の張りに寄り添うコースです。妊娠5ヶ月（16～19週）以降からお受けいただけます。<br>
+        □脚や身体のむくみが気になる方に<br>
+        □腰の張りをやわらげたい方に<br>
+        体調をお伺いしながら、優しく施術いたします。</x-slot>
     </x-menu.menu_overview>
     <x-menu.accordion_simple>  
       <x-slot name="menu_name">マタニティリンパオイルトリートメント 40分</x-slot>
-      <x-slot name="menu_concept"></x-slot>
+      <x-slot name="menu_concept">【脚のむくみや腰の張りが気になる方に】</x-slot>
       <x-slot name="time">40分</x-slot>
       <x-slot name="price">6,000円（税込）</x-slot>
     </x-menu.accordion_simple>
     <x-menu.accordion_simple>  
       <x-slot name="menu_name">マタニティリンパオイルトリートメント 60分</x-slot>
-      <x-slot name="menu_concept"></x-slot>
+      <x-slot name="menu_concept">【全身をゆっくりケアしたい方に】</x-slot>
       <x-slot name="time">60分</x-slot>
       <x-slot name="price">7,200円（税込）</x-slot>
     </x-menu.accordion_simple>

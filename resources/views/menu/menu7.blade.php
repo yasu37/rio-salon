@@ -35,32 +35,35 @@
       <x-slot name="image_src">../img/course12.jpg</x-slot>
       <x-slot name="image_alt">オイルカッピングの施術写真</x-slot>
       <x-slot name="menu_explanation">【オイルカッピングについて】</x-slot>
-      <x-slot name="menu_description">カッピング・吸玉療法は、古来より東洋でも西洋でも幅広く行われてきた伝統療法。背中などにカップに乗せ吸引し、カップ内部を一時的に真空状態にした後カップを外す。すると止まっていた血液が一気に流れ、血行改善・血行促進の効果が得られます。</x-slot>
+      <x-slot name="menu_description">肩まわりや背中の重だるさが気になる方へ。カッピング（吸玉）は、古来より東洋でも西洋でも行われてきた技法です。背中などにカップを乗せて吸引し、その部分の巡りに働きかけます。<br>
+        □肩や背中の重さが気になる方に<br>
+        □全身をまとめてケアしたい方に<br>
+        オイルマッサージと組み合わせて行います。施術部位に跡が残る場合があります。効果の感じ方には差があります。</x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
       <x-menu.accordion_menu_description>
-        <x-slot name="menu_name">オイルカッピング 60分</x-slot>
+        <x-slot name="menu_name">全身カッピングオイル 60分</x-slot>
         <x-slot name="menu_concept">【全身をすっきりケア】</x-slot>
-        <x-slot name="menu_description">うつ伏せ上半身、下半身、デコルテにカッピングを行います。その後、オイルマッサージを行い、更に血行を促進していきます。</x-slot>
+        <x-slot name="menu_description">うつ伏せで上半身・下半身・デコルテにカッピングを行った後、アロマオイルで全身をマッサージします。</x-slot>
         <x-slot name="time">60分</x-slot>
         <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion_menu_description>
       <x-menu.accordion_menu_description>
-        <x-slot name="menu_name">オイルカッピング 90分</x-slot>
+        <x-slot name="menu_name">全身カッピングオイル 90分</x-slot>
         <x-slot name="menu_concept">【じっくりケアしたい方に】</x-slot>
-        <x-slot name="menu_description">うつ伏せ上半身、下半身、仰向け下半身、デコルテにカッピングを行います。その後、オイルマッサージを行い、更に血行を促進していきます。</x-slot>
+        <x-slot name="menu_description">うつ伏せ・仰向けの両方でカッピングを行う、60分コースよりも範囲を広げたコースです。その後アロマオイルで全身をマッサージします。</x-slot>
         <x-slot name="time">90分</x-slot>
         <x-slot name="price">10,500円（税込）</x-slot>
       </x-menu.accordion_menu_description>
       <x-menu.accordion_menu_description>
-        <x-slot name="menu_name">オイルカッピング 120分</x-slot>
-        <x-slot name="menu_concept">【脂肪燃焼！新陳代謝UP】</x-slot>
-        <x-slot name="menu_description">うつ伏せ上半身、下半身、仰向け下半身、お腹、デコルテにカッピングを行います。その後、オイルマッサージを行い、更に血行を促進していきます。</x-slot>
+        <x-slot name="menu_name">全身カッピングオイル 120分</x-slot>
+        <x-slot name="menu_concept">【全身をじっくりケアしたい方に】</x-slot>
+        <x-slot name="menu_description">お腹まわりを含めた全身にカッピングを行う、最も範囲の広いコースです。その後アロマオイルで全身をマッサージします。</x-slot>
         <x-slot name="time">120分</x-slot>
         <x-slot name="price">13,800円（税込）</x-slot>
       </x-menu.accordion_menu_description>
       <x-menu.accordion_menu_description>
-        <x-slot name="menu_name">腸もみカッピング 45分</x-slot>
+        <x-slot name="menu_name">腸揉みカッピングオイル 45分</x-slot>
         <x-slot name="menu_concept">【脂肪燃焼】</x-slot>
         <x-slot name="menu_description">お腹カッピング＋腸つぼマッサージ＋腸リンパオイルトリートメント</x-slot>
         <x-slot name="time">45分</x-slot>

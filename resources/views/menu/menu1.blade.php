@@ -36,52 +36,48 @@
       <x-slot name="image_src">../img/course1.jpg</x-slot>
       <x-slot name="image_alt">美容鍼灸の施術写真</x-slot>
       <x-slot name="menu_explanation">【美容鍼灸とは？】</x-slot>
-      <x-slot name="menu_description">美容鍼灸は、美容鍼で顔のツボや経絡を刺激する施術です。<br>
-        筋肉、リンパ、神経へのアプローチを通じて、肌のターンオーバーを促す働きかけを行います。<br>
-        □たるみ・しわ・ほうれい線のケア<br>
-        □巡りのケア<br>
-        □小顔感・むくみのケア<br>
+      <x-slot name="menu_description">仕事や家事に追われる毎日でも、鏡を見るたびに気になる、たるみ・むくみ・ほうれい線。美容鍼灸は、髪の毛ほど細い鍼で顔のツボや経絡を刺激し、肌や表情筋にやさしく働きかける施術です。<br>
+        □たるみ・しわ・ほうれい線が気になる方に<br>
+        □顔まわりの巡りが気になる方に<br>
+        □小顔感を目指したい方に<br>
         ＊お顔には、0.1㎜程度の細い鍼を使用しております。鍼が初めての方にも選ばれている施術ですが、刺激の感じ方には個人差があります。</x-slot>
     </x-menu.menu_overview>
     <!-- 美容鍼灸のメニュー -->
     <section class="menu_course">
       <x-menu.accordion>
         <x-slot name="menu_name">美容鍼灸 70分</x-slot>
-        <x-slot name="menu_concept">【美容鍼灸を試してみたい方におすすめ！】</x-slot>
-        <x-slot name="menu_description">まずは美容鍼灸試してみたい、忙しくてゆっくり時間がとれない方におすすめです！</x-slot>
+        <x-slot name="menu_concept">【まずは試してみたい方に】</x-slot>
+        <x-slot name="menu_description">忙しくてゆっくり時間が取れない方や、美容鍼を初めて試してみたい方におすすめの基本コースです。髪の毛ほど細い鍼で、お顔の巡りや表情筋にやさしく働きかけます。効果の感じ方は人それぞれです。</x-slot>
         <x-slot name="treatment">①クレンジング ②お顔鍼&電気 ③デコルテマッサージ ④フェイシャルマッサージ ⑤パック ⑥お仕上げ</x-slot>
         <x-slot name="time">70分</x-slot>
         <x-slot name="price">11,000円（税込）／初回 10,500円（税込）</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">美容鍼灸(顔+全身) 90分</x-slot>
-        <x-slot name="menu_concept">【ご新規・リピーター様人気No.1】</x-slot>
-        <x-slot name="menu_description">当店人気No.1！お顔の肌エイジングだけじゃなく、体質改善の鍼治療も加えたコース。<br>
-          背面で首、肩、足を鍼とマッサージでしっかりほぐし、美容鍼灸へ。<br>
-          肌トラブル、肩凝り、腰痛、自律神経、更年期、生理痛、冷え、むくみなどの体質改善治療も同時に行います。<br>
-          本格的な美容鍼灸と体質改善をお望みの方にオススメ！</x-slot>
+        <x-slot name="menu_concept">【ご新規・リピーター様に人気のコース】</x-slot>
+        <x-slot name="menu_description">お顔のケアだけでなく、背面・正面の身体の鍼とマッサージを組み合わせたコースです。<br>
+          肩こり、冷え、むくみなど身体のお悩みもあわせてご相談いただけます。<br>
+          本格的に美容鍼灸と身体のケアを両方お求めの方におすすめです。</x-slot>
         <x-slot name="treatment">①ボディ鍼(背面)･マッサージ ②ボディ鍼(正面)･マッサージ ③クレンジング ④お顔鍼&電気 ⑤デコルテマッサージ ⑥フェイシャルマッサージ ⑦パック ⑧お仕上げ</x-slot>
         <x-slot name="time">90分</x-slot>
         <x-slot name="price">14,300円（税込）</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">美容鍼灸美肌再生コース(顔+全身) 120分</x-slot>
-        <x-slot name="menu_concept">【40・50代女性人気No.1】</x-slot>
-        <x-slot name="menu_description">さらにお肌のアンチエイジングと体質改善に特化したコース！<br>
-          美容鍼灸だけではなく、毛穴吸引やビタミンC誘導体のイオン導入を加え、美肌への土台作ります。<br>
-          「美」と「健康」にこだわりたい方にオススメ！<br>
-          また、ニキビ肌、オイリー肌、毛穴の開きにお悩みの方にもおすすめです。</x-slot>
+        <x-slot name="menu_concept">【40・50代女性に選ばれています】</x-slot>
+        <x-slot name="menu_description">美容鍼に加えて毛穴吸引とビタミンC誘導体のイオン導入を組み合わせた、お肌の状態を整えたい方向けのコースです。<br>
+          毛穴の目立ちやテカリ、乾燥が気になる方にも選ばれています。<br>
+          「美」と「健康」を両方大切にしたい方におすすめです。</x-slot>
         <x-slot name="treatment">①ボディ鍼(背面)･マッサージ ②ボディ鍼(正面)･マッサージ ③クレンジング ④お顔鍼&電気 ⑤デコルテマッサージ ⑥フェイシャルマッサージ ⑦毛穴吸引 ⑧イオン導入 ⑨パック ⑩お仕上げ</x-slot>
         <x-slot name="time">120分</x-slot>
         <x-slot name="price">18,500円（税込）</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">素肌美人美容鍼コース 120分</x-slot>
-        <x-slot name="menu_concept">【素肌美人！お肌にとってもスペシャルなコース】</x-slot>
-        <x-slot name="menu_description">美容鍼灸＋角質ケアピーリング&高濃度美容液マスクのコラボ！<br>
-          角質ケアピーリングは、<br>
-          「酵素」と「クレイ」の作用を利用してお肌に無理なく角質ケアをします。<br>
-          その後、毛穴吸引で毛穴の汚れの取残しを吸引し、最後に高濃度美容液マスクをする事で、お肌にとって必要な栄養成分をで吸収させます。</x-slot>
+        <x-slot name="menu_concept">【お肌にとってスペシャルなコース】</x-slot>
+        <x-slot name="menu_description">美容鍼に角質ケアピーリングと高濃度美容液マスクを組み合わせたコースです。<br>
+          「酵素」と「クレイ」の作用でお肌に負担をかけずに角質をケアします。<br>
+          その後、毛穴吸引で毛穴の汚れの取り残しをケアし、最後に高濃度美容液マスクで仕上げます。</x-slot>
         <x-slot name="treatment">①うつ伏せ鍼マッサージ(首・肩) ②クレンジング ③洗顔 ④フェイシャル・デコルテトリートメント ⑤毛穴吸引 ⑥角質ケアピーリング(3種類選択) ⑦お顔鍼 ⑧高濃度美容液マスク ⑨お仕上げ</x-slot>
         <x-slot name="time">120分</x-slot>
         <x-slot name="price">18,500円（税込）</x-slot>
@@ -90,7 +86,7 @@
         <x-slot name="menu_name">美容鍼灸＆リオ式美顔筋小顔リリース 70分</x-slot>
         <x-slot name="menu_concept">【表情筋のコリをほぐし、すっきりとした印象を目指すコース】</x-slot>
         <x-slot name="menu_description">表情筋のコリ、特に食いしばりなどで負担がかかる顎関節や側頭筋のコリを鍼やマッサージでほぐしていく施術です。<br>
-          表情筋やその周辺の巡りに働きかけ、すっきりとした印象を目指します。感じ方には個人差があります。<br>
+          表情筋やその周辺の巡りに働きかけ、すっきりとした印象を目指します。変化の感じ方には差があります。<br>
           食いしばりによって負担がかかりやすい部位の例<br>
           ①頭痛・眼精疲労<br>
           顎を動かす筋肉の１つである「側頭筋」の緊張をほぐしていきます。<br>
@@ -105,6 +101,12 @@
         <x-slot name="time">70分</x-slot>
         <x-slot name="price">11,000円（税込）</x-slot>
       </x-menu.accordion>
+      <x-menu.accordion_simple>
+        <x-slot name="menu_name">リオ式美顔筋小顔リリース 60分</x-slot>
+        <x-slot name="menu_concept">【表情筋のコリを単体でケアしたい方に】</x-slot>
+        <x-slot name="time">60分</x-slot>
+        <x-slot name="price">8,200円（税込）</x-slot>
+      </x-menu.accordion_simple>
     </section>
   </main>
   <x-menu.footer></x-menu.footer>

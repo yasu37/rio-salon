@@ -35,31 +35,34 @@
       <x-slot name="image_src">../img/course4.jpg</x-slot>
       <x-slot name="image_alt">鍼灸治療の施術写真</x-slot>
       <x-slot name="menu_explanation">【鍼灸治療について】</x-slot>
-      <x-slot name="menu_description">鍼灸とは、全身に点在するツボを鍼や灸で刺激して、筋肉をほぐしたり、血行や代謝を促すことを目的とした治療法です。お一人お一人の体調やお悩みに合わせて施術内容をご提案します。<br>
+      <x-slot name="menu_description">肩こり、首こり、日々の疲れ。頑張るあなたの身体、後回しになっていませんか。鍼灸は、全身のツボを鍼や灸で刺激し、お一人お一人の体調やお悩みに合わせてご提案する施術です。<br>
+        □肩こり・首こりが気になる方に<br>
+        □疲れが溜まりやすい方に<br>
+        □身体の巡りを整えたい方に<br>
         使用する鍼は、安全性と衛生面を考慮し、使い捨ての「ディスポーサブル鍼」を使用しています。<br>
         ＊鍼の長さは約15mm～90mm、太さ直径約0.10mm～0.30mmとあり、刺す場所や症状に応じて、使う鍼の長さ、太さは変わります。</x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 60分</x-slot>
-        <x-slot name="menu_concept">【鍼の初めての人におすすめ！】</x-slot>
-        <x-slot name="menu_description">身体の不調や痛み、体質のお悩みに合わせて、鍼灸ともみほぐしでケアしていきます。</x-slot>
+        <x-slot name="menu_concept">【鍼が初めての方におすすめ】</x-slot>
+        <x-slot name="menu_description">身体の不調や痛み、体質のお悩みに合わせてご提案する基本コースです。カウンセリング後、鍼灸ともみほぐしでケアしていきます。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">60分</x-slot>
         <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 90分</x-slot>
-        <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
-        <x-slot name="menu_description">身体の不調や痛み、体質のお悩みに合わせて、鍼灸ともみほぐしでケアしていきます。</x-slot>
+        <x-slot name="menu_concept">【ゆっくり身体を休めたい、気になる部位が多い方に】</x-slot>
+        <x-slot name="menu_description">60分コースよりも時間をかけて、身体のお悩みに合わせた施術を行います。複数箇所の不調が気になる方にもおすすめです。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">90分</x-slot>
         <x-slot name="price">10,500円（税込）</x-slot>
       </x-menu.accordion>
       <x-menu.accordion>
         <x-slot name="menu_name">鍼灸治療 120分</x-slot>
-        <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
-        <x-slot name="menu_description">身体の不調や痛み、体質のお悩みに合わせて、鍼灸ともみほぐしでケアしていきます。<br>鍼灸もみほぐし以外にストレッチ、オイルトリートメントなどのメニューとの組み合わせも出来ます。</x-slot>
+        <x-slot name="menu_concept">【じっくり時間をかけてケアしたい方に】</x-slot>
+        <x-slot name="menu_description">鍼灸ともみほぐしに加え、ご希望に応じてストレッチやオイルトリートメントも組み合わせられるコースです。長期的な不調が気になる方におすすめです。</x-slot>
         <x-slot name="treatment">①カウンセリング ②うつ伏せ又は、仰向け鍼(症状に合わせて) ③全身もみほぐし ④お仕上げ</x-slot>
         <x-slot name="time">120分</x-slot>
         <x-slot name="price">13,800円（税込）</x-slot>
@@ -79,8 +82,8 @@
     </x-menu.menu_overview>
     <section class="menu_course">
       <x-menu.accordion_simple>
-        <x-slot name="menu_name">高麗手指鍼灸 60分</x-slot>
-        <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
+        <x-slot name="menu_name">高麗手指鍼灸(手の鍼) 60分</x-slot>
+        <x-slot name="menu_concept">【手指への鍼にご興味のある方に】</x-slot>
         <x-slot name="time">60分</x-slot>
         <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion_simple>
@@ -90,21 +93,22 @@
       <x-slot name="image_src">../img/course21.jpg</x-slot>
       <x-slot name="image_alt">育毛治療の施術写真</x-slot>
       <x-slot name="menu_explanation">【育毛治療について】</x-slot>
-      <x-slot name="menu_description">日本人男性の3人に1人は薄毛を気にしているといわれています。<br>
-        近年は、女性の薄毛の悩みも増加する傾向にあり、背景には、ホルモンの影響、遺伝的要素、食生活、ストレスなどの理由が考えられています。<br>
-        鍼治療では、頭皮や首肩まわりのツボを用いて施術を行います。感じ方には個人差があります。
+      <x-slot name="menu_description">年齢を重ねるとともに気になる、髪のボリュームや分け目。女性の薄毛のお悩みも増えており、背景にはホルモンバランスや生活習慣など様々な要因が考えられています。<br>
+        □髪のボリュームが気になる方に<br>
+        □頭皮の巡りを整えたい方に<br>
+        鍼治療では、頭皮や首肩まわりのツボを用いて施術を行います。効果の感じ方は人それぞれです。
       </x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
       <x-menu.accordion_simple>
         <x-slot name="menu_name">育毛治療 90分</x-slot>
-        <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
+        <x-slot name="menu_concept">【薄毛・抜け毛が気になる方に】</x-slot>
         <x-slot name="time">90分</x-slot>
         <x-slot name="price">9,900円（税込）</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
-        <x-slot name="menu_name">育毛治療(ショート) 40分</x-slot>
-        <x-slot name="menu_concept">【ゆっくり身体を休めたい、治療部位が多い方におすすめ！】</x-slot>
+        <x-slot name="menu_name">育毛治療ショート(鍼100本のみ) 40分</x-slot>
+        <x-slot name="menu_concept">【短時間で試してみたい方に】</x-slot>
         <x-slot name="time">40分</x-slot>
         <x-slot name="price">6,600円（税込）</x-slot>
       </x-menu.accordion_simple>

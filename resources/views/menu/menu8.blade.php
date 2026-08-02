@@ -35,14 +35,17 @@
       <x-slot name="image_src">../img/course5.jpg</x-slot>
       <x-slot name="image_alt">もみほぐしの施術写真</x-slot>
       <x-slot name="menu_explanation">【もみほぐしについて】</x-slot>
-      <x-slot name="menu_description">洋服の上からお身体をもみほぐしていくコース。お客様のご要望や悩みなどお伺いしていきながら施術していきます。<br>
-        お着替えのご準備もございますのでお気軽にご来店ください。
+      <x-slot name="menu_description">肩や腰の張りが気になるけれど、鍼は少し不安。そんな方へ、洋服の上からお身体をもみほぐしていくコースです。<br>
+        □肩こり・腰の張りが気になる方に<br>
+        □鍼を使わずにケアしたい方に<br>
+        □着替えなしで気軽に受けたい方に<br>
+        ご要望やお悩みをお伺いしながら施術します。お着替えのご準備もございますので、お気軽にご来店ください。
       </x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 60分</x-slot>
-        <x-slot name="menu_concept">【全身の慢性こり改善！】</x-slot>
+        <x-slot name="menu_concept">【慢性的なこりが気になる方に】</x-slot>
         <x-slot name="time">60分</x-slot>
         <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion_simple>

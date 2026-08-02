@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="水戸市のリオ鍼灸サロンの黄土漢方浴メニューをご紹介します。">
+  <meta name="description" content="水戸市のリオ鍼灸サロンの漢方浴メニューをご紹介します。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -28,25 +28,28 @@
 </head>
 <body>
   <x-menu.header></x-menu.header>
-  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => '黄土漢方浴']]" />
-  <main data-gtm-view="view_menu" data-gtm-menu-name="黄土漢方浴">
+  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => '漢方浴']]" />
+  <main data-gtm-view="view_menu" data-gtm-menu-name="漢方浴">
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
-      <x-slot name="menu_name">黄土漢方浴</x-slot>
+      <x-slot name="menu_name">漢方浴</x-slot>
       <x-slot name="image_src">../img/course19.jpg</x-slot>
       <x-slot name="image_alt">漢方浴の施術写真</x-slot>
-      <x-slot name="menu_explanation">【黄土漢方浴とは？】</x-slot>
-      <x-slot name="menu_description">20～30分くらい座っているだけでじっとりと汗が噴き出します。内臓器を十分に温めることによって、手足などの末端まで血液を循環させ、ぽかぽか芯から温まるのが特長です。簡単で気軽に、また健康的なエステとしてお役立ていただけることができます。</x-slot>
+      <x-slot name="menu_explanation">【漢方浴とは？】</x-slot>
+      <x-slot name="menu_description">季節を問わず、身体の冷えが気になる方へ。8種類の漢方を使用した専用の浴槽に座るだけの温浴です。20～30分ほどで発汗を感じる方が多く、身体が芯から温まる感覚を得やすい施術です。<br>
+        □冷えが気になる方に<br>
+        □忙しくても気軽にケアしたい方に<br>
+        着替えて座るだけなので、施術に不安がある方にもおすすめです。感じ方は人それぞれです。</x-slot>
     </x-menu.menu_overview>
     <!-- 漢方浴のメニュー -->
     <section class="menu_course">
       <x-menu.accordion>
         <x-slot name="menu_name">漢方浴 40分</x-slot>
-        <x-slot name="menu_concept">【体の芯から温まりたい方におすすめ！】</x-slot>
+        <x-slot name="menu_concept">【体の芯から温まりたい方に】</x-slot>
         <x-slot name="menu_description">60分以上のメニューとセットの場合、1回3,500円</x-slot>
         <x-slot name="treatment"></x-slot>
         <x-slot name="time">40分</x-slot>
-        <x-slot name="price">4,000円（税込）</x-slot>
+        <x-slot name="price">3,800円（税込）</x-slot>
       </x-menu.accordion>
     </section>
   </main>
