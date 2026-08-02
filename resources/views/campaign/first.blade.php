@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="リオ鍼灸サロンの初回限定メニューページです。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/campaign.css">
   <link rel="stylesheet" href="../css/campaign_first.css">
-  <title>初回限定クーポンページ|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WTVF47M');</script>
-  <!-- End Google Tag Manager -->
+  <title>初回限定メニューページ|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <link rel="canonical" href="https://rio-salon.com/campaign/first">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rio-salon.com/campaign/first">
+  <meta property="og:title" content="初回限定メニューページ|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-">
+  <meta property="og:site_name" content="リオ鍼灸サロン">
+  <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
+  <meta name="twitter:card" content="summary">
+  <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
+  <x-breadcrumb :items="[['name' => 'キャンペーン']]" />
   <main>
   <section id="campaign">
     <div class="container">
@@ -31,8 +32,8 @@
       </div>
       <div class="list">
         <ul>
-            <li><a href="./term" class="button_term">期間限定クーポン</a></li>
-            <li><a href="./first" class="button_first">初回限定クーポン</a></li>
+            <li><a href="./term" class="button_term">期間限定メニュー</a></li>
+            <li><a href="./first" class="button_first">初回限定メニュー</a></li>
         </ul>
       </div>
     </div>

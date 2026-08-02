@@ -45,8 +45,9 @@
     right: 5px;
     top: 0;
     margin: 1rem 0;
+    height: 44px;
     list-style: none;
-    background-color: #B2DAD5;
+    background-color: #008475;
   }
 
   header .reservation .tel_number {
@@ -112,6 +113,103 @@
     font-weight: bold;
     color: inherit;
     letter-spacing: 0.2rem;
+  }
+
+  header .reservation_panel {
+    display: block;
+    position: relative;
+    height: 44px;
+    overflow: visible;
+  }
+
+  header .reservation_toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  header .reservation_panel .reservation_summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+  }
+
+  header .reservation_toggle:focus-visible ~ .reservation_summary {
+    outline: 2px solid #fff;
+    outline-offset: -4px;
+  }
+
+  header .reservation_toggle:checked ~ .reservation_summary {
+    background-color: #00695c;
+  }
+
+  header .reservation_panel .reservation_menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 260px;
+    background: #fff;
+    border: 1px solid #B2DAD5;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0.75rem;
+    z-index: 1000;
+  }
+
+  header .reservation_toggle:checked ~ .reservation_menu {
+    display: block;
+  }
+
+  header .reservation_panel .reservation_menu_lead {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0 0 0.5rem;
+  }
+
+  header .reservation_panel .reservation_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .reservation_panel .reservation_menu li {
+    padding: 0;
+  }
+
+  header .reservation_panel .reservation_menu li a {
+    display: block;
+    padding: 0.6rem 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #008475;
+    border-bottom: 1px solid #eee;
+  }
+
+  header .reservation_panel .reservation_menu li a:focus-visible {
+    outline: 2px solid #008475;
+    outline-offset: 2px;
+  }
+
+  header .reservation_panel .reservation_menu_sub a {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #999;
+    border-bottom: none;
   }
 
   header .sns {

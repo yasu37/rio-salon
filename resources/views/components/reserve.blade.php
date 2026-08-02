@@ -6,14 +6,16 @@
       <p>Reserve &amp; Inquiry</p>
     </div>
     <div class="infomation">
-      <p>以下の予約サイトからご予約できます。</p>
+      <p>目的に合わせて予約方法をお選びください。</p>
       <div class="list">
         <ul>
-          <li><a href="https://squareup.com/appointments/book/m56hqg7x5peigt/LW3NV5ZDJP453/start" target="_blank">予約サイト</a></li>
+          <li><a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="repeat" data-gtm-cta-position="reserve_page">Squareで再予約する</a></li>
+          <li><a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="reserve_page">LINEで施術を相談する</a></li>
+          <li class="reserve_sub"><a href="{{ config('salon.reservation.hotpepper.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_hotpepper_click" data-gtm-provider="hotpepper" data-gtm-customer-type="new" data-gtm-cta-position="reserve_page">HotPepperで空き時間を見る</a></li>
         </ul>
       </div>
       <p class="date">営業時間</p>
-      <p>平日：10:00〜20:00(火曜定休)<br>土日祝：10:00〜20:00</p>
+      <p>平日：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}（{{ config('salon.business_hours.closed_day_label') }}）<br>土日祝：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}</p>
     </div>
   </div>
 </section>

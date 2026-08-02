@@ -12,23 +12,27 @@ main {
 }
 
 #about1 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img headline" "img body";
+  align-items: center;
+  column-gap: 3rem;
+  row-gap: 1rem;
   width: 950px;
   margin: 0 auto 5rem;
-  height: 40rem;
 }
 
 #about1 .about1_img {
-  width: 60%;
+  grid-area: img;
 }
 
 #about1 .content1 {
-  width: 170px;
-  font-size: 1.6rem;
+  grid-area: body;
+  width: auto;
+  font-size: 1.5rem;
   text-align: left;
-  line-height: 2.5rem;
-  writing-mode: vertical-rl;
+  line-height: 2.6rem;
+  writing-mode: horizontal-tb;
 }
 
 #about1 .content1 span {
@@ -36,13 +40,15 @@ main {
 }
 
 #about1 .content2 {
-  width: 180px;
+  grid-area: headline;
+  align-self: end;
+  width: auto;
   text-align: left;
-  writing-mode: vertical-rl;
-  font-size: 2.6rem;
-  line-height: 5.4rem;
-  letter-spacing: 0.24rem;
-  color: #666;
+  writing-mode: horizontal-tb;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  color: #457a67;
   font-weight: normal;
   font-family: serif;
 }
@@ -53,25 +59,26 @@ main {
 
 #about2 {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
   width: 940px;
   margin: 0 auto;
-  height: 75rem;
 }
 
 #about2 .about2_img {
-  width: 60%;
+  width: 50%;
   object-fit: contain;
   order: 2;
 }
 
 #about2 .content1 {
-  width: 240px;
+  width: auto;
+  flex: 1;
   text-align: left;
-  writing-mode: vertical-rl;
-  font-size: 1.4rem;
-  line-height: 2.5rem;
-  margin-left: 4.5rem;
+  writing-mode: horizontal-tb;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  margin-left: 0;
   order: 1;
 }
 
@@ -94,10 +101,8 @@ main {
   }
 
   #about #about1 {
+    display: block;
     width: auto;
-    justify-content: center;
-    flex-flow: column;
-    order: 1;
     height: auto;
   }
 
@@ -109,8 +114,8 @@ main {
   #about1 .content1 {
     width: auto;
     writing-mode: horizontal-tb;
-    font-size: 1.4rem;
-    order: 3;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
     text-align: left;
   }
 
@@ -121,11 +126,10 @@ main {
   #about1 .content2 {
     width: auto;
     writing-mode: horizontal-tb;
-    order: 2;
-    font-size: 2.2rem;
-    line-height: 4.5rem;
-    color: #666;
-    margin: 3.5rem 0 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #457a67;
+    margin: 2.5rem 0 1.5rem;
   }
 
   #about2 {
@@ -182,7 +186,7 @@ main {
 /*スタッフ紹介*/
 
 #staff {
-  background: #f4f6f4;
+  background: #f7f4ef;
 }
 
 #staff .information {

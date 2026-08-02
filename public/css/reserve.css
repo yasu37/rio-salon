@@ -19,19 +19,29 @@ main {
 
 #inquiry ul li {
   width: auto;
-  background: #B2DAD5;
+  background: #008475;
   border-radius: 0.5rem;
   margin: 1rem 0;
   font-size: 2rem;
   color: #fff;
-  color: #666;
 }
 
 #inquiry ul li a {
   display: inline-block;
   width: 100%;
   padding: 1.5rem 0;
-  color: #666;
+  color: #fff;
+}
+
+#inquiry ul li.reserve_sub {
+  background: none;
+  border: 1px solid #008475;
+  font-size: 1.4rem;
+}
+
+#inquiry ul li.reserve_sub a {
+  padding: 1rem 0;
+  color: #008475;
 }
 
 #inquiry .date {
@@ -72,17 +82,18 @@ main {
 
 #rio_sns ul {
   width: 90%;
+  max-width: 500px;
   margin: 2rem auto 0;
-  margin-top: 2rem;
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 #rio_sns ul li {
-  width: 31%;
-  background: #B2DAD5;
+  flex: 1;
+  background: #008475;
   border-radius: 0.5rem;
 }
 
@@ -90,7 +101,7 @@ main {
   display: block;
   padding: 1.5rem 0;
   font-size: 2rem;
-  color: #666;
+  color: #fff;
 }
 
 /*サイトの横幅が600px以下*/

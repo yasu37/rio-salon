@@ -3,59 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="水戸市のリオ鍼灸サロンのもみほぐしメニューをご紹介します。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/menu/menu.css">
   <link rel="stylesheet" href="../css/components/accordion.css">
   <title>もみほぐしメニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <link rel="canonical" href="https://rio-salon.com/menu/menu8">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rio-salon.com/menu/menu8">
+  <meta property="og:title" content="もみほぐしメニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-">
+  <meta property="og:site_name" content="リオ鍼灸サロン">
+  <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
+  <meta name="twitter:card" content="summary">
   <style>
     #menu_list .menu_course .button_menu8 {
       background: #B2DAD5;
     }
   </style>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WTVF47M');</script>
-  <!-- End Google Tag Manager -->
+  <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
-  <main>
+  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => 'もみほぐし']]" />
+  <main data-gtm-view="view_menu" data-gtm-menu-name="もみほぐし">
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">もみほぐし</x-slot>
       <x-slot name="image_src">../img/course5.jpg</x-slot>
       <x-slot name="image_alt">もみほぐしの施術写真</x-slot>
       <x-slot name="menu_explanation">【もみほぐしについて】</x-slot>
-      <x-slot name="menu_description">洋服の上からお身体をもみほぐしていくコース。お客様のご要望や悩みなどお伺いしていきながら施術していきます。<br>
-        お着替えのご準備もございますのでお気軽にご来店ください。
+      <x-slot name="menu_description">肩や腰の張りが気になるけれど、鍼は少し不安。そんな方へ、洋服の上からお身体をもみほぐしていくコースです。<br>
+        □肩こり・腰の張りが気になる方に<br>
+        □鍼を使わずにケアしたい方に<br>
+        □着替えなしで気軽に受けたい方に<br>
+        ご要望やお悩みをお伺いしながら施術します。お着替えのご準備もございますので、お気軽にご来店ください。
       </x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 60分</x-slot>
-        <x-slot name="menu_concept">【全身の慢性こり改善！】</x-slot>
+        <x-slot name="menu_concept">【慢性的なこりが気になる方に】</x-slot>
         <x-slot name="time">60分</x-slot>
-        <x-slot name="price">￥7,200</x-slot>
+        <x-slot name="price">7,200円（税込）</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 90分</x-slot>
         <x-slot name="menu_concept">【体をゆっくり休めたい方へ】</x-slot>
         <x-slot name="time">90分</x-slot>
-        <x-slot name="price">￥10,500</x-slot>
+        <x-slot name="price">10,500円（税込）</x-slot>
       </x-menu.accordion_simple>
       <x-menu.accordion_simple>
         <x-slot name="menu_name">全身もみほぐし 120分</x-slot>
         <x-slot name="menu_concept">【ご自身へのご褒美コース】</x-slot>
         <x-slot name="time">120分</x-slot>
-        <x-slot name="price">￥13,800</x-slot>
+        <x-slot name="price">13,800円（税込）</x-slot>
       </x-menu.accordion_simple>
     </section>
   </main>

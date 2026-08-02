@@ -3,38 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="水戸市のリオ鍼灸サロンのブライダル鍼灸メニュー。結婚式に向けたコースをご紹介します。">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/menu/menu.css">
   <link rel="stylesheet" href="../css/components/accordion.css">
   <title>ブライダル鍼灸メニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <link rel="canonical" href="https://rio-salon.com/menu/menu10">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rio-salon.com/menu/menu10">
+  <meta property="og:title" content="ブライダル鍼灸メニュー|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-">
+  <meta property="og:site_name" content="リオ鍼灸サロン">
+  <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
+  <meta name="twitter:card" content="summary">
   <style>
     #menu_list .menu_course .button_menu10 {
       background: #B2DAD5;
     }
   </style>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WTVF47M');</script>
-  <!-- End Google Tag Manager -->
+  <x-gtm />
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <x-menu.header></x-menu.header>
-  <main>
+  <x-breadcrumb :items="[['name' => 'メニュー&料金', 'url' => '/menu/menu1'], ['name' => 'ブライダル鍼灸']]" />
+  <main data-gtm-view="view_menu" data-gtm-menu-name="ブライダル鍼灸">
     <x-menu.menu_list></x-menu.menu_list>
     <x-menu.menu_overview>
       <x-slot name="menu_name">ブライダル鍼灸</x-slot>
       <x-slot name="image_src">../img/course26.jpg</x-slot>
       <x-slot name="image_alt">花嫁の写真</x-slot>
       <x-slot name="menu_explanation">【ブライダル鍼灸について】</x-slot>
-      <x-slot name="menu_description">結婚式に向けて、新婦様が人生で最高によりキレイになっていただくため、美容鍼灸・エステ、漢方浴を組合わせながら、お身体の内側と外側を同時に働きかけ、表面的な美しさはもちろん、内面からの健康美と素肌美を引き出し、お身体全体のコンディションを整えていきます。</x-slot>
+      <x-slot name="menu_description">人生の特別な一日を、万全のコンディションで迎えたい花嫁様へ。美容鍼灸・エステ・漢方浴などを組み合わせてご提案するコースです。<br>
+        □挙式に向けてお肌を整えたい方に<br>
+        □直前の集中ケアをご希望の方に<br>
+        □身体の内側からコンディションを整えたい方に</x-slot>
     </x-menu.menu_overview>
     <section class="menu_course">
       <div class="bridal_img">
@@ -45,13 +49,13 @@
       </div>
       <x-menu.accordion>
         <x-slot name="menu_name">スペシャル1Dayコース 180分</x-slot>
-        <x-slot name="menu_concept">【挙短期中集中ケア。ご来店から3時間でお仕上げコース】</x-slot>
-        <x-slot name="menu_description">「酵素」と「クレイ」の作用でお肌に負担なく角質ケア。<br>鍼でツボや経路を刺激することで、表情筋の凝りほぐし肌のターンオーバーを促進し、肌の内部にアプローチします。最後に、高濃度美容液マスクでお肌に栄養成分を吸収させます。<br>姿勢矯正は理想の肩甲骨・鎖骨クッキリ、猫背改善、スタイルアップ効果などなりたい姿へ導きます。</x-slot>
+        <x-slot name="menu_concept">【挙式直前の短期集中ケア。ご来店から3時間のお仕上げコース】</x-slot>
+        <x-slot name="menu_description">「酵素」と「クレイ」の作用でお肌に負担をかけずに角質ケアを行います。<br>鍼でツボや経絡を刺激し、表情筋のコリをほぐしていきます。最後に、高濃度美容液マスクで仕上げます。<br>姿勢矯正オイルトリートメントでは、肩甲骨まわりや姿勢のケアを行います。施術後の感じ方には差があります。</x-slot>
         <x-slot name="treatment">素肌美人美容鍼コース120分 × 姿勢矯正オイルトリートメント60分<br><br>
           ※シェービングご希望のお客様別途5000円(税込)
         </x-slot>
         <x-slot name="time">180分</x-slot>
-        <x-slot name="price">￥24,000</x-slot>
+        <x-slot name="price">24,000円（税込）</x-slot>
       </x-menu.accordion>
       <div class="bridal_img">
         <picture>
@@ -74,7 +78,7 @@
           ※シェービングご希望のお客様別途5000円(税込)
         </x-slot>
         <x-slot name="time">4回コース</x-slot>
-        <x-slot name="price">￥49,800</x-slot>
+        <x-slot name="price">49,800円（税込）</x-slot>
       </x-menu.accordion_menu_description>
       <div class="bridal_img">
         <picture>
@@ -83,7 +87,7 @@
         </picture>
       </div>
       <x-menu.accordion_menu_description>
-        <x-slot name="menu_name">挙式2~3ヶ月前 : 8回コース</x-slot>
+        <x-slot name="menu_name">2～3ヶ月ベーシックプラン : 8回コース</x-slot>
         <x-slot name="menu_concept">【結婚式・撮影に向けて最高に綺麗になりたい方におすすめ】</x-slot>
         <x-slot name="menu_description">
           ・1回目<br>
@@ -95,7 +99,7 @@
           ・4回目<br>
           【美容鍼灸90分 × 姿勢矯正オイルトリートメント40分 × 漢方浴40分】<br><br>
           ・5回目<br>
-          【カーボキシ―高濃度炭酸パックコース60分 × 姿勢矯正オイルトリートメント60分】<br><br>
+          【カーボキシー高濃度炭酸フェイシャル70分 × 姿勢矯正オイルトリートメント60分】<br><br>
           ・6回目<br>
           【海藻プレミアムフェイシャル60分 × 姿勢矯正オイルトリートメント60分】<br><br>
           ・7回目<br>
@@ -107,7 +111,7 @@
           ・2ヶ月前にご予約のお客様は15%引き！ 149,000円→134,100円
         </x-slot>
         <x-slot name="time">8回コース</x-slot>
-        <x-slot name="price">￥149,000</x-slot>
+        <x-slot name="price">149,000円（税込）</x-slot>
       </x-menu.accordion_menu_description>
     </section>
   </main>

@@ -26,6 +26,8 @@
 
 #location .google_map {
   width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
 }
 
 #location .information {
@@ -38,13 +40,21 @@ th {
   text-align: left;
 }
 
-#location .img_box {
+th a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#location .img_box,
+#gallery .img_box {
   display: flex;
   list-style: none;
   padding-top: 2rem;
+  gap: 1rem;
 }
 
-#location .img_box li {
+#location .img_box li,
+#gallery .img_box li {
   width: 33%;
 }
 

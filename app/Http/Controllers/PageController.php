@@ -45,6 +45,11 @@ class PageController extends Controller
         return view('menu.menu10');
     }
 
+    //初めての方へ
+    public function firstVisit() {
+        return view('first-visit');
+    }
+
     //質問
     public function question() {
         return view('question');

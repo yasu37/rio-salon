@@ -66,16 +66,17 @@ details[open] .icon {
 }
 
 details .content {
-  background-color: #f6f6f6;
+  background-color: #f7f4ef;
   padding: 24px 48px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 16px;
+  gap: 20px;
 }
 
 details .content p {
   margin-top: 0.5rem;
+  line-height: 1.9;
 }
 
 .frame {

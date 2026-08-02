@@ -3,11 +3,11 @@
 <section id="reserved">
   <div class="container">
     <div class="infomation">
-      <p class="number"><span>ご予約・ご相談はこちら</span><br>029-279-8639</p>
-      <p class="date">平日：10:00〜20:00(火曜定休)<br>土日祝：10:00〜20:00</p>
+      <p class="number"><span>ご予約・ご相談はこちら</span><br><a href="tel:{{ config('salon.tel_href') }}" data-gtm-event="reservation_phone_click" data-gtm-provider="phone" data-gtm-cta-position="home_final_cta">{{ config('salon.tel') }}</a></p>
+      <p class="date">平日：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}（{{ config('salon.business_hours.closed_day_label') }}）<br>土日祝：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}</p>
     </div>
     <div class="button5">
-      <a href="./reserve">ご予約はこちら</a>
+      <a href="./reserve" data-gtm-event="begin_booking" data-gtm-cta-position="home_final_cta">予約方法を見る</a>
     </div>
   </div>
 </section>
