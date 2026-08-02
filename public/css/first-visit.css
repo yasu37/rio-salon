@@ -19,14 +19,17 @@
   font-size: 1.5rem;
   line-height: 1.8;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 #first_visit .first_visit_reserve_list {
   list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 #first_visit .first_visit_reserve_list li {
-  background: #B2DAD5;
+  background: #008475;
   border-radius: 0.5rem;
   margin: 1rem 0;
 }
@@ -40,12 +43,13 @@
   text-align: center;
 }
 
-#first_visit .first_visit_reserve_sub {
+#first_visit .first_visit_reserve_list li.first_visit_reserve_sub {
   background: none;
+  border: 1px solid #008475;
 }
 
-#first_visit .first_visit_reserve_sub a {
-  color: #999;
+#first_visit .first_visit_reserve_list li.first_visit_reserve_sub a {
+  color: #008475;
   font-size: 1.3rem;
   font-weight: normal;
 }
@@ -53,6 +57,9 @@
 #first_visit .first_visit_flow {
   list-style: none;
   counter-reset: flow;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 #first_visit .first_visit_flow li {
@@ -61,6 +68,7 @@
   font-size: 1.5rem;
   line-height: 1.8;
   border-bottom: 1px solid #eee;
+  text-align: left;
 }
 
 #first_visit .first_visit_flow li::before {

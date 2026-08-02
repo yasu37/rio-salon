@@ -12,7 +12,6 @@
       <ul class="first_visit_reserve_list">
         <li><a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="first_visit_page">Squareで予約する</a></li>
         <li><a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="first_visit_page">LINEで相談する</a></li>
-        <li><a href="tel:{{ config('salon.tel_href') }}" data-gtm-event="reservation_phone_click" data-gtm-provider="phone" data-gtm-cta-position="first_visit_page">電話で空き状況を確認する（{{ config('salon.tel') }}）</a></li>
         <li class="first_visit_reserve_sub"><a href="{{ config('salon.reservation.hotpepper.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_hotpepper_click" data-gtm-provider="hotpepper" data-gtm-customer-type="new" data-gtm-cta-position="first_visit_page">HotPepperで予約する</a></li>
       </ul>
     </div>
@@ -25,13 +24,12 @@
         <li><strong>お着替え</strong><br>施術内容に応じてお着替えいただく場合があります。</li>
         <li><strong>施術</strong><br>カウンセリング内容に合わせて施術を行います。</li>
         <li><strong>お会計</strong></li>
-        <li><strong>次回のご提案</strong><br>今後のペースなどについてご案内します。</li>
       </ol>
     </div>
 
     <div class="first_visit_block">
       <h2>鍼の刺激について</h2>
-      <p>使用する鍼は髪の毛ほど細いものですが、部位やその日の体調によって刺激を感じる場合があります。施術後に内出血、赤み、眠気、だるさなどが生じる場合があります。感じ方や経過には個人差がありますので、体調がすぐれない場合はご自宅でゆっくりお過ごしください。ご不安な点は施術前にお気軽にご相談ください。</p>
+      <p>使用する鍼は髪の毛ほど細いものですが、部位やその日の体調によって刺激を感じる場合があります。施術後に内出血、赤み、眠気、だるさなどが生じる場合があります。ご不安な点は施術前にお気軽にご相談ください。</p>
     </div>
 
     <div class="first_visit_block">

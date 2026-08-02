@@ -11,7 +11,6 @@
       <li><span class="flow_step">3</span>お着替え</li>
       <li><span class="flow_step">4</span>施術</li>
       <li><span class="flow_step">5</span>お会計</li>
-      <li><span class="flow_step">6</span>次回のご提案</li>
     </ol>
     <p class="flow_more">
       <a href="./first-visit" target="_self">初めての方へ（持ち物・注意事項など）</a>

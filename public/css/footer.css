@@ -25,6 +25,12 @@ footer .number .number_color {
   font-size: 3.5rem;
 }
 
+footer .number a,
+footer .number .number_color a {
+  color: inherit;
+  text-decoration: none;
+}
+
 footer .date {
   display: flex;
   justify-content: center;

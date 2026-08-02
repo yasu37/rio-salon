@@ -1,6 +1,52 @@
+/*
+  トップページのセクション区切り。
+  白とアイボリーを交互に敷き、境目には細い罫線を入れることで、
+  余白だけに頼らずセクションの切れ目が視覚的に分かるようにする。
+*/
+#trust,
+#home_campaign,
+#first_visit_flow,
+#reviews,
+#location {
+  background: #fff;
+}
+
+#concerns,
+#reasons,
+#gallery {
+  background: #f7f4ef;
+}
+
+#ceo {
+  background: #f7f4ef !important;
+}
+
+#trust,
+#concerns,
+#home_campaign,
+#reasons,
+#first_visit_flow,
+#ceo,
+#reviews,
+#gallery,
+#location {
+  border-top: 1px solid #e8e2d9;
+}
+
+#concerns,
+#home_campaign,
+#reasons,
+#first_visit_flow,
+#reviews,
+#gallery,
+#location {
+  padding-bottom: 5rem;
+}
+
 /*信頼要素*/
 #trust {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #trust .trust_list {
@@ -14,7 +60,7 @@
 }
 
 #trust .trust_list li {
-  background: #008475;
+  background: #9c6540;
   color: #fff;
   border-radius: 2rem;
   padding: 0.8rem 1.6rem;
@@ -33,7 +79,7 @@
 #concerns .concerns_list a {
   display: block;
   background: #fff;
-  border: 1px solid #B2DAD5;
+  border: 1px solid #e8e2d9;
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
   text-align: center;
@@ -60,17 +106,41 @@
 }
 
 #recommended_menu .recommended_menu_list li {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border: 1px solid #eee;
   border-radius: 0.5rem;
-  padding: 2rem 1.5rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+#recommended_menu .recommended_menu_img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+#recommended_menu .recommended_menu_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#recommended_menu .recommended_menu_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1.5rem;
 }
 
 #recommended_menu .recommended_menu_tag {
   display: inline-block;
-  background: #008475;
-  color: #fff;
+  background: #f3e3d3;
+  color: #7a4f36;
   font-size: 1.2rem;
+  font-weight: bold;
   border-radius: 1rem;
   padding: 0.3rem 1rem;
   margin-bottom: 1rem;
@@ -78,8 +148,13 @@
 
 #recommended_menu .recommended_menu_name {
   font-size: 1.9rem;
+  line-height: 1.4;
   font-weight: bold;
+  color: #3d332b;
   margin-bottom: 0.8rem;
+  min-height: 5.32rem;
+  display: flex;
+  align-items: center;
 }
 
 #recommended_menu .recommended_menu_concept {
@@ -87,6 +162,7 @@
   line-height: 1.7;
   margin-bottom: 1rem;
   color: #666;
+  min-height: 7.14rem;
 }
 
 #recommended_menu .recommended_menu_time,
@@ -96,9 +172,9 @@
 }
 
 #recommended_menu .recommended_menu_price {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #008475;
+  color: #4a453f;
   margin-bottom: 1.5rem;
 }
 
@@ -106,6 +182,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  margin-top: auto;
 }
 
 #recommended_menu .recommended_menu_actions a {
@@ -115,16 +192,8 @@
   border-radius: 0.3rem;
   font-size: 1.4rem;
   font-weight: bold;
-}
-
-#recommended_menu .recommended_menu_actions a:first-child {
   border: 1px solid #008475;
   color: #008475;
-}
-
-#recommended_menu .recommended_menu_actions a:last-child {
-  background: #008475;
-  color: #fff;
 }
 
 #recommended_menu .recommended_menu_more {
@@ -139,6 +208,148 @@
   text-decoration: underline;
 }
 
+/*期間限定キャンペーン*/
+#home_campaign .campaign_teaser_list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#home_campaign .campaign_teaser_list li {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e8e2d9;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#home_campaign .campaign_teaser_img {
+  width: 100%;
+  aspect-ratio: 768 / 461;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+#home_campaign .campaign_teaser_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home_campaign .campaign_teaser_rank {
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0 0 1rem 1.8rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0.4rem 1.2rem;
+}
+
+#home_campaign .campaign_teaser_rank.rank-1 {
+  background: #c9974c;
+}
+
+#home_campaign .campaign_teaser_rank.rank-2 {
+  background: #8a8f98;
+}
+
+#home_campaign .campaign_teaser_rank.rank-3 {
+  background: #a0673c;
+}
+
+#home_campaign .campaign_teaser_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1.8rem;
+}
+
+#home_campaign .campaign_teaser_tag {
+  display: inline-block;
+  background: #f3e3d3;
+  color: #7a4f36;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+#home_campaign .campaign_teaser_name {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #3d332b;
+  margin-bottom: 1rem;
+  min-height: 4.76rem;
+  display: flex;
+  align-items: center;
+}
+
+#home_campaign .campaign_teaser_concept {
+  font-size: 1.4rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+#home_campaign .campaign_teaser_time,
+#home_campaign .campaign_teaser_price {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+#home_campaign .campaign_teaser_time {
+  padding-top: 1.2rem;
+  border-top: 1px solid #eee;
+}
+
+#home_campaign .campaign_teaser_price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #008475;
+  margin-bottom: 1.8rem;
+}
+
+#home_campaign .campaign_teaser_actions {
+  margin-top: auto;
+}
+
+#home_campaign .campaign_teaser_actions a {
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 1px solid #008475;
+  color: #008475;
+}
+
+#home_campaign .campaign_teaser_more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#home_campaign .campaign_teaser_more a {
+  color: #008475;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 780px) {
+  #home_campaign .campaign_teaser_list {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*選ばれる理由*/
 #reasons .reasons_list {
   list-style: none;
@@ -147,10 +358,20 @@
   gap: 2rem;
 }
 
+#reasons .reasons_list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #e8e2d9;
+  border-radius: 0.5rem;
+  padding: 2rem 1.8rem;
+}
+
 #reasons .reasons_ttl {
   font-size: 1.7rem;
   font-weight: bold;
-  color: #008475;
+  color: #9c6540;
   margin-bottom: 0.8rem;
 }
 
@@ -197,12 +418,16 @@
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
-  background: #008475;
+  background: #9c6540;
   color: #fff;
   font-weight: bold;
 }
 
 /*口コミ*/
+#reviews {
+  padding-bottom: 3rem;
+}
+
 #reviews .reviews_link {
   text-align: center;
 }

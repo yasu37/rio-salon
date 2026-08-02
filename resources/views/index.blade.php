@@ -8,11 +8,10 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/index/article1.css">
-  <link rel="stylesheet" href="css/index/renewal.css">
   <link rel="stylesheet" href="css/index/article2.css">
   <link rel="stylesheet" href="css/index/article5.css">
   <link rel="stylesheet" href="css/index/article7.css">
-  <link rel="stylesheet" href="css/question.css">
+  <link rel="stylesheet" href="css/index/renewal.css">
   <title>リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
   <link rel="canonical" href="https://rio-salon.com/">
   <meta property="og:type" content="website">
@@ -63,13 +62,12 @@
     <x-index.article1></x-index.article1>
     <x-index.trust></x-index.trust>
     <x-index.concerns></x-index.concerns>
-    <x-index.recommended-menu></x-index.recommended-menu>
+    <x-index.campaign-teaser></x-index.campaign-teaser>
     <x-index.reasons></x-index.reasons>
     <x-index.first-visit-flow></x-index.first-visit-flow>
     <x-index.article2></x-index.article2>
     <x-index.reviews></x-index.reviews>
     <x-index.gallery></x-index.gallery>
-    <x-question></x-question>
     <x-index.access></x-index.access>
     <x-index.article5></x-index.article5>
   </main>

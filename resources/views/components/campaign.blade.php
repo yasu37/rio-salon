@@ -22,6 +22,9 @@
             <p class="menu_price">{{ $menu_price }}</p>
         </div>
     </div>
+    @isset($menu_description)
+    <p class="menu_description">{{ $menu_description }}</p>
+    @endisset
     <div class="conditions">
         <div class="conditions_text">
             <p><ご利用条件></p>
