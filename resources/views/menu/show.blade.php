@@ -4,6 +4,7 @@
   $pages = config('menus.pages');
   $page = $pages[$slug];
   $yen = fn ($n) => number_format($n) . '円';
+  $areas = ['face' => 'お顔', 'face_neck' => 'お顔＋首・肩', 'face_body' => 'お顔＋からだ'];
 @endphp
 @section('title', $page['title'])
 @section('description', $page['description'])
@@ -64,8 +65,11 @@
           @foreach ($group['items'] as $item)
             <li class="p-item">
               <div class="p-item__head">
+                @if (!empty($item['area']))
+                  <span class="p-area p-area--{{ $item['area'] }}">{{ $areas[$item['area']] }}</span>
+                @endif
                 <h3 class="p-item__name">{{ $item['name'] }}</h3>
-                @if ($item['concept'])
+                @if ($item['concept'] && empty($item['for']))
                   <p class="p-item__concept">{{ $item['concept'] }}</p>
                 @endif
               </div>
@@ -76,14 +80,38 @@
                   <span class="p-item__first">はじめての方 <strong>{{ $yen($item['first_price']) }}</strong></span>
                 @endif
               </div>
-              @if ($item['text'])
-                <p class="p-item__text">{!! nl2br(e($item['text'])) !!}</p>
-              @endif
-              @if ($item['flow'])
-                <details class="p-item__flow">
-                  <summary>施術の流れ</summary>
-                  <p>{!! nl2br(e($item['flow'])) !!}</p>
-                </details>
+              @if (!empty($item['for']))
+                {{-- 「こんな方に」と施術の内容を先に見せ、説明文と施術の流れは「詳しく見る」の中に入れる --}}
+                <p class="p-item__for"><span>こんな方に</span>{{ $item['for'] }}</p>
+                @if (!empty($item['tags']))
+                  <ul class="p-item__tags" aria-label="施術の内容">
+                    @foreach ($item['tags'] as $tag)
+                      <li>{{ $tag }}</li>
+                    @endforeach
+                  </ul>
+                @endif
+                @if ($item['text'] || $item['flow'])
+                  <details class="p-item__flow p-item__more">
+                    <summary>詳しく見る</summary>
+                    @if ($item['text'])
+                      <p class="p-item__text">{!! nl2br(e($item['text'])) !!}</p>
+                    @endif
+                    @if ($item['flow'])
+                      <p class="p-item__flow-title">施術の流れ</p>
+                      <p class="p-item__flow-body">{!! nl2br(e($item['flow'])) !!}</p>
+                    @endif
+                  </details>
+                @endif
+              @else
+                @if ($item['text'])
+                  <p class="p-item__text">{!! nl2br(e($item['text'])) !!}</p>
+                @endif
+                @if ($item['flow'])
+                  <details class="p-item__flow">
+                    <summary>施術の流れ</summary>
+                    <p>{!! nl2br(e($item['flow'])) !!}</p>
+                  </details>
+                @endif
               @endif
               @foreach ($item['notes'] as $note)
                 <p class="p-item__note">{{ $note }}</p>
