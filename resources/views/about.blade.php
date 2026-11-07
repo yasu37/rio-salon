@@ -34,6 +34,27 @@
     </div>
   </section>
 
+  @php($salonPhotos = [
+    ['name' => 'salon1', 'alt' => '観葉植物と木の棚がある受付と待合スペース', 'caption' => '受付・待合', 'width' => 1280, 'height' => 960],
+    ['name' => 'salon2', 'alt' => 'カーテンで仕切られた個室が並ぶ通路', 'caption' => '個室の並ぶ通路', 'width' => 1280, 'height' => 960],
+    ['name' => 'salon3', 'alt' => '「health & beauty RIO鍼灸サロン」と書かれた入口の看板', 'caption' => '入口の看板', 'width' => 640, 'height' => 480],
+  ])
+  <section class="t-section p-salon">
+    <div class="t-wrap">
+      <h2 class="t-heading">サロンの様子</h2>
+      <ul class="p-salon__list">
+        @foreach ($salonPhotos as $photo)
+          <li>
+            <figure>
+              <div class="p-salon__photo"><x-top.photo :name="$photo['name']" :alt="$photo['alt']" :width="$photo['width']" :height="$photo['height']" /></div>
+              <figcaption>{{ $photo['caption'] }}</figcaption>
+            </figure>
+          </li>
+        @endforeach
+      </ul>
+    </div>
+  </section>
+
   @foreach (collect(config('staff'))->where('status', 'active')->sortBy('order') as $member)
     <section class="t-section p-staff" data-gtm-view="view_staff">
       <div class="t-wrap">
