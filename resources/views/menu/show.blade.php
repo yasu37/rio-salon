@@ -4,7 +4,7 @@
   $pages = config('menus.pages');
   $page = $pages[$slug];
   $yen = fn ($n) => number_format($n) . '円';
-  $areas = ['face' => 'お顔', 'face_neck' => 'お顔＋首・肩', 'face_body' => 'お顔＋からだ'];
+  $areas = ['face' => 'お顔', 'face_neck' => 'お顔＋首・肩', 'face_body' => 'お顔＋からだ', 'body' => 'からだ', 'hand' => '手', 'scalp' => '頭皮', 'legs' => '足', 'belly' => 'お腹'];
 @endphp
 @section('title', $page['title'])
 @section('description', $page['description'])

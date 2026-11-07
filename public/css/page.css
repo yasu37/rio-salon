@@ -52,6 +52,7 @@
 /* 施術の範囲（お顔／お顔＋からだ） */
 .p-area { align-self: flex-start; font-size: 12.5px; font-weight: 700; padding: 1px 10px; border-radius: 999px; background: var(--t-mint); color: #1F4A44; margin-bottom: 4px; }
 .p-area--face_body, .p-area--face_neck { background: var(--t-teal); color: var(--t-white); }
+.p-area--body, .p-area--hand, .p-area--scalp, .p-area--legs, .p-area--belly { background: var(--t-apricot-soft); color: var(--t-apricot-ink); }
 /* こんな方に・施術の内容 */
 .p-item__for { display: flex; flex-direction: column; gap: 2px; font-weight: 700; color: var(--t-ink); line-height: 1.7; }
 .p-item__for span { font-size: 12.5px; font-weight: 700; color: var(--t-teal-dark); letter-spacing: .04em; }
