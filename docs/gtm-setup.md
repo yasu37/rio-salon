@@ -31,12 +31,13 @@
 | イベント名 | いつ出るか |
 |---|---|
 | `select_menu` | メニューの詳しいページへのリンクが押されたとき |
-| `select_content` | コラムから「リオについて」「初めての方へ」などのページへのリンクが押されたとき |
+| `select_content` | トップページやコラムから「リオについて」「初めての方へ」などのページへのリンクが押されたとき |
 | `hotpepper_reviews_click` | 「HotPepperで口コミを見る」が押されたとき |
 | `view_menu` | メニューの欄が画面に表示されたとき |
 | `view_access` | アクセスの欄が画面に表示されたとき |
 | `view_staff` | スタッフ紹介の欄が画面に表示されたとき |
 | `view_faq` | よくある質問の欄が画面に表示されたとき |
+| `view_reviews` | トップページの「お客様の声」の欄が画面に表示されたとき |
 | `click_google_map` | ページ内の地図が押されたとき |
 
 `view_` で始まる合図は、その欄が**実際に画面に表示されたとき**に1回だけ出ます。「そのページのどこまで読まれたか」を知るために使います。
@@ -59,11 +60,15 @@
 | `mobile_fixed` | スマホの画面下に固定されたボタン |
 | `footer` | ページ下部の電話番号 |
 | `footer_sns` | ページ下部のLINEアイコン |
-| `home_campaign` | トップページの限定メニュー |
+| `home_greeting` | トップページのご挨拶の「院長のこと、もう少し」 |
+| `home_campaign` | トップページの季節のおすすめメニュー |
 | `home_recommended_menu` | トップページのおすすめメニュー |
-| `home_final_cta` | トップページ下部の予約案内 |
-| `home_access` | トップページのアクセス欄の電話番号 |
-| `home_sns` | トップページのSNS欄のLINE |
+| `home_menu_all` | トップページの「ほかのメニューと料金」 |
+| `home_first_visit` | トップページの「ご来店の流れと持ち物」 |
+| `home_letter` | トップページ最後のお手紙の欄（LINE相談・Web予約・電話・予約方法の一覧） |
+| `home_final_cta` | 旧トップページ下部の予約案内（リニューアル後は使われていません） |
+| `home_access` | トップページのアクセス欄（電話番号・Googleマップ） |
+| `home_sns` | 旧トップページのSNS欄のLINE（リニューアル後は使われていません） |
 | `home_reviews` | トップページの口コミ欄 |
 | `menu_page` | メニューページの「ご予約はこちら」 |
 | `campaign_page` | キャンペーンページの「ご予約はこちら」 |
@@ -115,7 +120,7 @@
 4. 「イベント名」に、次の1行をそのまま貼り付けます
 
    ```
-   ^(begin_booking|reservation_(square|hotpepper|line|phone)_click|hotpepper_reviews_click|select_menu|select_content|view_(menu|access|staff|faq)|click_google_map)$
+   ^(begin_booking|reservation_(square|hotpepper|line|phone)_click|hotpepper_reviews_click|select_menu|select_content|view_(menu|access|staff|faq|reviews)|click_google_map)$
    ```
 
 5. すぐ下の「**正規表現一致を使用**」に**チェックを入れます**（これを忘れると動きません）

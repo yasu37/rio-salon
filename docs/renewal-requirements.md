@@ -189,7 +189,23 @@ GTM（`GTM-WTVF47M`）とGoogle Analyticsで計測する。
 
 ---
 
-## 9. 次のステップ
+## 9. 実装状況（2026-11-07時点、ブランチ `renewal/phase1`）
+
+トップページを「親しみやすい案」のワイヤーフレームどおりに実装済み（本番未反映）。
+
+- 構成：ファーストビュー → ご挨拶 → こんなこと、ありませんか？ → 大切にしていること・できること → おすすめメニュー → お客様の声 → はじめての方へ → お店のこと・アクセス → 最後のお手紙
+- ファイル：`resources/views/index.blade.php`、`resources/views/components/top/*`、`public/css/top.css`
+- 文言・メニュー・口コミは `config/top.php` で管理。店舗情報は従来どおり `config/salon.php`
+- 写真は `public/img` の既存写真を仮で使用（about, ceo, course23, course3, course27, course8, location2, location6）。撮影後に差し替える
+- ヘッダー・フッター・スマホ固定ボタンはトップページ専用の新デザイン。ほかのページは旧デザインのまま（共通部分の刷新はフェーズ2）
+- 旧トップページの部品（`components/index/*`）は削除せず残している
+
+**許可・確認待ちのためスキップしたもの**
+- 口コミ本文：`config/top.php` の `reviews` で `approved` を `true` にしたものだけ表示。許可が取れるまでは「お客様の声」の見出しと、HotPepperの評価・リンクのみ
+- 季節のおすすめメニュー：`config/top.php` の `seasonal` を設定すると表示（今は非表示）
+- 「エイジング美容鍼（顔＋全身）100分 13,800円」がSquareでも同額か
+
+## 10. 次のステップ
 
 1. 上記の確認事項に回答する
 2. アクセス解析で、改善前の数値（ベースライン）を記録する
