@@ -11,13 +11,50 @@
 @section('canonical', 'menu/' . $slug)
 @section('og_image', $page['groups'][0]['photo'] . '.jpg')
 
+{{-- 構造化データ：このページの施術と料金（Google が施術内容を理解しやすくするため） --}}
+@push('head')
+@php
+  $offers = collect($page['groups'])->flatMap(fn ($group) => $group['items'] ?? [])
+    ->filter(fn ($item) => !empty($item['price']))
+    ->map(fn ($item) => ['@type' => 'Offer', 'name' => $item['name'], 'price' => $item['price'], 'priceCurrency' => 'JPY'])
+    ->values()->all();
+  $serviceLd = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Service',
+    'name' => $page['h1'] ?? $page['nav'],
+    'description' => $page['description'],
+    'url' => 'https://rio-salon.com/menu/' . $slug,
+    'areaServed' => config('salon.address.prefecture') . config('salon.address.city'),
+    'provider' => [
+      '@type' => 'HealthAndBeautyBusiness',
+      '@id' => 'https://rio-salon.com/#salon',
+      'name' => config('salon.name'),
+      'url' => 'https://rio-salon.com/',
+      'telephone' => config('salon.tel_e164'),
+      'address' => [
+        '@type' => 'PostalAddress',
+        'postalCode' => config('salon.address.postal_code'),
+        'streetAddress' => config('salon.address.street'),
+        'addressLocality' => config('salon.address.city'),
+        'addressRegion' => config('salon.address.prefecture'),
+        'addressCountry' => 'JP',
+      ],
+    ],
+  ];
+  if ($offers) {
+    $serviceLd['hasOfferCatalog'] = ['@type' => 'OfferCatalog', 'name' => ($page['h1'] ?? $page['nav']) . 'のメニューと料金', 'itemListElement' => $offers];
+  }
+@endphp
+<script type="application/ld+json">{!! json_encode($serviceLd, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) !!}</script>
+@endpush
+
 @section('content')
 <x-breadcrumb :items="[['name' => 'メニューと料金', 'url' => '/menu/menu1'], ['name' => $page['nav']]]" />
 <main data-gtm-view="view_menu" data-gtm-menu-name="{{ $page['nav'] }}">
   <section class="p-head">
     <div class="t-wrap">
       <p class="p-head__eyebrow">メニューと料金</p>
-      <h1 class="p-head__title">{{ $page['nav'] }}</h1>
+      <h1 class="p-head__title">{{ $page['h1'] ?? $page['nav'] }}</h1>
       <nav class="p-tabs" aria-label="メニューの種類">
         <ul>
           @foreach ($pages as $key => $item)

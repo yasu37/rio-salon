@@ -11,6 +11,7 @@
   ];
 @endphp
 @section('title', 'よくある質問')
+@section('full_title', 'よくある質問（美容鍼・鍼灸）｜水戸市のリオ鍼灸サロン')
 @section('description', 'リオ鍼灸サロンによく寄せられるご質問。美容鍼灸について、鍼の刺激、通うペース、施術後の過ごし方などをご案内します。')
 @section('canonical', 'question')
 @push('head')

@@ -9,7 +9,8 @@
   ];
 @endphp
 @section('title', 'お知らせ')
-@section('description', 'リオ鍼灸サロンからのお知らせ一覧です。')
+@section('full_title', 'お知らせ｜水戸市のリオ鍼灸サロン')
+@section('description', '水戸市米沢町のリオ鍼灸サロンからのお知らせ。オープンのご案内や、コラムの公開などをお知らせしています。')
 @section('canonical', 'news')
 
 @section('content')

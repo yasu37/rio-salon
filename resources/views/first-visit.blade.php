@@ -21,6 +21,7 @@
   ];
 @endphp
 @section('title', 'はじめての方へ')
+@section('full_title', 'はじめての方へ（施術の流れ・鍼の刺激）｜水戸市のリオ鍼灸サロン')
 @section('description', 'リオ鍼灸サロンにはじめてお越しの方へ。ご来店から施術までの流れ、鍼の刺激について、服装や駐車場、お支払い方法をご案内します。')
 @section('canonical', 'first-visit')
 @section('og_image', 'about.jpg')

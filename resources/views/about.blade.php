@@ -1,6 +1,7 @@
 {{-- リオについて --}}
 @extends('layouts.renewal')
 @section('title', 'リオについて')
+@section('full_title', 'リオについて・院長紹介｜水戸市のリオ鍼灸サロン')
 @section('description', 'リオ鍼灸サロンのご挨拶と院長紹介。筋肉・神経・リンパなどの西洋医学的な知見と東洋医学的な視点を組み合わせた施術をご提案しています。')
 @section('canonical', 'about')
 @section('og_image', 'location.jpg')

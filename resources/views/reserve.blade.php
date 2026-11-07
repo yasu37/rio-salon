@@ -2,6 +2,7 @@
 @extends('layouts.renewal')
 @php($hours = config('salon.business_hours'))
 @section('title', 'ご予約・お問い合わせ')
+@section('full_title', 'ご予約・お問い合わせ｜水戸市のリオ鍼灸サロン')
 @section('description', 'リオ鍼灸サロンのご予約方法。Web予約（Square）、LINE、HotPepper、お電話から、ご都合に合わせてお選びいただけます。')
 @section('canonical', 'reserve')
 
