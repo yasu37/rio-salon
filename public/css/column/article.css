@@ -280,3 +280,16 @@
 /* ポイントの箱：スマホで幅50%だと狭く、言葉の途中で改行されるため幅を広げる。印は読み込んでいないアイコン用フォントをやめて文字で出す */
 .p-article .point1 { width: auto; max-width: 480px; border-radius: 12px; }
 .p-article .point1 li:before { font-family: inherit; content: "▸"; color: var(--t-teal); }
+
+/* 更新日・まとめ・よくある質問（2026-11 追加） */
+.p-article .column_meta { font-size: 13px !important; color: var(--t-ink-3) !important; }
+.p-article .column_summary { margin: 24px 0; padding: 18px 20px; border-radius: 18px; background: var(--t-mint); }
+.p-article .column_summary_title { font-weight: 700; color: var(--t-teal-dark); margin-bottom: 8px; }
+.p-article .column_summary ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.p-article .column_summary li { position: relative; padding-left: 1.2em; line-height: 1.75; color: var(--t-ink); }
+.p-article .column_summary li::before { content: "▸"; position: absolute; left: 0; color: var(--t-teal); }
+.p-article .column_faq { margin: 12px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.p-article .column_faq > div { padding: 16px 18px; border-radius: 16px; border: 1px solid #DCEBE7; background: var(--t-white); }
+.p-article .column_faq dt { font-weight: 700; color: var(--t-ink); line-height: 1.7; }
+.p-article .column_faq dt::before { content: "Q. "; color: var(--t-teal); }
+.p-article .column_faq dd { margin: 8px 0 0; color: var(--t-ink-2); line-height: 1.85; }
