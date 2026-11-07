@@ -28,7 +28,6 @@ class PublicRoutesTest extends TestCase
             'menu9' => ['/menu/menu9'],
             'menu10' => ['/menu/menu10'],
             'campaign_term' => ['/campaign/term'],
-            'campaign_first' => ['/campaign/first'],
             'column1' => ['/column/column1'],
         ];
     }
@@ -39,6 +38,13 @@ class PublicRoutesTest extends TestCase
     public function test_public_page_returns_200(string $uri): void
     {
         $this->get($uri)->assertStatus(200);
+    }
+
+    public function test_campaign_first_redirects_permanently_to_campaign_term(): void
+    {
+        // 初回限定ページは campaign/term の「はじめての方の料金」にまとめた
+        $this->get('/campaign/first')->assertStatus(301);
+        $this->assertStringEndsWith('/campaign/term#first', $this->get('/campaign/first')->headers->get('Location'));
     }
 
     public function test_menu5_redirects_permanently_to_menu6(): void
