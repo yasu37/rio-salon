@@ -26,7 +26,7 @@
 
   <section class="t-section t-bg-mint p-split p-split--reverse">
     <div class="t-wrap">
-      <div class="p-split__photo"><x-top.photo name="location5" alt="窓のある明るい施術室" width="960" height="1280" /></div>
+      <div class="p-split__photo p-split__photo--portrait"><x-top.photo name="location5" alt="窓のある明るい施術室" width="960" height="1280" /></div>
       <div class="p-split__text">
         <h2 class="t-heading">気軽に集い、癒される場所に</h2>
         <p>東洋医学の分野である鍼灸、漢方、もみほぐしなどを通じて、からだのバランスを整えるお手伝いをしています。皆さまが気軽に集い、癒され、笑顔で過ごしていただける場所になるよう、心をこめておもてなしいたします。</p>

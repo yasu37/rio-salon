@@ -105,6 +105,8 @@
 .p-split .t-wrap { display: flex; flex-direction: column; gap: 20px; }
 .p-split__photo { border-radius: 24px; overflow: hidden; aspect-ratio: 3 / 2; }
 .p-split__photo img { width: 100%; height: 100%; object-fit: cover; }
+/* 縦長の写真は切り取らず、写真と同じ縦横比（3:4）で全体を見せる */
+.p-split__photo--portrait { aspect-ratio: 3 / 4; width: 100%; max-width: 360px; margin-inline: auto; }
 .p-split__text { display: flex; flex-direction: column; gap: 14px; color: var(--t-ink-2); }
 
 /* ---------- 院長紹介 ---------- */
@@ -160,7 +162,8 @@
 @media (min-width: 900px) {
   .p-split .t-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; }
   .p-split--reverse .p-split__photo { order: 2; }
-  .p-split--reverse .p-split__photo { aspect-ratio: 4 / 3; }
+  .p-split--reverse .p-split__photo:not(.p-split__photo--portrait) { aspect-ratio: 4 / 3; }
+  .p-split__photo--portrait { max-width: 400px; }
   .p-staff__inner { flex-direction: row; gap: 40px; align-items: flex-start; }
   .p-staff__photo { flex: none; width: 240px; }
   .p-flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
