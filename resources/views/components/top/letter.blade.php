@@ -1,10 +1,9 @@
-@php($owner = collect(config('staff'))->where('status', 'active')->sortBy('order')->first())
 <div class="t-wave t-wave--top" aria-hidden="true"></div>
 <section class="t-section t-letter" id="reserve">
   <div class="t-wrap t-narrow">
     <h2 class="t-heading">お会いできるのを、<br>楽しみにしています。</h2>
     <p>どのメニューがいいかわからない方も、まずはLINEで気軽にご相談ください。</p>
-    <p class="t-hand t-letter__sign">{{ config('salon.name') }}　{{ $owner['name'] ?? '' }}</p>
+    <p class="t-hand t-letter__sign">{{ config('salon.name') }}　院長</p>
     <div class="t-letter__buttons">
       <a class="t-button t-button--primary" href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="home_letter">LINEで相談する</a>
       <a class="t-button" href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="home_letter">Webで予約する</a>
