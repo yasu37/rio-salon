@@ -50,7 +50,9 @@ body.t-body {
 .t-section > .t-wrap { display: flex; flex-direction: column; gap: 20px; }
 .t-bg-mint { background: var(--t-mint); }
 
-.t-heading { font-family: var(--t-mincho); font-weight: 700; font-size: 22px; line-height: 1.6; letter-spacing: .03em; text-wrap: balance; }
+.t-heading { font-family: var(--t-mincho); font-weight: 700; font-size: 24px; line-height: 1.55; letter-spacing: .04em; text-wrap: balance; color: var(--t-ink); }
+/* 見出しの下に短いティールの線を引き、節の始まりをわかりやすくする */
+.t-heading::after { content: ""; display: block; width: 32px; height: 3px; margin-top: 12px; border-radius: 2px; background: var(--t-teal); }
 .t-eyebrow { font-size: 13px; color: var(--t-ink-3); margin-bottom: -12px; }
 .t-hand { font-family: var(--t-hand); font-weight: 600; }
 .t-small { font-size: 13px; color: var(--t-ink-3); }
@@ -127,7 +129,7 @@ body.t-body {
 .t-services__photo { border-radius: 52px 52px 16px 16px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--t-white); }
 .t-services__photo img { width: 100%; height: 100%; object-fit: cover; }
 .t-services__item--apricot .t-services__photo { box-shadow: 0 0 0 3px var(--t-apricot-soft); }
-.t-services__name { font-family: var(--t-mincho); font-weight: 700; font-size: 16px; line-height: 1.5; margin-top: 4px; }
+.t-services__name { font-family: var(--t-mincho); font-weight: 700; font-size: 17.5px; line-height: 1.45; margin-top: 6px; padding-bottom: 6px; border-bottom: 1px dashed var(--t-mint-line); color: var(--t-teal-dark); }
 .t-services__text { font-size: 14.5px; color: var(--t-ink-2); line-height: 1.75; }
 
 /* ---------- メニュー ---------- */
@@ -201,7 +203,7 @@ body.t-body {
   body.t-body { font-size: 16px; padding-bottom: 0; }
   .t-mobile-bar { display: none; }
   .t-section { padding-block: 80px; }
-  .t-heading { font-size: 27px; }
+  .t-heading { font-size: 30px; }
 
   .t-header__toggle { display: none; }
   .t-nav { display: block; position: static; background: transparent; border: 0; box-shadow: none; }
@@ -236,6 +238,7 @@ body.t-body {
   .t-letter__buttons { flex-direction: row; justify-content: center; }
   .t-letter__buttons .t-button { min-width: 240px; }
   .t-letter .t-heading { text-align: center; }
+  .t-letter .t-heading::after { margin-inline: auto; }
   .t-letter > .t-wrap > p:not(.t-letter__sign) { text-align: center; }
 
   .t-footer__inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr) auto; gap: 40px; align-items: start; }
