@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* コラム記事の本文用スタイル。旧 column.css を .p-article の中だけに効くようにし、rem を px に直したもの（リニューアル版レイアウト用）。 */
+
+.p-article {
+  text-align: center;
+  margin: 0 auto;
+  padding: 60px 30px 0;
+  max-width: 750px;
+}
+.p-article h1, .p-article h2, .p-article h3 {
+  font-family: var(--t-mincho);
+  font-weight: 700;
+}
+.p-article section {
+  text-align: left;
+}
+.p-article section p {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+  padding-bottom: 10px !important;
+}
+.p-article h1 {
+  margin: 0 0 20px;
+  line-height: 1.4;
+  padding: 0 40px 15px 40px;
+  border-bottom: 1px dashed #B1791D;
+  font-size: 26px;
+  font-weight: bold;
+  color: #343434;
+}
+.p-article .contents {
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 600px;
+  border: 1px solid #aaa;
+}
+.p-article .contents p {
+  margin-bottom: 7.5px;
+  text-align: center;
+}
+.p-article .contents ol {
+  margin-left: 30px;
+}
+.p-article .contents li {
+  margin: 0.25em 0;
+}
+.p-article .contents a {
+  color: #666;
+}
+.p-article .headline {
+  margin-bottom: 30px !important;
+}
+.p-article .headline h2 {
+  border-bottom: 2px solid #008475;
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 0 2px 8px;
+  margin-bottom: 20px !important;
+}
+.p-article .headline .image {
+  max-width: 100%;
+  margin: 0 auto;
+  margin: 0 0 8%;
+  width: 60%;
+}
+.p-article .headline .top-image {
+  width: 90%;
+}
+.p-article .headline .BA-image {
+  width: 40%;
+}
+.p-article .headline .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.p-article .subheading {
+  margin-bottom: 10px !important;
+  margin-top: 30px !important;
+  margin-left: 8px;
+}
+.p-article .subheading h3 {
+  border-left: 4px solid #008475;
+  padding: 0 0 2px 8px;
+  margin-bottom: 4px;
+}
+.p-article .point1 {
+  box-shadow: 0px 0px 3px silver;
+  border: solid 1px whitesmoke;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+  background: #fafafa;
+  width: 50%;
+}
+.p-article .point1 li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+}
+.p-article .point1 li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0da";
+  position: absolute;
+  left: 1em;
+  
+  color: gray;
+  
+}
+.p-article .point2 {
+  background: #fcfcfc;
+  
+  padding: 0.5em 0.5em 0.5em 2em;
+  
+}
+.p-article .point2 li {
+  line-height: 1;
+  
+  padding: 0.5em 0;
+  
+}
+.p-article .button {
+  text-align: center;
+}
+.p-article .button a {
+  background: #009886;
+  border-radius: 5px;
+  color: #fff !important;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 15px 20px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 80%;
+}
+.p-article .review {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+.p-article .review .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+.p-article .review .faceicon img {
+  width: 100%;
+  height: auto;
+  border: solid 3px #ebffeb;
+  border-radius: 50%;
+}
+.p-article .review .chatting {
+  width: 100%;
+}
+.p-article .says {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #ebffeb;
+}
+.p-article .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #ebffeb;
+}
+.p-article .says blockquote {
+  margin: 0;
+  padding: 0;
+}
+.p-article .review span {
+  font-size: 12px;
+  line-height: 0.2;
+}
+.p-article .column_guide {
+  margin-top: 30px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #ebffeb;
+}
+.p-article .column_guide a, .p-article .column_owner_body a, .p-article .column_reserve_more {
+  color: #008475;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  display: inline-block;
+  padding: 6px 0;
+}
+.p-article .column_end {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px dashed #B1791D;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.p-article .column_owner {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.p-article .column_owner_body {
+  min-width: 0;
+}
+.p-article .column_owner_name {
+  font-weight: bold;
+  color: #343434;
+  padding-bottom: 4px !important;
+}
+.p-article .column_links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ddd;
+}
+.p-article .column_links li {
+  border-bottom: 1px solid #ddd;
+}
+.p-article .column_links a {
+  display: block;
+  padding: 14px 4px;
+  font-size: 15px;
+  color: #343434;
+  text-decoration: none;
+}
+.p-article .column_links a::after {
+  content: "›";
+  float: right;
+  color: #008475;
+}
+.p-article .column_reserve {
+  text-align: center;
+}
+.p-article .column_reserve_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 6px 0 8px;
+}
+.p-article .column_reserve_buttons a {
+  flex: 1 1 220px;
+  max-width: 320px;
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.5;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.p-article .column_reserve_primary {
+  background: #008475;
+  color: #fff !important;
+}
+.p-article .column_reserve_secondary {
+  background: #fff;
+  color: #008475 !important;
+  border: 2px solid #008475;
+}@media screen and (max-width: 780px) {
+.p-article .headline .image {
+    width: 100%;
+  }
+}
+
+/* リニューアル版での読みやすさの調整 */
+.p-article { padding: 8px var(--t-gutter-r) 24px var(--t-gutter); text-align: left; }
+.p-article section p { font-size: 16px; line-height: 1.95; color: var(--t-ink-2); }
+.p-article h1 { padding: 0 0 15px; font-size: 24px; border-bottom-color: var(--t-mint-line); color: var(--t-ink); }
+.p-article a { color: var(--t-teal); }
+/* ポイントの箱：スマホで幅50%だと狭く、言葉の途中で改行されるため幅を広げる。印は読み込んでいないアイコン用フォントをやめて文字で出す */
+.p-article .point1 { width: auto; max-width: 480px; border-radius: 12px; }
+.p-article .point1 li:before { font-family: inherit; content: "▸"; color: var(--t-teal); }

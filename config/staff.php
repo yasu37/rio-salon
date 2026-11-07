@@ -24,7 +24,8 @@ return [
             'エステ',
             'オイルカッピング',
         ],
-        'experience_years' => 25,
+        // 施術歴の表示用ラベル。HotPepperなど他の掲載先と表記を揃えるため「20年以上」とする。
+        'experience_label' => '20年以上',
         'specialties' => null,
         'motto' => null,
         'work_days' => null,
