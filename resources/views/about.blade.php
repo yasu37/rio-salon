@@ -3,7 +3,7 @@
 @section('title', 'リオについて')
 @section('description', 'リオ鍼灸サロンのご挨拶と院長紹介。筋肉・神経・リンパなどの西洋医学的な知見と東洋医学的な視点を組み合わせた施術をご提案しています。')
 @section('canonical', 'about')
-@section('og_image', 'about.jpg')
+@section('og_image', 'location.jpg')
 
 @section('content')
 <x-breadcrumb :items="[['name' => 'リオについて']]" />
@@ -17,7 +17,7 @@
 
   <section class="t-section p-split">
     <div class="t-wrap">
-      <div class="p-split__photo"><x-top.photo name="about" alt="院長がお客様のお話を伺っている様子" :eager="true" /></div>
+      <div class="p-split__photo"><x-top.photo name="location" alt="花が飾られた受付の様子" width="1200" height="900" :eager="true" /></div>
       <div class="p-split__text">
         <p>{{ config('salon.name') }}では、筋肉、神経、リンパなどの西洋医学的な知見と東洋医学的な視点を組み合わせた施術をご提案し、「健康」と「美しさ」を引き出すサポートをしています。はじめての方も、安心してお越しください。</p>
       </div>
@@ -26,7 +26,7 @@
 
   <section class="t-section t-bg-mint p-split p-split--reverse">
     <div class="t-wrap">
-      <div class="p-split__photo"><x-top.photo name="location3" alt="店内の様子" width="1439" height="1800" /></div>
+      <div class="p-split__photo"><x-top.photo name="location5" alt="窓のある明るい施術室" width="960" height="1280" /></div>
       <div class="p-split__text">
         <h2 class="t-heading">気軽に集い、癒される場所に</h2>
         <p>東洋医学の分野である鍼灸、漢方、もみほぐしなどを通じて、からだのバランスを整えるお手伝いをしています。皆さまが気軽に集い、癒され、笑顔で過ごしていただける場所になるよう、心をこめておもてなしいたします。</p>
