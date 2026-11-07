@@ -15,7 +15,7 @@
             <div class="price">{{ $price }}</div>
           </div>
           <div class="button5">
-            <a href="../../reserve">ご予約はこちら</a>
+            <a href="../../reserve" data-gtm-event="begin_booking" data-gtm-menu-name="{{ trim(strip_tags((string) $menu_name)) }}" data-gtm-cta-position="menu_page">ご予約はこちら</a>
           </div>
         </div>
       </div>

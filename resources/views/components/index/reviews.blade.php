@@ -14,7 +14,7 @@
     </div>
     <div class="reviews_link">
       <p>実際にご利用いただいたお客様の口コミを、HotPepper Beautyでご覧いただけます。</p>
-      <a href="{{ config('salon.reservation.hotpepper.url') }}" target="_blank" rel="noopener noreferrer">HotPepperで口コミを見る</a>
+      <a href="{{ config('salon.reservation.hotpepper.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="hotpepper_reviews_click" data-gtm-provider="hotpepper" data-gtm-cta-position="home_reviews">HotPepperで口コミを見る</a>
     </div>
   </div>
 </section>

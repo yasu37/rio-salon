@@ -7,7 +7,7 @@
     <div class="content">
       <ul class="sns">
         <li><a href="{{ config('salon.sns.instagram') }}" target="_blank" rel="noopener noreferrer"><picture><source srcset="./img/instagram1.webp" type="image/webp"><img src="./img/instagram1.jpg" alt="{{ config('salon.name') }}の公式Instagram" width="73" height="73"></picture></a></li>
-        <li><a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer"><picture><source srcset="./img/line1.webp" type="image/webp"><img src="./img/line1.jpg" alt="{{ config('salon.name') }}の公式LINE" width="72" height="73"></picture></a></li>
+        <li><a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="header_sns"><picture><source srcset="./img/line1.webp" type="image/webp"><img src="./img/line1.jpg" alt="{{ config('salon.name') }}の公式LINE" width="72" height="73"></picture></a></li>
       </ul>
       <ul class="reservation">
         <li class="reservation_panel">
@@ -48,7 +48,7 @@
         <li class="is_pc">／</li>
         <li><a href="./question" target="_self">Q&A</a></li>
         <li class="is_pc">／</li>
-        <li><a href="./reserve" target="_self">予約</a></li>
+        <li><a href="./reserve" target="_self" data-gtm-event="begin_booking" data-gtm-cta-position="header_nav">予約</a></li>
       </ul>
     </nav>
   </div>

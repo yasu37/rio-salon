@@ -33,7 +33,7 @@
           </tr>
           <tr>
             <th>電話番号</th>
-            <th><a href="tel:{{ config('salon.tel_href') }}">{{ config('salon.tel') }}</a></th>
+            <th><a href="tel:{{ config('salon.tel_href') }}" data-gtm-event="reservation_phone_click" data-gtm-provider="phone" data-gtm-cta-position="home_access">{{ config('salon.tel') }}</a></th>
           </tr>
           <tr>
             <th>駐車場</th>

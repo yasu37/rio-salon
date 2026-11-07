@@ -90,11 +90,11 @@
   <div class="message">@yield('message')</div>
   <ul class="links">
     <li><a class="primary" href="/">トップページへ戻る</a></li>
-    <li><a href="/reserve">予約方法を見る</a></li>
+    <li><a href="/reserve" data-gtm-event="begin_booking" data-gtm-cta-position="error_page">予約方法を見る</a></li>
     <li><a href="/menu/menu1">メニュー&amp;料金</a></li>
   </ul>
   <p class="contact">
-    ご予約・ご相談：<a href="tel:{{ config('salon.tel_href') }}">{{ config('salon.tel') }}</a><br>
+    ご予約・ご相談：<a href="tel:{{ config('salon.tel_href') }}" data-gtm-event="reservation_phone_click" data-gtm-provider="phone" data-gtm-cta-position="error_page">{{ config('salon.tel') }}</a><br>
     平日 {{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}（{{ config('salon.business_hours.closed_day_label') }}）／土日祝 {{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}
   </p>
 </body>

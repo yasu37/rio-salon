@@ -26,12 +26,27 @@
     });
   });
 
-  // 表示計測: data-gtm-view を持つ要素はページ読み込み時に1回だけ発火
-  document.querySelectorAll('[data-gtm-view]').forEach(function (el) {
+  // 表示計測: data-gtm-view を持つ要素が実際に画面に表示されたとき（要素の30%以上が見えたとき）に1回だけ発火する。
+  // 「そのセクションまで読まれたか」を測るため。IntersectionObserver が使えない古いブラウザでは、読み込み時に発火する。
+  function pushViewEvent(el) {
     pushEvent(el.getAttribute('data-gtm-view'), {
       menu_name: el.getAttribute('data-gtm-menu-name')
     });
-  });
+  }
+
+  var viewTargets = document.querySelectorAll('[data-gtm-view]');
+  if ('IntersectionObserver' in window) {
+    var viewObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        pushViewEvent(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.3 });
+    viewTargets.forEach(function (el) { viewObserver.observe(el); });
+  } else {
+    viewTargets.forEach(pushViewEvent);
+  }
 
   // Googleマップ（外部originのiframe）クリック計測。
   // iframe内のクリックイベントは親ドキュメントに伝播しないため、

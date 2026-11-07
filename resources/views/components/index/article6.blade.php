@@ -5,7 +5,7 @@
   <div class="list">
     <ul>
       <li><a href="{{ config('salon.sns.instagram') }}" target="_blank" rel="noopener noreferrer">公式Instagram</a></li>
-      <li><a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer">公式LINE</a></li>
+      <li><a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="home_sns">公式LINE</a></li>
     </ul>
   </div>
 </div>

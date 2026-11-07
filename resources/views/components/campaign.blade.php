@@ -33,7 +33,7 @@
             <p>・男女共に施術可能</p>
         </div>
         <div class="button5">
-            <a href="../../reserve">ご予約はこちら</a>
+            <a href="../../reserve" data-gtm-event="begin_booking" data-gtm-cta-position="campaign_page">ご予約はこちら</a>
           </div>
     </div>
 </div>
