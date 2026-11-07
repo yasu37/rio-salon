@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="{{ asset('css/top.css') }}">
   <link rel="stylesheet" href="{{ asset('css/page.css') }}">
   {{-- full_title があればそのまま使う（コラムなど、店名を付けない題名のページ用） --}}
-  @php($pageTitle = View::hasSection('full_title') ? View::yieldContent('full_title') : View::yieldContent('title') . '|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-')
+  @php($pageTitle = View::hasSection('full_title') ? View::yieldContent('full_title') : View::yieldContent('title') . '｜リオ鍼灸サロン')
   <title>{{ $pageTitle }}</title>
   <link rel="canonical" href="https://rio-salon.com/@yield('canonical')">
   <meta property="og:type" content="website">
