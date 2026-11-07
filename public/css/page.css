@@ -119,6 +119,8 @@
 .p-item--photo { padding-top: 12px; }
 .p-item__photo { margin: 0 -6px; border-radius: 14px; overflow: hidden; aspect-ratio: 5 / 3; }
 .p-item__photo img { width: 100%; height: 100%; object-fit: cover; }
+/* Squareの案内画像は文字入りの正方形なので、切り取らずに正方形で表示する */
+.p-item__photo--square { aspect-ratio: 1 / 1; margin: 0; }
 .p-item__regular { font-size: 14px; color: var(--t-ink-3); }
 .p-item__arrow { font-size: 14px; color: var(--t-ink-3); }
 .p-campaign .p-item__yen { color: #B4532A; }

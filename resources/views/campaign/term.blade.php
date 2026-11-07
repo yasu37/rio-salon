@@ -9,7 +9,7 @@
 @section('title', 'キャンペーン')
 @section('description', 'リオ鍼灸サロンのキャンペーン。期間限定のメニューと、はじめての方の料金をご案内します。')
 @section('canonical', 'campaign/term')
-@section('og_image', 'campaign5.jpeg')
+@section('og_image', 'campaign/winter-01.jpg')
 
 @section('content')
 <x-breadcrumb :items="[['name' => 'キャンペーン']]" />
@@ -45,7 +45,7 @@
         <ul class="p-items">
           @foreach ($group['items'] as $item)
             <li class="p-item p-item--photo">
-              <div class="p-item__photo"><x-top.photo :name="$item['photo']" alt="" width="768" height="461" /></div>
+              <div class="p-item__photo p-item__photo--square"><x-top.photo :name="$item['photo']" :alt="$item['name'] . 'の案内画像'" width="800" height="800" /></div>
               <h3 class="p-item__name">{{ $item['name'] }}</h3>
               <div class="p-item__price">
                 @isset($item['time'])
