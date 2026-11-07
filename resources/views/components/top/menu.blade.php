@@ -15,7 +15,7 @@
         </li>
       @endforeach
     </ul>
-    <p class="t-small">料金はすべて税込です。はじめての方向けの料金を載せています。</p>
+    <p class="t-small">料金はすべて税込です。「はじめての方」とあるものは、初回の料金です。</p>
     <p class="t-menu__massage">鍼を使わない「全身オイルマッサージ」もあります。</p>
     @if ($seasonal)
       <a class="t-season" href="{{ url($seasonal['link']) }}" data-gtm-event="select_menu" data-gtm-menu-name="{{ $seasonal['name'] }}" data-gtm-cta-position="home_campaign">
