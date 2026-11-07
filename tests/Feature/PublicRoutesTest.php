@@ -29,6 +29,7 @@ class PublicRoutesTest extends TestCase
             'menu10' => ['/menu/menu10'],
             'campaign_term' => ['/campaign/term'],
             'column1' => ['/column/column1'],
+            'column2' => ['/column/column2'],
         ];
     }
 
@@ -45,6 +46,12 @@ class PublicRoutesTest extends TestCase
         // 初回限定ページは campaign/term の「はじめての方の料金」にまとめた
         $this->get('/campaign/first')->assertStatus(301);
         $this->assertStringEndsWith('/campaign/term#first', $this->get('/campaign/first')->headers->get('Location'));
+    }
+
+    public function test_unknown_column_returns_404(): void
+    {
+        // コラムは config/columns.php にあるものだけ表示する
+        $this->get('/column/column99')->assertStatus(404);
     }
 
     public function test_menu5_redirects_permanently_to_menu6(): void

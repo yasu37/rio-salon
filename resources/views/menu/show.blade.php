@@ -200,6 +200,21 @@
     </section>
   @endif
 
+  {{-- このメニューに関係するコラム（config/columns.php の menu で指定） --}}
+  @php($relatedColumns = collect(config('columns'))->filter(fn ($column) => ($column['menu'] ?? null) === $slug))
+  @if ($relatedColumns->isNotEmpty())
+    <section class="t-section p-related">
+      <div class="t-wrap">
+        <h2 class="t-heading">関連する記事</h2>
+        <ul class="p-related__list">
+          @foreach ($relatedColumns as $columnSlug => $column)
+            <li><a href="{{ url('column/' . $columnSlug) }}" data-gtm-event="select_content" data-gtm-cta-position="menu_related_column">{{ $column['title'] }}</a></li>
+          @endforeach
+        </ul>
+      </div>
+    </section>
+  @endif
+
   <section class="t-section p-notice">
     <div class="t-wrap">
       <p class="t-small">料金はすべて税込です。「はじめての方」の料金は、初回のご来店時に適用されます。<br>期間限定のお得なメニューは<a href="{{ url('campaign/term') }}">キャンペーンのページ</a>をご覧ください。</p>

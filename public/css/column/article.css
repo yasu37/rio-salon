@@ -114,10 +114,9 @@
   
 }
 .p-article .point2 li {
-  line-height: 1;
-  
-  padding: 0.5em 0;
-  
+  /* 2行に折り返しても行が詰まりすぎないように */
+  line-height: 1.7;
+  padding: 0.3em 0;
 }
 .p-article .button {
   text-align: center;

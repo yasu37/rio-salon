@@ -48,8 +48,9 @@ class PageController extends Controller
     }
 
 
-    //コラム
-    public function column1() {
-        return view('column.column1');
+    //コラム（一覧は config/columns.php、本文は components/column/{slug}）
+    public function column(string $slug) {
+        abort_unless(array_key_exists($slug, config('columns')), 404);
+        return view('column.show', ['slug' => $slug, 'column' => config('columns')[$slug]]);
     }
 }

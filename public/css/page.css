@@ -94,6 +94,11 @@
 
 .p-notice { padding-block: 24px; }
 
+/* ---------- 関連する記事（メニューページ） ---------- */
+.p-related__list { display: grid; gap: 10px; margin-top: 16px; }
+.p-related__list a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; padding: 14px 18px; border-radius: 16px; background: var(--t-white); border: 1px solid #DCEBE7; color: var(--t-ink); font-weight: 700; line-height: 1.6; text-decoration: none; word-break: keep-all; word-break: auto-phrase; overflow-wrap: anywhere; }
+.p-related__list a::after { content: "›"; flex: none; color: var(--t-teal); font-size: 20px; }
+
 /* 短い文が言葉の途中で折り返されないようにする（top.css と同じ考え方） */
 .p-head, .p-points, .p-items, .p-options__list { word-break: keep-all; word-break: auto-phrase; overflow-wrap: anywhere; }
 
