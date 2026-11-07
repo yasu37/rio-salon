@@ -114,7 +114,7 @@
 /* ---------- キャンペーン ---------- */
 .p-campaign__meta { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; font-size: 14.5px; }
 .p-campaign__meta div { display: flex; gap: 8px; }
-.p-campaign__meta dt { color: var(--t-ink-3); }
+.p-campaign__meta dt { flex: none; color: var(--t-ink-3); }
 .p-campaign__meta dd { margin: 0; font-weight: 700; color: var(--t-ink); }
 .p-item--photo { padding-top: 12px; }
 .p-item__photo { margin: 0 -6px; border-radius: 14px; overflow: hidden; aspect-ratio: 5 / 3; }

@@ -68,7 +68,7 @@
                 @if (!empty($item['area']))
                   <span class="p-area p-area--{{ $item['area'] }}">{{ $areas[$item['area']] }}</span>
                 @endif
-                <h3 class="p-item__name">{{ $item['name'] }}</h3>
+                <h3 class="p-item__name u-phrase">{!! \App\Support\Text::wbr($item['name']) !!}</h3>
                 @if ($item['concept'] && empty($item['for']))
                   <p class="p-item__concept">{{ $item['concept'] }}</p>
                 @endif
@@ -152,7 +152,7 @@
           @foreach (config('menus.options') as $option)
             <li>
               <div class="p-options__row">
-                <span class="p-options__name">{{ $option['name'] }}</span>
+                <span class="p-options__name u-phrase">{!! \App\Support\Text::wbr($option['name']) !!}</span>
                 <span class="p-options__price">{{ $option['time'] }}　＋{{ $yen($option['price']) }}</span>
               </div>
               <p>{{ $option['text'] }}</p>

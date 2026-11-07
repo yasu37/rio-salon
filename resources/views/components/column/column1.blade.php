@@ -68,7 +68,7 @@
         <ul class="point1">
           <li>小顔・引き締め感</li>
           <li>ハリ・うるおい</li>
-          <li>シワ・ほうれい線のケア</li>
+          <li class="u-phrase">シワ・ほうれい線のケア</li>
           <li>肌荒れのケア</li>
           <li>肌質のケア</li>
         </ul>
@@ -79,7 +79,7 @@
         <ul class="point1">
           <li>睡眠の質に関する変化</li>
           <li>眼精疲労のケア</li>
-          <li>ホルモンバランスに関する変化</li>
+          <li class="u-phrase">ホルモンバランスに関する変化</li>
         </ul>
       </div>
       <div class="subheading">
@@ -125,7 +125,7 @@
         <ul class="point2">
           <li>肌の引き締まった印象</li>
           <li>むくみのケア</li>
-          <li>シワ・ほうれい線のケア</li>
+          <li class="u-phrase">シワ・ほうれい線のケア</li>
           <li>眼精疲労のケア</li>
         </ul>
       </div>
@@ -135,7 +135,7 @@
         <ul class="point2">
           <li>ハリ感・うるおい</li>
           <li>化粧水や美容液のなじみ</li>
-          <li>シワ・ほうれい線のケア</li>
+          <li class="u-phrase">シワ・ほうれい線のケア</li>
           <li>肌荒れのケア</li>
           <li>毛穴の目立ちにくさ</li>
         </ul>

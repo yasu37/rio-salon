@@ -7,7 +7,7 @@
         <li class="t-menu__item">
           <a href="{{ url($menu['link']) }}" data-gtm-event="select_menu" data-gtm-menu-name="{{ $menu['name'] }}" data-gtm-cta-position="home_recommended_menu">
             <span class="t-menu__row">
-              <span class="t-menu__name">{{ $menu['name'] }}</span>
+              <span class="t-menu__name u-phrase">{!! \App\Support\Text::wbr($menu['name']) !!}</span>
               <span class="t-menu__price">{{ $menu['price'] }}</span>
             </span>
             <span class="t-menu__comment">{{ $menu['comment'] }}</span>

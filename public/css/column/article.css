@@ -277,3 +277,6 @@
 .p-article section p { font-size: 16px; line-height: 1.95; color: var(--t-ink-2); }
 .p-article h1 { padding: 0 0 15px; font-size: 24px; border-bottom-color: var(--t-mint-line); color: var(--t-ink); }
 .p-article a { color: var(--t-teal); }
+/* ポイントの箱：スマホで幅50%だと狭く、言葉の途中で改行されるため幅を広げる。印は読み込んでいないアイコン用フォントをやめて文字で出す */
+.p-article .point1 { width: auto; max-width: 480px; border-radius: 12px; }
+.p-article .point1 li:before { font-family: inherit; content: "▸"; color: var(--t-teal); }

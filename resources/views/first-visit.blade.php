@@ -1,6 +1,8 @@
 {{-- はじめての方へ --}}
 @extends('layouts.renewal')
 @php
+  // 「QUIC Pay」などの名前の途中で改行しないよう、空白を改行しない空白にする
+  $nobreak = fn ($names) => array_map(fn ($n) => str_replace(' ', "\u{00A0}", $n), $names);
   $flow = [
     ['ご来店・受付', 'ご予約のお時間になりましたら、ご来店ください。'],
     ['カウンセリング', 'お悩みや体調、気になることをお伺いします。'],
@@ -15,7 +17,7 @@
     ['駐車場', '駐車場を' . config('salon.parking_spaces') . '台ご用意しています。'],
     ['遅刻・キャンセル', 'ご来店が遅れる場合は、あらかじめお電話でご連絡ください。キャンセル・変更も、なるべく早めにご連絡いただけると助かります。'],
     ['男性の方', '男性の方もご利用いただけます。'],
-    ['お支払い方法', '現金、クレジットカード（' . implode('／', config('salon.payment.credit_cards')) . 'など）、電子マネー（' . implode('／', config('salon.payment.e_money')) . '）がご利用いただけます。'],
+    ['お支払い方法', '現金、クレジットカード（' . implode('／', $nobreak(config('salon.payment.credit_cards'))) . 'など）、電子マネー（' . implode('／', $nobreak(config('salon.payment.e_money'))) . '）がご利用いただけます。'],
   ];
 @endphp
 @section('title', 'はじめての方へ')

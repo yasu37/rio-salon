@@ -34,7 +34,7 @@
   @foreach ($groups as $group)
     <section class="t-section p-campaign" id="{{ $group['id'] }}">
       <div class="t-wrap">
-        <h2 class="t-heading">{{ $group['title'] }}</h2>
+        <h2 class="t-heading u-phrase">{!! \App\Support\Text::wbr($group['title']) !!}</h2>
         <dl class="p-campaign__meta">
           <div><dt>対象</dt><dd>{{ $group['target'] }}</dd></div>
           <div><dt>期間</dt><dd>{{ $group['period'] ?? '期間限定' }}</dd></div>
@@ -46,7 +46,7 @@
           @foreach ($group['items'] as $item)
             <li class="p-item p-item--photo">
               <div class="p-item__photo p-item__photo--square"><x-top.photo :name="$item['photo']" :alt="$item['name'] . 'の案内画像'" width="800" height="800" /></div>
-              <h3 class="p-item__name">{{ $item['name'] }}</h3>
+              <h3 class="p-item__name u-phrase">{!! \App\Support\Text::wbr($item['name']) !!}</h3>
               <div class="p-item__price">
                 @isset($item['time'])
                   <span class="p-item__time">{{ $item['time'] }}</span>
@@ -73,7 +73,7 @@
         <ul class="p-items">
           @foreach ($firstItems as $item)
             <li class="p-item">
-              <h3 class="p-item__name">{{ $item['name'] }}</h3>
+              <h3 class="p-item__name u-phrase">{!! \App\Support\Text::wbr($item['name']) !!}</h3>
               <div class="p-item__price">
                 <s class="p-item__regular">{{ $yen($item['regular']) }}</s><span class="p-item__arrow" aria-hidden="true">→</span>
                 <span class="p-item__yen">{{ $yen($item['price']) }}</span>
@@ -95,7 +95,7 @@
         @foreach (config('menus.options') as $option)
           <li>
             <div class="p-options__row">
-              <span class="p-options__name">{{ $option['name'] }}</span>
+              <span class="p-options__name u-phrase">{!! \App\Support\Text::wbr($option['name']) !!}</span>
               <span class="p-options__price">{{ $option['time'] }}　＋{{ $yen($option['price']) }}</span>
             </div>
             <p>{{ $option['text'] }}</p>
@@ -107,7 +107,7 @@
 
   <section class="t-section p-notice">
     <div class="t-wrap">
-      <p class="t-small">料金はすべて税込です。通常のメニューは<a href="{{ url('menu/menu1') }}">メニューと料金</a>のページをご覧ください。</p>
+      <p class="t-small">料金はすべて税込です。通常のメニューは<a class="u-phrase" href="{{ url('menu/menu1') }}">メニューと料金</a>のページをご覧ください。</p>
     </div>
   </section>
 </main>

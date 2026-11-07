@@ -38,6 +38,14 @@ body.t-body {
 /* リセットは :where() で詳細度を0にし、各部品のクラス指定が必ず優先されるようにする */
 :where(.t-body) :where(h1, h2, h3, p, ul, dl, dd, figure, blockquote) { margin: 0; }
 :where(.t-body) :where(ul) { padding: 0; list-style: none; }
+
+/* 改行の位置：対応ブラウザ（Chrome など）では文節の切れ目で改行する。
+   最後の行が1〜2文字だけにならないようにし、見出しは行の長さをそろえる。 */
+@supports (word-break: auto-phrase) { body.t-body { word-break: auto-phrase; } }
+.t-body :where(p, li, dd, dt, blockquote, figcaption) { text-wrap: pretty; }
+.t-body :where(h1, h2, h3, .t-button, .p-item__name) { text-wrap: balance; }
+/* メニュー名などは、記号や語の切れ目（<wbr>）でだけ改行する（App\Support\Text::wbr と組み合わせる） */
+.t-body .u-phrase { word-break: keep-all; overflow-wrap: anywhere; }
 .t-body img { display: block; max-width: 100%; height: auto; }
 .t-body a { color: var(--t-teal); }
 .t-body a:hover { color: var(--t-teal-dark); }
