@@ -75,8 +75,8 @@ class PublicRoutesTest extends TestCase
     public function test_scheduled_columns_render_after_publish_date(): void
     {
         config(['salon.column_preview' => false]);
-        \Illuminate\Support\Carbon::setTestNow('2026-12-01');
-        foreach (['column5', 'column6', 'column8'] as $slug) {
+        \Illuminate\Support\Carbon::setTestNow('2026-12-06');
+        foreach (['column5', 'column6', 'column7', 'column8'] as $slug) {
             $this->get('/column/' . $slug)->assertStatus(200);
         }
         \Illuminate\Support\Carbon::setTestNow();
