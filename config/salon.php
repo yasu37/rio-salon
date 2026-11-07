@@ -35,7 +35,7 @@ return [
     ],
 
     'parking_spaces' => 4,
-    'bed_count' => 2,
+    'bed_count' => 3,
 
     // Googleマップの埋め込み・リンク先URL。未確定のため空欄
     'google_map_url' => null,
