@@ -48,6 +48,9 @@
               <div class="p-item__photo"><x-top.photo :name="$item['photo']" alt="" width="768" height="461" /></div>
               <h3 class="p-item__name">{{ $item['name'] }}</h3>
               <div class="p-item__price">
+                @isset($item['time'])
+                  <span class="p-item__time">{{ $item['time'] }}</span>
+                @endisset
                 @if ($item['regular'])
                   <s class="p-item__regular">{{ $yen($item['regular']) }}</s><span class="p-item__arrow" aria-hidden="true">→</span>
                 @endif
@@ -84,9 +87,27 @@
     </section>
   @endif
 
+  <section class="t-section t-bg-mint p-options">
+    <div class="t-wrap">
+      <h2 class="t-heading">組み合わせできるオプション</h2>
+      <p>キャンペーンのメニューにも追加できます。オプションだけのご利用はできません。</p>
+      <ul class="p-options__list">
+        @foreach (config('menus.options') as $option)
+          <li>
+            <div class="p-options__row">
+              <span class="p-options__name">{{ $option['name'] }}</span>
+              <span class="p-options__price">{{ $option['time'] }}　＋{{ $yen($option['price']) }}</span>
+            </div>
+            <p>{{ $option['text'] }}</p>
+          </li>
+        @endforeach
+      </ul>
+    </div>
+  </section>
+
   <section class="t-section p-notice">
     <div class="t-wrap">
-      <p class="t-small">料金はすべて税込です。キャンペーンのメニューには、<a href="{{ url('menu/menu1') }}">メニューページ</a>のオプションも組み合わせられます。</p>
+      <p class="t-small">料金はすべて税込です。通常のメニューは<a href="{{ url('menu/menu1') }}">メニューと料金</a>のページをご覧ください。</p>
     </div>
   </section>
 </main>
