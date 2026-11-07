@@ -19,18 +19,11 @@ Route::get('/', [PageController::class, 'index']);
 /*RIOについて */
 Route::get('about', [PageController::class, 'about']);
 /*メニュー一覧 */
-Route::get('menu/menu1', [PageController::class, 'menu1']);
-Route::get('menu/menu2', [PageController::class, 'menu2']);
-Route::get('menu/menu3', [PageController::class, 'menu3']);
-Route::get('menu/menu4', [PageController::class, 'menu4']);
+/* メニューページは config/menus.php の pages のキー（menu1 など）から作る。menu5 は下でリダイレクトする。 */
+Route::get('menu/{slug}', [PageController::class, 'menu'])->where('slug', 'menu(1|2|3|4|6|7|8|9|10)');
 /* menu5（姿勢矯正リンパオイルトリートメント）は 2024-05-07 に提供終了。
    同一料金帯の後継である menu6（オイルトリートメント）へ恒久リダイレクトする。 */
 Route::redirect('menu/menu5', '/menu/menu6', 301);
-Route::get('menu/menu6', [PageController::class, 'menu6']);
-Route::get('menu/menu7', [PageController::class, 'menu7']);
-Route::get('menu/menu8', [PageController::class, 'menu8']);
-Route::get('menu/menu9', [PageController::class, 'menu9']);
-Route::get('menu/menu10', [PageController::class, 'menu10']);
 /*初めての方へ */
 Route::get('first-visit', [PageController::class, 'firstVisit']);
 /*質問 */

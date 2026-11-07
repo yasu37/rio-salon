@@ -16,33 +16,10 @@ class PageController extends Controller
         return view('about');
     }
 
-    //メニュー
-    public function menu1() {
-        return view('menu.menu1');
-    }
-    public function menu2() {
-        return view('menu.menu2');
-    }
-    public function menu3() {
-        return view('menu.menu3');
-    }
-    public function menu4() {
-        return view('menu.menu4');
-    }
-    public function menu6() {
-        return view('menu.menu6');
-    }
-    public function menu7() {
-        return view('menu.menu7');
-    }
-    public function menu8() {
-        return view('menu.menu8');
-    }
-    public function menu9() {
-        return view('menu.menu9');
-    }
-    public function menu10() {
-        return view('menu.menu10');
+    //メニュー（内容は config/menus.php）
+    public function menu(string $slug) {
+        abort_unless(array_key_exists($slug, config('menus.pages')), 404);
+        return view('menu.show', ['slug' => $slug]);
     }
 
     //初めての方へ

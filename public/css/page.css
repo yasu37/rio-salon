@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* リニューアル版の下層ページ（メニューなど）用のスタイル。top.css の色・書体・部品を前提にしている。クラス名は p- で始める。 */
+
+/* ---------- パンくずリスト ---------- */
+.t-body .breadcrumb { max-width: 1080px; margin: 0 auto; padding: 12px var(--t-gutter-r) 0 var(--t-gutter); font-size: 12.5px; color: var(--t-ink-3); }
+.t-body .breadcrumb ol { display: flex; flex-wrap: wrap; gap: 0 6px; margin: 0; padding: 0; list-style: none; }
+.t-body .breadcrumb li + li::before { content: "›"; margin-right: 6px; color: var(--t-mint-line); }
+.t-body .breadcrumb a { color: var(--t-ink-3); }
+
+/* ---------- ページの見出しとメニューの切り替え ---------- */
+.p-head { padding-block: 20px 8px; }
+.p-head .t-wrap { display: flex; flex-direction: column; gap: 6px; }
+.p-head__eyebrow { margin: 0; font-size: 13px; color: var(--t-teal); letter-spacing: .08em; }
+.p-head__title { margin: 0; font-family: var(--t-mincho); font-weight: 700; font-size: 28px; line-height: 1.5; letter-spacing: .04em; }
+.p-tabs { margin: 10px calc(var(--t-gutter-r) * -1) 0 calc(var(--t-gutter) * -1); }
+.p-tabs ul { display: flex; gap: 8px; overflow-x: auto; padding: 4px var(--t-gutter-r) 10px var(--t-gutter); margin: 0; scrollbar-width: none; }
+.p-tabs ul::-webkit-scrollbar { display: none; }
+.p-tabs li { flex: none; }
+.p-tabs a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--t-mint-line); background: var(--t-white); color: #1F4A44 !important; font-size: 14px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.p-tabs a:hover { background: var(--t-mint); }
+.p-tabs a[aria-current="page"] { background: var(--t-teal); border-color: var(--t-teal); color: var(--t-white) !important; }
+
+/* ---------- 施術の説明 ---------- */
+.p-group { padding-block: 32px 40px; }
+.p-group + .p-group { border-top: 1px dashed var(--t-mint-line); }
+.p-group__intro { display: flex; flex-direction: column; gap: 18px; }
+.p-group__photo { border-radius: 24px; overflow: hidden; aspect-ratio: 3 / 2; }
+.p-group__photo img { width: 100%; height: 100%; object-fit: cover; }
+.p-group__text { display: flex; flex-direction: column; gap: 12px; color: var(--t-ink-2); }
+.p-group__label { font-weight: 700; color: var(--t-teal-dark); }
+.p-points { display: flex; flex-direction: column; }
+.p-points li { position: relative; padding: 8px 0 8px 26px; border-bottom: 1px dashed var(--t-mint-line); line-height: 1.7; color: var(--t-ink); }
+.p-points li::before { content: ""; position: absolute; left: 4px; top: 15px; width: 10px; height: 6px; border-left: 2px solid var(--t-teal); border-bottom: 2px solid var(--t-teal); transform: rotate(-45deg); }
+
+/* ---------- メニュー一覧 ---------- */
+.p-items { display: grid; gap: 14px; }
+.p-item { display: flex; flex-direction: column; gap: 10px; padding: 18px 18px 14px; border-radius: 20px; border: 1px solid #DCEBE7; background: var(--t-white); }
+.p-item__head { display: flex; flex-direction: column; gap: 2px; }
+.p-item__name { margin: 0; font-family: var(--t-mincho); font-weight: 700; font-size: 18px; line-height: 1.5; color: var(--t-ink); }
+.p-item__concept { font-size: 14px; color: var(--t-teal-dark); }
+.p-item__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 8px 0; border-top: 1px dashed var(--t-mint-line); border-bottom: 1px dashed var(--t-mint-line); }
+.p-item__time { font-size: 14px; color: var(--t-ink-3); }
+.p-item__yen { font-size: 20px; font-weight: 700; color: var(--t-ink); font-variant-numeric: tabular-nums; }
+.p-item__first { font-size: 13.5px; padding: 2px 10px; border-radius: 999px; background: var(--t-apricot-soft); color: var(--t-apricot-ink); }
+.p-item__first strong { font-size: 15px; }
+.p-item__text { font-size: 15px; color: var(--t-ink-2); line-height: 1.85; }
+.p-item__flow summary { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; cursor: pointer; font-size: 14px; font-weight: 700; color: var(--t-teal-dark); list-style: none; }
+.p-item__flow summary::-webkit-details-marker { display: none; }
+.p-item__flow summary::after { content: "＋"; font-weight: 500; }
+.p-item__flow[open] summary::after { content: "－"; }
+.p-item__flow p { padding: 10px 14px; border-radius: 14px; background: var(--t-mint); font-size: 14px; color: #1F4A44; line-height: 1.8; }
+.p-item__note { font-size: 14px; color: var(--t-ink-2); padding-left: 1em; text-indent: -1em; }
+.p-item__note::before { content: "・"; }
+.p-item__reserve { align-self: flex-end; display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 700; text-underline-offset: 4px; }
+.p-item__reserve::after { content: "›"; margin-left: 6px; }
+
+/* ---------- 案内画像（ブライダル） ---------- */
+.p-gallery { display: grid; gap: 16px; }
+.p-gallery img { border-radius: 16px; }
+
+/* ---------- オプション ---------- */
+.p-options__list { display: grid; gap: 10px; }
+.p-options__list li { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 18px; background: var(--t-white); }
+.p-options__row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; }
+.p-options__name { font-weight: 700; color: var(--t-ink); }
+.p-options__price { font-variant-numeric: tabular-nums; color: var(--t-ink); }
+.p-options__list p { font-size: 14px; color: var(--t-ink-2); line-height: 1.75; }
+
+.p-notice { padding-block: 24px; }
+
+/* 短い文が言葉の途中で折り返されないようにする（top.css と同じ考え方） */
+.p-head, .p-points, .p-items, .p-options__list { word-break: keep-all; word-break: auto-phrase; overflow-wrap: anywhere; }
+
+/* ---------- PC・タブレット ---------- */
+@media (min-width: 900px) {
+  .p-head { padding-block: 32px 8px; }
+  .p-head__title { font-size: 36px; }
+  .p-tabs { margin-inline: 0; }
+  .p-tabs ul { flex-wrap: wrap; overflow: visible; padding-inline: 0; }
+  .p-group { padding-block: 56px 64px; }
+  .p-group__intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 40px; align-items: start; }
+  .p-items { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+  .p-item { padding: 22px 24px 16px; }
+  .p-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .p-options__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
