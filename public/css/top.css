@@ -99,8 +99,9 @@ body.t-body {
 .t-hero__photo { border-radius: 150px 150px 28px 28px; overflow: hidden; aspect-ratio: 4 / 3; max-height: 300px; }
 .t-hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; }
 .t-hero__text { display: flex; flex-direction: column; gap: 10px; }
-.t-hero__place { font-size: 14px; color: var(--t-ink-3); letter-spacing: .06em; }
-.t-hero__title { font-family: var(--t-mincho); font-weight: 700; font-size: 29px; line-height: 1.6; letter-spacing: .04em; }
+.t-hero__heading { display: flex; flex-direction: column; gap: 10px; margin: 0; font-weight: inherit; }
+.t-hero__place { display: block; font-family: var(--t-maru); font-weight: 500; font-size: 14px; color: var(--t-ink-3); letter-spacing: .06em; }
+.t-hero__title { display: block; font-family: var(--t-mincho); font-weight: 700; font-size: 29px; line-height: 1.6; letter-spacing: .04em; }
 .t-hero__lead { font-size: 18px; color: var(--t-teal); line-height: 1.8; }
 .t-hero__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 

@@ -15,15 +15,18 @@
   <link rel="stylesheet" href="{{ asset('css/top.css') }}">
   <link rel="stylesheet" href="{{ asset('css/page.css') }}">
   {{-- full_title があればそのまま使う（コラムなど、店名を付けない題名のページ用） --}}
-  @php($pageTitle = View::hasSection('full_title') ? View::yieldContent('full_title') : View::yieldContent('title') . '|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-')
+  @php($pageTitle = View::hasSection('full_title') ? View::yieldContent('full_title') : View::yieldContent('title') . '｜リオ鍼灸サロン')
   <title>{{ $pageTitle }}</title>
   <link rel="canonical" href="https://rio-salon.com/@yield('canonical')">
-  <meta property="og:type" content="website">
+  {{-- コラムなどの記事ページは @section('og_type', 'article') を指定する --}}
+  <meta property="og:type" content="@yield('og_type', 'website')">
   <meta property="og:url" content="https://rio-salon.com/@yield('canonical')">
   <meta property="og:title" content="{{ $pageTitle }}">
+  <meta property="og:description" content="@yield('description')">
   <meta property="og:site_name" content="リオ鍼灸サロン">
+  <meta property="og:locale" content="ja_JP">
   <meta property="og:image" content="https://rio-salon.com/img/@yield('og_image', 'course1.jpg')">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <x-gtm />
   <script src="/js/analytics.js" defer></script>
   @stack('head')

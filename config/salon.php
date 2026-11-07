@@ -15,6 +15,12 @@ return [
         'full' => '〒310-0847 茨城県水戸市米沢町627',
     ],
 
+    // 構造化データ（地図上の位置）用。国土地理院の住所検索で「茨城県水戸市米沢町627」を調べた値
+    'geo' => [
+        'latitude' => 36.339027,
+        'longitude' => 140.458969,
+    ],
+
     'tel' => '029-279-8639',
     'tel_href' => '0292798639',
     'tel_e164' => '+81-29-279-8639',
@@ -68,4 +74,7 @@ return [
     ],
 
     'gtm_id' => 'GTM-WTVF47M',
+
+    // true にすると、公開日（config/columns.php の published）前のコラムも表示する。ローカルの確認用。本番では設定しない
+    'column_preview' => (bool) env('COLUMN_PREVIEW', false),
 ];

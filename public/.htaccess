@@ -5,6 +5,14 @@
 
     RewriteEngine On
 
+    # 本番のアドレスを https://rio-salon.com に統一する（http や www 付きで来たら 301 で転送）。
+    # 同じページが複数のアドレスで検索エンジンに登録され、評価が分散するのを防ぐ。ローカル環境には影響しない。
+    RewriteCond %{HTTP_HOST} ^www\.rio-salon\.com$ [NC]
+    RewriteRule ^(.*)$ https://rio-salon.com/$1 [R=301,L]
+    RewriteCond %{HTTP_HOST} ^rio-salon\.com$ [NC]
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://rio-salon.com/$1 [R=301,L]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

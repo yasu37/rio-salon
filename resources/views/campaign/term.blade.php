@@ -7,7 +7,8 @@
   $firstItems = collect(config('campaign.first_items'));
 @endphp
 @section('title', 'キャンペーン')
-@section('description', 'リオ鍼灸サロンのキャンペーン。期間限定のメニューと、はじめての方の料金をご案内します。')
+@section('full_title', 'キャンペーン・はじめての方の料金｜水戸市のリオ鍼灸サロン')
+@section('description', '水戸市米沢町のリオ鍼灸サロンのキャンペーン。美容鍼、フェイシャルエステ、カッピング、オイルマッサージの期間限定メニューと、はじめての方の料金をご案内します。')
 @section('canonical', 'campaign/term')
 @section('og_image', 'campaign/winter-01.jpg')
 

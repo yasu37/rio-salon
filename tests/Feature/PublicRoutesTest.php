@@ -29,6 +29,7 @@ class PublicRoutesTest extends TestCase
             'menu10' => ['/menu/menu10'],
             'campaign_term' => ['/campaign/term'],
             'column1' => ['/column/column1'],
+            'column2' => ['/column/column2'],
         ];
     }
 
@@ -45,6 +46,49 @@ class PublicRoutesTest extends TestCase
         // 初回限定ページは campaign/term の「はじめての方の料金」にまとめた
         $this->get('/campaign/first')->assertStatus(301);
         $this->assertStringEndsWith('/campaign/term#first', $this->get('/campaign/first')->headers->get('Location'));
+    }
+
+    public function test_unknown_column_returns_404(): void
+    {
+        // コラムは config/columns.php にあるものだけ表示する
+        $this->get('/column/column99')->assertStatus(404);
+    }
+
+    public function test_column_is_hidden_until_its_publish_date(): void
+    {
+        // column5 の公開日は 2026-11-15
+        config(['salon.column_preview' => false]);
+
+        \Illuminate\Support\Carbon::setTestNow('2026-11-14 23:59:00');
+        $this->get('/column/column5')->assertStatus(404);
+        $this->get('/news')->assertDontSee('column/column5', false);
+        $this->get('/menu/menu2')->assertDontSee('column/column5', false);
+
+        \Illuminate\Support\Carbon::setTestNow('2026-11-15 00:00:00');
+        $this->get('/column/column5')->assertStatus(200);
+        $this->get('/news')->assertSee('column/column5', false);
+        $this->get('/menu/menu2')->assertSee('column/column5', false);
+
+        \Illuminate\Support\Carbon::setTestNow();
+    }
+
+    public function test_scheduled_columns_render_after_publish_date(): void
+    {
+        config(['salon.column_preview' => false]);
+        \Illuminate\Support\Carbon::setTestNow('2026-12-06');
+        foreach (['column5', 'column6', 'column7', 'column8'] as $slug) {
+            $this->get('/column/' . $slug)->assertStatus(200);
+        }
+        \Illuminate\Support\Carbon::setTestNow();
+    }
+
+    public function test_column_preview_shows_unpublished_column(): void
+    {
+        // ローカル確認用の COLUMN_PREVIEW=true のときは、公開日前でも表示する
+        config(['salon.column_preview' => true]);
+        \Illuminate\Support\Carbon::setTestNow('2026-11-08');
+        $this->get('/column/column8')->assertStatus(200);
+        \Illuminate\Support\Carbon::setTestNow();
     }
 
     public function test_menu5_redirects_permanently_to_menu6(): void

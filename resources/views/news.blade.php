@@ -1,15 +1,18 @@
 {{-- お知らせ --}}
 @extends('layouts.renewal')
 @php
-  $news = [
-    ['date' => '2022-06-12', 'title' => '記事「美容鍼の効果を感じるのは何回目？正しい頻度や通い続けた人の写真などもご紹介！」', 'url' => 'column/column1'],
+  // コラムの公開は config/columns.php から自動で載せる。それ以外のお知らせはここに書く
+  $news = collect([
     ['date' => '2022-01-11', 'title' => 'スタッフ紹介', 'url' => 'about'],
     ['date' => '2022-01-11', 'title' => 'オープンキャンペーン', 'url' => null],
     ['date' => '2022-01-11', 'title' => 'リオ鍼灸サロンオープン', 'url' => null],
-  ];
+  ])->merge(\App\Support\Columns::published()->map(fn ($column, $slug) => [
+    'date' => $column['published'], 'title' => 'コラム「' . $column['title'] . '」', 'url' => 'column/' . $slug,
+  ])->values())->sortByDesc('date')->values();
 @endphp
 @section('title', 'お知らせ')
-@section('description', 'リオ鍼灸サロンからのお知らせ一覧です。')
+@section('full_title', 'お知らせ｜水戸市のリオ鍼灸サロン')
+@section('description', '水戸市米沢町のリオ鍼灸サロンからのお知らせ。オープンのご案内や、コラムの公開などをお知らせしています。')
 @section('canonical', 'news')
 
 @section('content')

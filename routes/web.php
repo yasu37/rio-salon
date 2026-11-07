@@ -37,7 +37,8 @@ Route::get('campaign/term', [PageController::class, 'term']);
 /* 初回限定メニューは campaign/term の「はじめての方の料金」にまとめたため、そちらへ恒久リダイレクトする。 */
 Route::redirect('campaign/first', '/campaign/term#first', 301);
 /*コラム */
-Route::get('column/column1', [PageController::class, 'column1']);
+/* 記事は config/columns.php のキー（column1, column2 …）から作る */
+Route::get('column/{slug}', [PageController::class, 'column'])->where('slug', 'column[0-9]+');
 /*サイトマップ*/
 /* 実体は public/sitemap.xml（静的ファイル）に一元化した。
    旧 /sitemap を失わないよう恒久リダイレクトのみ残す。 */
