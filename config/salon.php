@@ -23,14 +23,14 @@ return [
         'open' => '10:00',
         'close' => '20:00',
         // 確定情報がないため空欄。画面には表示せず、確定次第ここへ設定する
-        'last_reception' => null,
+        'last_reception' => '19:00',
         'closed_day' => '火曜日',
         'closed_day_label' => '火曜定休',
     ],
 
     'payment' => [
         'cash' => true,
-        'credit_cards' => ['VISA', 'MasterCard', 'JCB'],
+        'credit_cards' => ['VISA', 'MasterCard', 'JCB', 'American Express', 'Diners Club', '銀聯', 'Discover'],
         'e_money' => ['PayPay', 'iD', 'QUIC Pay', 'Apple Pay'],
     ],
 

@@ -15,7 +15,7 @@
         </ul>
       </div>
       <p class="date">営業時間</p>
-      <p>平日：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}（{{ config('salon.business_hours.closed_day_label') }}）<br>土日祝：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}</p>
+      <p>平日：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}（{{ config('salon.business_hours.closed_day_label') }}）<br>土日祝：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}@if (config('salon.business_hours.last_reception'))<br>最終受付：{{ config('salon.business_hours.last_reception') }}@endif</p>
     </div>
   </div>
 </section>

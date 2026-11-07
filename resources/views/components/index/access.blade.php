@@ -21,7 +21,7 @@
           </tr>
           <tr>
             <th>営業時間</th>
-            <th>{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}</th>
+            <th>{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}@if (config('salon.business_hours.last_reception'))<br>（最終受付 {{ config('salon.business_hours.last_reception') }}）@endif</th>
           </tr>
           <tr>
             <th>定休日</th>

@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <p class="number"><span>ご予約・ご相談</span><br><span class="number_color"><a href="tel:{{ config('salon.tel_href') }}">{{ config('salon.tel') }}</a></span></p>
-      <p>平日：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}<span>({{ config('salon.business_hours.closed_day_label') }})</span><br>土日祝：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}</p>
+      <p>平日：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}<span>({{ config('salon.business_hours.closed_day_label') }})</span><br>土日祝：{{ config('salon.business_hours.open') }}〜{{ config('salon.business_hours.close') }}@if (config('salon.business_hours.last_reception'))<br>最終受付：{{ config('salon.business_hours.last_reception') }}@endif</p>
     </div>
     <div class="list">
       <ul class="sns">

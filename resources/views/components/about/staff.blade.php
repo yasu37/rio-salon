@@ -15,7 +15,7 @@
       <div class="content">
         <p>「健康や美容に悩まれている人達のためにご自身と向き合う場所を作りたい」と決意し、令和4年1月に「{{ config('salon.name') }}」「RIO漢方薬店」を開院いたしました。</p>
         <p>平成6年に国家資格取得後は、整形外科、鍼灸接骨院や指圧治療院など、臨床経験を重ねて参りました。</p>
-        <p>{{ $member['experience_years'] }}年間培ってきた鍼灸の臨床経験と漢方、エステ、リラクゼーションの4本柱を軸に、お一人お一人に合った治療を提案し、皆様に笑顔で健やかな時間を過ごして頂きたいと思います。</p>
+        <p>{{ $member['experience_label'] }}培ってきた鍼灸の臨床経験と漢方、エステ、リラクゼーションの4本柱を軸に、お一人お一人に合った治療を提案し、皆様に笑顔で健やかな時間を過ごして頂きたいと思います。</p>
       </div>
     </div>
     <div class="ceo_img">
@@ -31,7 +31,7 @@
         <dt>担当施術</dt>
         <dd>@foreach ($member['treatments'] as $treatment)・{{ $treatment }}@if (!$loop->last)<br>@endif @endforeach</dd>
         <dt>施術歴</dt>
-        <dd>{{ $member['experience_years'] }}年</dd>
+        <dd>{{ $member['experience_label'] }}</dd>
         @if ($member['work_days'])
           <dt>出勤日</dt>
           <dd>{{ $member['work_days'] }}</dd>
