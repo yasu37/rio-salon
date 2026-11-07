@@ -105,6 +105,10 @@
         <p>施術を重ねることで、コラーゲンなどの生成に関わる反応が促されると考えられていますが、感じ方や持続感には個人差があります。</p>
         <p>その後は月1～2回程度のペースでケアを続けていただくことをおすすめしています。</p>
       </div>
+      <div class="column_guide">
+        <p>通うペースは、お顔とからだの様子を見ながら一緒に決めていきます。{{ config('salon.name') }}の美容鍼のメニューと料金は、こちらからご覧いただけます。</p>
+        <a href="../menu/menu1" target="_self" data-gtm-event="select_menu" data-gtm-menu-name="美容鍼灸メニュー" data-gtm-cta-position="column_mid">美容鍼灸のメニューと料金を見る</a>
+      </div>
     </div>
     <div id="column5" class="headline">
       <h2>変化を感じやすいタイミング</h2>
@@ -167,8 +171,31 @@
       <p>水戸市の{{ config('salon.name') }}は美容鍼灸サロンであり、お客様のお悩みに合わせた施術をご提案いたします。</p>
       <p>水戸市で美容鍼の施術を受けたいという方は、ぜひご相談ください。</p>
     </div>
-    <div class="button">
-      <a href="../reserve" target="_self">予約方法を見る</a>
+    @php($owner = collect(config('staff'))->where('status', 'active')->sortBy('order')->first())
+    <div class="column_end">
+      @if ($owner)
+      <div class="column_owner">
+        <div class="column_owner_body">
+          <p class="column_owner_name">院長　{{ $owner['name'] }}</p>
+          <p>はじめまして、院長の{{ $owner['name'] }}です。鍼灸師として{{ $owner['experience_label'] }}、たくさんの方のお顔とからだに向き合ってきました。美容鍼がはじめての方も、気になることがあれば気軽にご相談くださいね。</p>
+          <a href="../about" target="_self" data-gtm-event="select_content" data-gtm-cta-position="column_end">院長のこと、もう少し</a>
+        </div>
+      </div>
+      @endif
+
+      <ul class="column_links">
+        <li><a href="../menu/menu1" target="_self" data-gtm-event="select_menu" data-gtm-menu-name="美容鍼灸メニュー" data-gtm-cta-position="column_end">美容鍼灸のメニューと料金</a></li>
+        <li><a href="../first-visit" target="_self" data-gtm-event="select_content" data-gtm-cta-position="column_end">はじめての方へ（来店の流れ・持ち物）</a></li>
+      </ul>
+
+      <div class="column_reserve">
+        <p>どのメニューが合うかわからない方も、まずはLINEでお気軽にご相談ください。</p>
+        <div class="column_reserve_buttons">
+          <a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_primary" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="column_end">LINEで相談する</a>
+          <a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_secondary" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="column_end">Webで予約する</a>
+        </div>
+        <a href="../reserve" target="_self" class="column_reserve_more" data-gtm-event="begin_booking" data-gtm-cta-position="column_end">お電話・HotPepperでのご予約はこちら</a>
+      </div>
     </div>
 
   </div>

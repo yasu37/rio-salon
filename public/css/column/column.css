@@ -216,6 +216,113 @@ h1 {
   line-height: 0.2;
 }
 
+/*記事途中のメニュー案内*/
+.column_guide {
+  margin-top: 3rem;
+  padding: 1.6rem 2rem;
+  border-radius: 12px;
+  background: #ebffeb;
+}
+
+.column_guide a,
+.column_owner_body a,
+.column_reserve_more {
+  color: #008475;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  display: inline-block;
+  padding: 0.6rem 0;
+}
+
+/*記事末尾：院長紹介・次に読むページ・予約*/
+.column_end {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px dashed #B1791D;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.column_owner {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.column_owner_body {
+  min-width: 0;
+}
+
+.column_owner_name {
+  font-weight: bold;
+  color: #343434;
+  padding-bottom: 0.4rem !important;
+}
+
+.column_links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ddd;
+}
+
+.column_links li {
+  border-bottom: 1px solid #ddd;
+}
+
+.column_links a {
+  display: block;
+  padding: 1.4rem 0.4rem;
+  font-size: 1.5rem;
+  color: #343434;
+  text-decoration: none;
+}
+
+.column_links a::after {
+  content: "›";
+  float: right;
+  color: #008475;
+}
+
+.column_reserve {
+  text-align: center;
+}
+
+.column_reserve_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0.6rem 0 0.8rem;
+}
+
+.column_reserve_buttons a {
+  flex: 1 1 220px;
+  max-width: 320px;
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.column_reserve_primary {
+  background: #008475;
+  color: #fff !important;
+}
+
+.column_reserve_secondary {
+  background: #fff;
+  color: #008475 !important;
+  border: 2px solid #008475;
+}
+
 /*サイトの横幅が780px以下*/
 @media screen and (max-width: 780px) {
   .headline .image {
