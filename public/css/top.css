@@ -12,7 +12,7 @@
   --t-apricot-soft: #FDF1EA;
   --t-apricot-ink: #6A3A22;
   --t-ink: #1F2D2B;
-  --t-ink-2: #46534F;
+  --t-ink-2: #3B4845;
   --t-ink-3: #55635F;
   --t-mincho: "Shippori Mincho", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
   --t-maru: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
@@ -107,17 +107,20 @@ body.t-body {
 .t-first__photo { border-radius: 24px; overflow: hidden; aspect-ratio: 16 / 9; }
 .t-first__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
 
+/* 短い項目が言葉の途中で折り返されないようにする（Chrome は文節単位、Safari は句読点・記号の位置で改行。収まらない時だけ途中で改行） */
+.t-concerns__list, .t-values, .t-services, .t-menu, .t-voice { word-break: keep-all; word-break: auto-phrase; overflow-wrap: anywhere; }
+
 /* ---------- お悩み ---------- */
-.t-concerns__list { display: flex; flex-direction: column; gap: 12px; }
-.t-concerns__list li { display: flex; gap: 12px; align-items: flex-start; }
-.t-concerns__list svg { flex: none; margin-top: 6px; color: var(--t-teal); }
+.t-concerns__list { display: flex; flex-direction: column; }
+.t-concerns__list li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 2px; border-bottom: 1px dashed var(--t-mint-line); line-height: 1.75; }
+.t-concerns__list svg { flex: none; margin-top: 4px; color: var(--t-teal); }
 
 /* ---------- 大切にしていること・できること ---------- */
-.t-values { display: flex; flex-direction: column; gap: 14px; }
-.t-values li { display: flex; flex-direction: column; padding-left: 16px; position: relative; }
-.t-values li::before { content: ""; position: absolute; left: 0; top: .85em; width: 7px; height: 7px; border-radius: 50%; background: var(--t-apricot); }
+.t-values { display: flex; flex-direction: column; gap: 18px; }
+.t-values li { display: flex; flex-direction: column; gap: 2px; padding-left: 16px; position: relative; }
+.t-values li::before { content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 3px; border-radius: 2px; background: var(--t-teal); opacity: .55; }
 .t-values__title { font-family: var(--t-mincho); font-weight: 700; font-size: 17px; line-height: 1.7; }
-.t-values__text { font-size: 14.5px; color: var(--t-ink-2); }
+.t-values__text { font-size: 15px; color: var(--t-ink-2); line-height: 1.8; }
 .t-care__sub { margin-top: 20px; }
 .t-services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
 .t-services__item { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
@@ -125,7 +128,7 @@ body.t-body {
 .t-services__photo img { width: 100%; height: 100%; object-fit: cover; }
 .t-services__item--apricot .t-services__photo { box-shadow: 0 0 0 3px var(--t-apricot-soft); }
 .t-services__name { font-family: var(--t-mincho); font-weight: 700; font-size: 16px; line-height: 1.5; margin-top: 4px; }
-.t-services__text { font-size: 13.5px; color: var(--t-ink-2); line-height: 1.75; }
+.t-services__text { font-size: 14.5px; color: var(--t-ink-2); line-height: 1.75; }
 
 /* ---------- メニュー ---------- */
 .t-menu__list { background: var(--t-white); border-radius: 24px; padding: 4px 18px; border: 1px solid #DCEBE7; }
@@ -134,9 +137,9 @@ body.t-body {
 .t-menu__row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .t-menu__name { font-weight: 700; }
 .t-menu__price { flex: none; font-variant-numeric: tabular-nums; }
-.t-menu__comment { font-size: 15px; color: var(--t-teal); line-height: 1.7; }
+.t-menu__comment { font-size: 14.5px; color: var(--t-teal-dark); line-height: 1.75; }
 .t-menu__item a:hover .t-menu__name { text-decoration: underline; text-underline-offset: 4px; }
-.t-menu__massage { font-size: 14.5px; color: var(--t-ink-2); }
+.t-menu__massage { font-size: 15px; color: var(--t-ink-2); }
 .t-season { display: flex; flex-direction: column; padding: 14px 16px; border-radius: 18px; background: var(--t-apricot-soft); text-decoration: none; }
 .t-season__label { font-size: 13px; color: var(--t-apricot-ink); }
 .t-season__name { font-weight: 700; color: var(--t-ink); }
@@ -145,7 +148,7 @@ body.t-body {
 .t-menu + .t-voice { padding-top: 8px; }
 
 /* ---------- お客様の声 ---------- */
-.t-voice__rating { font-size: 14px; color: var(--t-ink-2); }
+.t-voice__rating { font-size: 15px; color: var(--t-ink-2); }
 .t-voice__empty { color: var(--t-ink-2); font-size: 15px; }
 .t-voice__groups { display: grid; gap: 28px; }
 .t-voice__group { display: flex; flex-direction: column; gap: 12px; }
@@ -153,7 +156,7 @@ body.t-body {
 .t-card { padding: 16px 18px; border-radius: 6px; background: var(--t-white); box-shadow: 0 2px 10px rgba(11, 125, 114, .10); display: flex; flex-direction: column; gap: 6px; }
 .t-card:nth-child(odd) { transform: rotate(-.6deg); }
 .t-card:nth-child(even) { transform: rotate(.6deg); }
-.t-card blockquote { font-size: 15.5px; line-height: 1.8; }
+.t-card blockquote { font-size: 15px; line-height: 1.85; }
 .t-card figcaption { font-size: 12.5px; color: var(--t-ink-3); text-align: right; }
 
 /* ---------- お店のこと・アクセス ---------- */
@@ -221,7 +224,7 @@ body.t-body {
 
   .t-letter .t-wrap { max-width: 760px; align-items: center; }
 
-  .t-concerns__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 32px; }
+  .t-concerns__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
 
   .t-values { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
   .t-services { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }

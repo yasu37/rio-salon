@@ -29,7 +29,7 @@
             <h3 class="t-hand t-voice__group-title">{{ $group }}</h3>
             @foreach ($items as $review)
               <figure class="t-card">
-                <blockquote class="t-hand">{{ $review['text'] }}</blockquote>
+                <blockquote>{{ $review['text'] }}</blockquote>
                 <figcaption>{{ $review['author'] }}</figcaption>
               </figure>
             @endforeach

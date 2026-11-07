@@ -10,7 +10,7 @@
               <span class="t-menu__name">{{ $menu['name'] }}</span>
               <span class="t-menu__price">{{ $menu['price'] }}</span>
             </span>
-            <span class="t-hand t-menu__comment">{{ $menu['comment'] }}</span>
+            <span class="t-menu__comment">{{ $menu['comment'] }}</span>
           </a>
         </li>
       @endforeach
