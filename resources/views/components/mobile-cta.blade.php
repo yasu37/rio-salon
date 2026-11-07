@@ -7,7 +7,7 @@
     <div class="mobile_cta_menu">
       <p class="mobile_cta_menu_lead">目的に合わせてお選びください</p>
       <ul>
-        <li><a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-cta-position="mobile_fixed">予約する</a></li>
+        <li><a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-cta-position="mobile_fixed">Webで予約する</a></li>
         <li class="mobile_cta_menu_sub"><a href="{{ config('salon.reservation.hotpepper.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_hotpepper_click" data-gtm-provider="hotpepper" data-gtm-customer-type="new" data-gtm-cta-position="mobile_fixed">HotPepperで空き時間を見る</a></li>
       </ul>
     </div>

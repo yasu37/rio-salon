@@ -16,7 +16,7 @@
           <div class="reservation_menu">
             <p class="reservation_menu_lead">目的に合わせてお選びください</p>
             <ul>
-              <li><a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-cta-position="header">予約する</a></li>
+              <li><a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-cta-position="header">Webで予約する</a></li>
               <li><a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="header">LINEで施術を相談する</a></li>
               <li class="reservation_menu_sub"><a href="{{ config('salon.reservation.hotpepper.url') }}" target="_blank" rel="noopener noreferrer" data-gtm-event="reservation_hotpepper_click" data-gtm-provider="hotpepper" data-gtm-customer-type="new" data-gtm-cta-position="header">HotPepperで空き時間を見る</a></li>
             </ul>
