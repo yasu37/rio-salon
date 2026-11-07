@@ -84,3 +84,19 @@
   .p-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .p-options__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* ---------- キャンペーン ---------- */
+.p-campaign__meta { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; font-size: 14.5px; }
+.p-campaign__meta div { display: flex; gap: 8px; }
+.p-campaign__meta dt { color: var(--t-ink-3); }
+.p-campaign__meta dd { margin: 0; font-weight: 700; color: var(--t-ink); }
+.p-item--photo { padding-top: 12px; }
+.p-item__photo { margin: 0 -6px; border-radius: 14px; overflow: hidden; aspect-ratio: 5 / 3; }
+.p-item__photo img { width: 100%; height: 100%; object-fit: cover; }
+.p-item__regular { font-size: 14px; color: var(--t-ink-3); }
+.p-item__arrow { font-size: 14px; color: var(--t-ink-3); }
+.p-campaign .p-item__yen { color: #B4532A; }
+.p-campaign .p-items { word-break: keep-all; word-break: auto-phrase; overflow-wrap: anywhere; }
+@media (min-width: 900px) {
+  .p-campaign .p-items { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

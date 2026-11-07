@@ -47,10 +47,6 @@ class PageController extends Controller
         return view('campaign.term');
     }
 
-    //キャンペーン（期間限定クーポン）
-    public function first() {
-        return view('campaign.first');
-    }
 
     //コラム
     public function column1() {

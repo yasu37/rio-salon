@@ -34,7 +34,8 @@ Route::get('news', [PageController::class, 'news']);
 Route::get('reserve', [PageController::class, 'reserve']);
 /*キャンペーン */
 Route::get('campaign/term', [PageController::class, 'term']);
-Route::get('campaign/first', [PageController::class, 'first']);
+/* 初回限定メニューは campaign/term の「はじめての方の料金」にまとめたため、そちらへ恒久リダイレクトする。 */
+Route::redirect('campaign/first', '/campaign/term#first', 301);
 /*コラム */
 Route::get('column/column1', [PageController::class, 'column1']);
 /*サイトマップ*/
