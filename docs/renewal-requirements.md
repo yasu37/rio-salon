@@ -197,7 +197,10 @@ GTM（`GTM-WTVF47M`）とGoogle Analyticsで計測する。
 - ファイル：`resources/views/index.blade.php`、`resources/views/components/top/*`、`public/css/top.css`
 - 文言・メニュー・口コミは `config/top.php` で管理。店舗情報は従来どおり `config/salon.php`
 - 写真は `public/img` の既存写真を仮で使用（about, ceo, course23, course3, course27, course8, location2, location6）。撮影後に差し替える
-- ヘッダー・フッター・スマホ固定ボタンはトップページ専用の新デザイン。ほかのページは旧デザインのまま（共通部分の刷新はフェーズ2）
+- フェーズ2（2026-11-07）：全ページを新デザインに移行。共通レイアウトは `layouts/renewal`
+  - メニューは `config/menus.php`、キャンペーンは `config/campaign.php` で管理（Squareの予約ページ 2026-11-07時点に合わせた）
+  - `campaign/first` は `campaign/term#first` へ301リダイレクト（はじめての方の料金は menus.php の first_price から自動表示）
+  - 旧デザインの部品・CSSは削除。エラーページ（errors/）は外部ファイルに依存しない作りのため従来のまま
 - 旧トップページの部品（`components/index/*`）は削除せず残している
 
 **許可・確認待ちのためスキップしたもの**
