@@ -30,7 +30,7 @@
     <div class="image top-image">
       <picture>
         <source srcset="{{ $img(0) }}.webp" type="image/webp">
-        <img src="{{ $img(0) }}.jpg" alt="うつ伏せの方の背中と肩にカッピングのカップを並べている様子" width="1280" height="854">
+        <img src="{{ $img(0) }}.jpg" alt="うつ伏せの方の背中から肩にかけて、カッピングのカップを並べている様子" width="1200" height="800">
       </picture>
     </div>
     <h1>カッピングの跡はいつ消える？<br>色の違いと消えるまでの日数、施術後の過ごし方</h1>
@@ -82,12 +82,6 @@
 
     <div id="why" class="headline">
       <h2>カッピングの跡はなぜできる？</h2>
-      <div class="image">
-        <picture>
-          <source srcset="{{ $img(1) }}.webp" type="image/webp">
-          <img src="{{ $img(1) }}.jpg" alt="背中にカップを付けて吸引している、カッピングの施術中の様子" width="1280" height="854" loading="lazy">
-        </picture>
-      </div>
       <p>カッピングは、カップの中の空気を抜いて皮膚を吸い上げる施術です。吸い上げられることで、皮膚の下にある細い血管から血液の成分がにじみ出て、それが皮膚の上から丸い色として見えている、と言われています。</p>
       <p>ぶつけてできるあざと見た目は似ていますが、強い衝撃が加わったわけではないので、<strong>跡に痛みを感じることは少ない</strong>のが一般的です。</p>
       <p>カッピングは、古くから東洋でも西洋でも行われてきた技法です。吸引して皮膚や筋肉を持ち上げることで、肩まわりや背中の重だるさが気になる方に選ばれています。感じ方には個人差があります。</p>
@@ -126,12 +120,6 @@
 
     <div id="schedule" class="headline">
       <h2>結婚式・水着など、予定がある方は</h2>
-      <div class="image">
-        <picture>
-          <source srcset="{{ $img(2) }}.webp" type="image/webp">
-          <img src="{{ $img(2) }}.jpg" alt="脚の裏側にカッピングのカップを並べている様子" width="1280" height="854" loading="lazy">
-        </picture>
-      </div>
       <p>カッピングの跡は、施術を受けた場所にしばらく残ります。次のようなご予定がある方は、<strong>日にちに余裕をもって</strong>受けるか、ご予定のあとに受けるのが安心です。</p>
       <ul class="point1">
         <li>結婚式やパーティー（背中の開いたドレス）</li>
@@ -194,7 +182,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(3) }}.webp" type="image/webp">
-          <img src="{{ $img(3) }}.jpg" alt="オイルを使って脚をマッサージしている様子" width="1280" height="854" loading="lazy">
+          <img src="{{ $img(3) }}.jpg" alt="仰向けの方のからだを、施術者がオイルでマッサージしている様子" width="1200" height="800" loading="lazy">
         </picture>
       </div>
       <p>水戸市米沢町の{{ config('salon.name') }}では、カッピングのあとにアロマオイルで全身をマッサージする「オイルカッピング」をご用意しています。鍼灸師歴20年以上の院長が、その日のからだの様子をお伺いしながら施術します。</p>

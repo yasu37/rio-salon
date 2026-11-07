@@ -109,7 +109,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(1) }}.webp" type="image/webp">
-          <img src="{{ $img(1) }}.jpg" alt="目を閉じてあお向けになった女性の額、目の下、ほお、あごに、色つきの持ち手の細い鍼を打っている様子" width="1272" height="955" loading="lazy">
+          <img src="{{ $img(1) }}.jpg" alt="仰向けで目を閉じた方の額やほお、あごに、細い鍼をしている様子" width="1200" height="800" loading="lazy">
         </picture>
       </div>
       <p>美容鍼は、髪の毛ほどの細い鍼をお顔のツボや表情筋に打つ施術です。鍼を使う施術は、医師をのぞくと、<strong>はり師という国家資格を持つ人</strong>しか仕事として行うことができません。</p>
@@ -122,7 +122,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(2) }}.webp" type="image/webp">
-          <img src="{{ $img(2) }}.jpg" alt="あお向けに寝た女性のおでこからほおにかけて、施術者が手のひらでやさしくマッサージしている様子" width="1280" height="854" loading="lazy">
+          <img src="{{ $img(2) }}.jpg" alt="仰向けの方のお顔を、両手でやさしくマッサージしている様子" width="1200" height="800" loading="lazy">
         </picture>
       </div>
       <p>フェイシャルエステは、クレンジング、マッサージ、毛穴のケア、パックなどで、<strong>肌の表面を整えるケア</strong>です。鍼を使わないので、刺激の少ないケアを受けたい方や、ゆったりリラックスしたい方にも選ばれています。</p>
@@ -201,7 +201,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(3) }}.webp" type="image/webp">
-          <img src="{{ $img(3) }}.jpg" alt="あお向けに寝た女性のほおに、毛穴吸引の機器をあてている様子" width="1280" height="961" loading="lazy">
+          <img src="{{ $img(3) }}.jpg" alt="施術者が、仰向けの方のほおに美顔器をあてている様子" width="438" height="328" loading="lazy">
         </picture>
       </div>
       <p>美容鍼とエステは、どちらかひとつに決めなければいけないものではありません。<strong>美容鍼で内側に、エステで表面に</strong>と、ねらうところがちがうので、組み合わせて受ける方もいらっしゃいます。</p>

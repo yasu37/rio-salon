@@ -37,7 +37,7 @@
     <div class="image top-image">
       <picture>
         <source srcset="{{ $img(0) }}.webp" type="image/webp">
-        <img src="{{ $img(0) }}.jpg" alt="うつ伏せの方の背骨の両わきに、赤い持ち手の鍼を何本か並べて打っている様子" width="1280" height="854">
+        <img src="{{ $img(0) }}.jpg" alt="うつ伏せの方の首から背中にかけて、細い鍼をしている様子" width="1200" height="900">
       </picture>
     </div>
     <h1>自律神経の乱れに鍼灸はどう向き合う？<br>施術の流れと通うペースの目安</h1>
@@ -140,7 +140,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(1) }}.webp" type="image/webp">
-          <img src="{{ $img(1) }}.jpg" alt="白衣の施術者が、ボードを手にお客様と向き合ってお話を聞いている、カウンセリングの様子" width="570" height="427" loading="lazy">
+          <img src="{{ $img(1) }}.jpg" alt="白衣の施術者が、ボードを手にお客様のお話を伺っている様子" width="1200" height="800" loading="lazy">
         </picture>
       </div>
       <p>{{ config('salon.name') }}の鍼灸治療は、次のような流れで進めていきます。</p>
@@ -181,12 +181,6 @@
 
     <div id="care" class="headline">
       <h2>鍼のあとの過ごし方と、毎日のセルフケア</h2>
-      <div class="image">
-        <picture>
-          <source srcset="{{ $img(2) }}.webp" type="image/webp">
-          <img src="{{ $img(2) }}.jpg" alt="仰向けで目を閉じて休んでいる方の頭を、両手でやさしく包んでいる様子" width="1280" height="854" loading="lazy">
-        </picture>
-      </div>
       <div class="subheading">
         <h3>施術を受けた日の過ごし方</h3>
         <p>鍼のあとは、からだがリラックスした状態になっていると言われています。当日は次のことを心がけて、ゆっくりお過ごしください。</p>
@@ -241,7 +235,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(3) }}.webp" type="image/webp">
-          <img src="{{ $img(3) }}.jpg" alt="木目の床に、茶色のソファと白い受付カウンター、観葉植物がある{{ config('salon.name') }}の待合スペース" width="1280" height="960" loading="lazy">
+          <img src="{{ $img(3) }}.jpg" alt="花が飾られた、サロンの受付" width="1200" height="900" loading="lazy">
         </picture>
       </div>
       <p>水戸市米沢町の{{ config('salon.name') }}では、首や肩のこり、疲れ、自律神経の乱れが気になる方に向けて、鍼灸治療を行っています。鍼灸師歴20年以上の院長が、その日のからだの様子をお伺いしながら施術します。</p>

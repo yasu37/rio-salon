@@ -70,12 +70,6 @@
   <div class="column">
     <div id="about" class="headline">
       <h2>ハーブピーリングとは？</h2>
-      <div class="image">
-        <picture>
-          <source srcset="{{ $img(1) }}.webp" type="image/webp">
-          <img src="{{ $img(1) }}.jpg" alt="ALEXのクレンジングミルク、グリーントニック、BBクリーム、ビタミンクリームを木のテーブルに並べた写真" width="1280" height="960" loading="lazy">
-        </picture>
-      </div>
       <p>ハーブピーリングは、ハーブなどの植物を原料にしたものをお肌に塗り込み、古い角質にアプローチする角質ケアです。お肌のごわつきやくすみが気になる方に選ばれています。</p>
       <p>薬剤を使うケミカルピーリングとちがい、細かいハーブの粒をお肌になじませるのが特徴です。塗っているときや塗ったあとに、チクチクとした刺激を感じる方が多いと言われています。刺激の感じ方には個人差があります。</p>
       <div class="subheading">
@@ -120,12 +114,6 @@
 
     <div id="peeling" class="headline">
       <h2>皮むけはいつから？どのくらい続く？</h2>
-      <div class="image">
-        <picture>
-          <source srcset="{{ $img(2) }}.webp" type="image/webp">
-          <img src="{{ $img(2) }}.jpg" alt="お顔全体に細かいハーブがのっている、ハーブピーリングの施術中の様子" width="960" height="800" loading="lazy">
-        </picture>
-      </div>
       <p>ハーブピーリングの皮むけは、一般的には<strong>施術から数日たったころ</strong>に始まり、<strong>しばらくすると</strong>落ち着いてくることが多いと言われています。</p>
       <p>皮むけは、口のまわりや小鼻のまわり、あごなど、よく動く部分から始まりやすい傾向があります。粉をふいたような細かい皮むけのこともあれば、うすい皮がはがれるように感じることもあります。</p>
       <div class="subheading">
@@ -229,7 +217,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(3) }}.webp" type="image/webp">
-          <img src="{{ $img(3) }}.jpg" alt="うつ伏せの方の首から肩まわりを両手でマッサージしている様子" width="1280" height="854" loading="lazy">
+          <img src="{{ $img(3) }}.jpg" alt="仰向けの方のお顔を、両手でやさしくマッサージしている様子" width="1200" height="800" loading="lazy">
         </picture>
       </div>
       <p>水戸市米沢町の{{ config('salon.name') }}では、ALEXハーブを使ったハーブピーリングをご用意しています。施術の前に首・肩をほぐすマッサージを行うので、ゆったりとした時間をお過ごしいただけます。美容鍼と組み合わせたコースもあります。</p>

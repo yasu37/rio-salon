@@ -33,7 +33,7 @@
     <div class="image top-image">
       <picture>
         <source srcset="{{ $img(0) }}.webp" type="image/webp">
-        <img src="{{ $img(0) }}.jpg" alt="チャペルの祭壇の前で、ブーケを持ってふり返るウェディングドレスの花嫁" width="1000" height="667">
+        <img src="{{ $img(0) }}.jpg" alt="チャペルでブーケを持って立つ、ウェディングドレスの花嫁" width="640" height="427">
       </picture>
     </div>
     <h1>ブライダル美容鍼はいつから始める？<br>挙式までの逆算スケジュールと、直前に気をつけること</h1>
@@ -120,7 +120,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(1) }}.webp" type="image/webp">
-          <img src="{{ $img(1) }}.jpg" alt="あお向けに寝た女性のおでこやこめかみ、頬まわりに細い鍼を打っている美容鍼の施術中の様子" width="1280" height="854" loading="lazy">
+          <img src="{{ $img(1) }}.jpg" alt="仰向けの方のお顔に鍼をして、電気を流している様子" width="1200" height="800" loading="lazy">
         </picture>
       </div>
       <p>挙式まで数か月ある時期は、準備を始めやすい時期です。美容鍼がはじめての方は、まず一度受けて、<strong>ご自身の肌がどんな反応をするか</strong>を知っておきましょう。</p>
@@ -162,12 +162,6 @@
 
     <div id="one-week" class="headline">
       <h2>挙式の直前：ブライダル美容鍼で気をつけること</h2>
-      <div class="image">
-        <picture>
-          <source srcset="{{ $img(2) }}.webp" type="image/webp">
-          <img src="{{ $img(2) }}.jpg" alt="あお向けに寝た女性の首すじから耳の下を、手でやさしくほぐしている様子" width="1280" height="854" loading="lazy">
-        </picture>
-      </div>
       <p>挙式が近づいてきたら、「新しいことを足す」よりも、「いまの状態を整える」ことを大切にする時期です。</p>
       <div class="subheading">
         <h3>はじめての美容鍼は、この時期より前に</h3>
@@ -261,7 +255,7 @@
       <div class="image">
         <picture>
           <source srcset="{{ $img(3) }}.webp" type="image/webp">
-          <img src="{{ $img(3) }}.jpg" alt="白いウェディングシューズと、淡いピンクのバラのブーケ" width="940" height="637" loading="lazy">
+          <img src="{{ $img(3) }}.jpg" alt="白い背景に置かれた、2つの結婚指輪" width="640" height="352" loading="lazy">
         </picture>
       </div>
       <p>水戸市米沢町の{{ config('salon.name') }}では、挙式までの期間に合わせて選べるブライダル鍼灸のコースをご用意しています。鍼灸師歴20年以上の院長が、お肌やからだの様子、挙式や前撮りの日程をお伺いしながら施術します。</p>
