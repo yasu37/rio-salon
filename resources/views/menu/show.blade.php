@@ -93,13 +93,20 @@
                 @if ($item['text'] || $item['flow'])
                   <details class="p-item__flow p-item__more">
                     <summary>詳しく見る</summary>
-                    @if ($item['text'])
-                      <p class="p-item__text">{!! nl2br(e($item['text'])) !!}</p>
-                    @endif
-                    @if ($item['flow'])
-                      <p class="p-item__flow-title">施術の流れ</p>
-                      <p class="p-item__flow-body">{!! nl2br(e($item['flow'])) !!}</p>
-                    @endif
+                    <div class="p-more">
+                      @if ($item['text'])
+                        <div class="p-more__block">
+                          <p class="p-more__title">{{ str_contains($item['text'], '回目') ? 'プランの内容' : 'このメニューについて' }}</p>
+                          <x-page.rich-text :text="$item['text']" />
+                        </div>
+                      @endif
+                      @if ($item['flow'])
+                        <div class="p-more__block p-more__block--flow">
+                          <p class="p-more__title">施術の流れ</p>
+                          <x-page.steps :text="$item['flow']" />
+                        </div>
+                      @endif
+                    </div>
                   </details>
                 @endif
               @else
