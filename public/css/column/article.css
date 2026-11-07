@@ -292,3 +292,9 @@
 .p-article .column_faq dt { font-weight: 700; color: var(--t-ink); line-height: 1.7; }
 .p-article .column_faq dt::before { content: "Q. "; color: var(--t-teal); }
 .p-article .column_faq dd { margin: 8px 0 0; color: var(--t-ink-2); line-height: 1.85; }
+
+/* お店の情報の一覧（コラム3「リオ鍼灸サロンの場合」） */
+.p-article .column_facts { margin: 12px 0; display: flex; flex-direction: column; }
+.p-article .column_facts > div { display: grid; grid-template-columns: 7em minmax(0, 1fr); gap: 10px; padding: 12px 0; border-bottom: 1px dashed var(--t-mint-line); }
+.p-article .column_facts dt { font-weight: 700; color: var(--t-teal-dark); font-size: 14.5px; }
+.p-article .column_facts dd { margin: 0; color: var(--t-ink); line-height: 1.8; }
