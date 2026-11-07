@@ -6,7 +6,7 @@
     ['date' => '2022-01-11', 'title' => 'スタッフ紹介', 'url' => 'about'],
     ['date' => '2022-01-11', 'title' => 'オープンキャンペーン', 'url' => null],
     ['date' => '2022-01-11', 'title' => 'リオ鍼灸サロンオープン', 'url' => null],
-  ])->merge(collect(config('columns'))->map(fn ($column, $slug) => [
+  ])->merge(\App\Support\Columns::published()->map(fn ($column, $slug) => [
     'date' => $column['published'], 'title' => 'コラム「' . $column['title'] . '」', 'url' => 'column/' . $slug,
   ])->values())->sortByDesc('date')->values();
 @endphp

@@ -50,7 +50,9 @@ class PageController extends Controller
 
     //コラム（一覧は config/columns.php、本文は components/column/{slug}）
     public function column(string $slug) {
-        abort_unless(array_key_exists($slug, config('columns')), 404);
-        return view('column.show', ['slug' => $slug, 'column' => config('columns')[$slug]]);
+        // 公開日前の記事は 404 にする（App\Support\Columns）
+        $column = config('columns')[$slug] ?? null;
+        abort_unless($column && \App\Support\Columns::isPublished($column), 404);
+        return view('column.show', ['slug' => $slug, 'column' => $column]);
     }
 }

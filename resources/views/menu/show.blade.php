@@ -201,7 +201,7 @@
   @endif
 
   {{-- このメニューに関係するコラム（config/columns.php の menu で指定） --}}
-  @php($relatedColumns = collect(config('columns'))->filter(fn ($column) => ($column['menu'] ?? null) === $slug))
+  @php($relatedColumns = \App\Support\Columns::published()->filter(fn ($column) => ($column['menu'] ?? null) === $slug))
   @if ($relatedColumns->isNotEmpty())
     <section class="t-section p-related">
       <div class="t-wrap">

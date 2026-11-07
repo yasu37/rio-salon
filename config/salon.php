@@ -74,4 +74,7 @@ return [
     ],
 
     'gtm_id' => 'GTM-WTVF47M',
+
+    // true にすると、公開日（config/columns.php の published）前のコラムも表示する。ローカルの確認用。本番では設定しない
+    'column_preview' => (bool) env('COLUMN_PREVIEW', false),
 ];

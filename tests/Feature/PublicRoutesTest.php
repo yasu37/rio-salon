@@ -54,6 +54,43 @@ class PublicRoutesTest extends TestCase
         $this->get('/column/column99')->assertStatus(404);
     }
 
+    public function test_column_is_hidden_until_its_publish_date(): void
+    {
+        // column5 の公開日は 2026-11-15
+        config(['salon.column_preview' => false]);
+
+        \Illuminate\Support\Carbon::setTestNow('2026-11-14 23:59:00');
+        $this->get('/column/column5')->assertStatus(404);
+        $this->get('/news')->assertDontSee('column/column5', false);
+        $this->get('/menu/menu2')->assertDontSee('column/column5', false);
+
+        \Illuminate\Support\Carbon::setTestNow('2026-11-15 00:00:00');
+        $this->get('/column/column5')->assertStatus(200);
+        $this->get('/news')->assertSee('column/column5', false);
+        $this->get('/menu/menu2')->assertSee('column/column5', false);
+
+        \Illuminate\Support\Carbon::setTestNow();
+    }
+
+    public function test_scheduled_columns_render_after_publish_date(): void
+    {
+        config(['salon.column_preview' => false]);
+        \Illuminate\Support\Carbon::setTestNow('2026-12-01');
+        foreach (['column5', 'column6', 'column8'] as $slug) {
+            $this->get('/column/' . $slug)->assertStatus(200);
+        }
+        \Illuminate\Support\Carbon::setTestNow();
+    }
+
+    public function test_column_preview_shows_unpublished_column(): void
+    {
+        // ローカル確認用の COLUMN_PREVIEW=true のときは、公開日前でも表示する
+        config(['salon.column_preview' => true]);
+        \Illuminate\Support\Carbon::setTestNow('2026-11-08');
+        $this->get('/column/column8')->assertStatus(200);
+        \Illuminate\Support\Carbon::setTestNow();
+    }
+
     public function test_menu5_redirects_permanently_to_menu6(): void
     {
         $this->get('/menu/menu5')->assertRedirect('/menu/menu6');
