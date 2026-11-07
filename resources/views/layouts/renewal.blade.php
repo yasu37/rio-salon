@@ -14,11 +14,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&family=Zen+Maru+Gothic:wght@500;700&family=Klee+One:wght@600&display=swap">
   <link rel="stylesheet" href="{{ asset('css/top.css') }}">
   <link rel="stylesheet" href="{{ asset('css/page.css') }}">
-  <title>@yield('title')|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  {{-- full_title があればそのまま使う（コラムなど、店名を付けない題名のページ用） --}}
+  @php($pageTitle = View::hasSection('full_title') ? View::yieldContent('full_title') : View::yieldContent('title') . '|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-')
+  <title>{{ $pageTitle }}</title>
   <link rel="canonical" href="https://rio-salon.com/@yield('canonical')">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rio-salon.com/@yield('canonical')">
-  <meta property="og:title" content="@yield('title')|リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-">
+  <meta property="og:title" content="{{ $pageTitle }}">
   <meta property="og:site_name" content="リオ鍼灸サロン">
   <meta property="og:image" content="https://rio-salon.com/img/@yield('og_image', 'course1.jpg')">
   <meta name="twitter:card" content="summary">

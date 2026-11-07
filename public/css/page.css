@@ -100,3 +100,71 @@
 @media (min-width: 900px) {
   .p-campaign .p-items { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* ---------- 写真と文章を並べる欄（リオについて・はじめての方へ） ---------- */
+.p-split .t-wrap { display: flex; flex-direction: column; gap: 20px; }
+.p-split__photo { border-radius: 24px; overflow: hidden; aspect-ratio: 3 / 2; }
+.p-split__photo img { width: 100%; height: 100%; object-fit: cover; }
+.p-split__text { display: flex; flex-direction: column; gap: 14px; color: var(--t-ink-2); }
+
+/* ---------- 院長紹介 ---------- */
+.p-staff__inner { display: flex; flex-direction: column; gap: 18px; }
+.p-staff__photo { width: 200px; border-radius: 100px 100px 20px 20px; overflow: hidden; aspect-ratio: 4 / 5; }
+.p-staff__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+.p-staff__body { display: flex; flex-direction: column; gap: 10px; color: var(--t-ink-2); }
+.p-staff__name { font-family: var(--t-mincho); font-weight: 700; font-size: 20px; color: var(--t-ink) !important; }
+.p-staff__name span { margin-left: 12px; font-family: var(--t-maru); font-weight: 500; font-size: 13px; color: var(--t-ink-3); }
+
+/* ---------- 項目と内容の一覧 ---------- */
+.p-dl { margin: 0; display: flex; flex-direction: column; }
+.p-dl > div { display: grid; grid-template-columns: 6em minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px dashed var(--t-mint-line); }
+.p-dl dt { color: var(--t-ink-3); font-size: 14.5px; }
+.p-dl dd { margin: 0; color: var(--t-ink); }
+.p-dl ul li::before { content: "・"; }
+
+/* ---------- ご来店の流れ ---------- */
+.p-flow { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.p-flow li { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; border-radius: 18px; background: var(--t-white); }
+.p-flow__num { flex: none; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--t-teal); color: var(--t-white); font-weight: 700; font-size: 14px; }
+.p-flow__title { font-weight: 700; color: var(--t-ink); }
+.p-flow li p:not(.p-flow__title) { font-size: 14.5px; color: var(--t-ink-2); }
+
+/* ---------- ご来店の前に ---------- */
+.p-qa { margin: 0; display: flex; flex-direction: column; }
+.p-qa > div { padding: 16px 0; border-bottom: 1px dashed var(--t-mint-line); }
+.p-qa dt { font-weight: 700; color: var(--t-teal-dark); margin-bottom: 4px; }
+.p-qa dd { margin: 0; color: var(--t-ink-2); font-size: 15px; }
+
+/* ---------- よくある質問 ---------- */
+.p-faq { margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.p-faq > div { padding: 18px; border-radius: 20px; border: 1px solid #DCEBE7; background: var(--t-white); display: flex; flex-direction: column; gap: 10px; }
+.p-faq dt, .p-faq dd { display: flex; gap: 12px; align-items: flex-start; margin: 0; }
+.p-faq dt { font-weight: 700; color: var(--t-ink); line-height: 1.7; }
+.p-faq dd { color: var(--t-ink-2); font-size: 15px; line-height: 1.85; padding-top: 10px; border-top: 1px dashed var(--t-mint-line); }
+.p-faq__mark { flex: none; display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--t-teal); color: var(--t-white); font-family: var(--t-mincho); font-size: 14px; }
+.p-faq__mark--a { background: var(--t-apricot-soft); color: var(--t-apricot-ink); }
+
+/* ---------- お知らせ ---------- */
+.p-news { display: flex; flex-direction: column; }
+.p-news li { display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-bottom: 1px dashed var(--t-mint-line); }
+.p-news time { font-size: 13px; color: var(--t-ink-3); font-variant-numeric: tabular-nums; }
+
+/* ---------- ご予約 ---------- */
+.p-reserve { display: flex; flex-direction: column; gap: 18px; }
+.p-reserve li { display: flex; flex-direction: column; gap: 6px; }
+.p-reserve p { font-size: 14px; color: var(--t-ink-2); text-align: center; }
+.p-reserve__tel { text-align: center; color: var(--t-ink-2); }
+
+.p-qa, .p-faq, .p-flow, .p-split__text, .p-staff__body, .p-reserve { word-break: keep-all; word-break: auto-phrase; overflow-wrap: anywhere; }
+
+@media (min-width: 900px) {
+  .p-split .t-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+  .p-split--reverse .p-split__photo { order: 2; }
+  .p-split--reverse .p-split__photo { aspect-ratio: 4 / 3; }
+  .p-staff__inner { flex-direction: row; gap: 40px; align-items: flex-start; }
+  .p-staff__photo { flex: none; width: 240px; }
+  .p-flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .p-flow li { flex-direction: column; }
+  .p-news li { flex-direction: row; gap: 24px; }
+  .p-reserve { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
