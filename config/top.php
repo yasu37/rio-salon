@@ -6,7 +6,8 @@
 
 return [
 
-    // 「リオでできること」の4つの施術。photo は public/img 内のファイル名（拡張子なし）。
+    // 「リオでできること」の4つの施術。photo は public/img 内のファイル名（拡張子なし）、link は施術を押したときに開くメニューページ。
+    // sub_link があれば、説明の下に小さなリンクを追加する。
     'services' => [
         [
             'name' => '美容鍼',
@@ -14,6 +15,8 @@ return [
             'photo' => 'course23',
             'alt' => 'お顔に美容鍼をしている様子',
             'tone' => 'teal',
+            'link' => 'menu/menu1',
+            'sub_link' => ['label' => 'ブライダルの方はこちら', 'link' => 'menu/menu10', 'menu_name' => 'ブライダル鍼灸'],
         ],
         [
             'name' => 'からだの鍼灸',
@@ -21,6 +24,7 @@ return [
             'photo' => 'course3',
             'alt' => '背中への鍼の施術',
             'tone' => 'teal',
+            'link' => 'menu/menu2',
         ],
         [
             'name' => 'フェイシャルエステ',
@@ -28,6 +32,7 @@ return [
             'photo' => 'course27',
             'alt' => 'フェイシャルエステの施術',
             'tone' => 'apricot',
+            'link' => 'menu/menu4',
         ],
         [
             'name' => 'マッサージ・リラクゼーション',
@@ -35,6 +40,7 @@ return [
             'photo' => 'course8',
             'alt' => 'オイルマッサージの施術',
             'tone' => 'apricot',
+            'link' => 'menu/menu6',
         ],
     ],
 

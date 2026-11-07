@@ -22,8 +22,12 @@
           <div class="t-services__photo">
             <x-top.photo :name="$service['photo']" :alt="$service['alt']" width="600" height="400" />
           </div>
-          <h3 class="t-services__name">{{ $service['name'] }}</h3>
+          {{-- 施術名のリンクをカード全体に広げ、写真や説明を押してもメニューページが開くようにしている --}}
+          <h3 class="t-services__name"><a href="{{ url($service['link']) }}" data-gtm-event="select_menu" data-gtm-menu-name="{{ $service['name'] }}" data-gtm-cta-position="home_services">{{ $service['name'] }}</a></h3>
           <p class="t-services__text">{{ $service['text'] }}</p>
+          @isset($service['sub_link'])
+            <a class="t-services__sub" href="{{ url($service['sub_link']['link']) }}" data-gtm-event="select_menu" data-gtm-menu-name="{{ $service['sub_link']['menu_name'] }}" data-gtm-cta-position="home_services">{{ $service['sub_link']['label'] }}</a>
+          @endisset
         </li>
       @endforeach
     </ul>

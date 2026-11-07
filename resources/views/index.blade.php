@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://rio-salon.com/">
   <meta property="og:title" content="リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-">
   <meta property="og:site_name" content="リオ鍼灸サロン">
-  <meta property="og:image" content="https://rio-salon.com/img/logo1.jpg">
+  <meta property="og:image" content="https://rio-salon.com/img/course1.jpg">
   <meta name="twitter:card" content="summary">
   <x-gtm />
   <script src="/js/analytics.js" defer></script>

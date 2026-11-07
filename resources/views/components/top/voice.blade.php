@@ -9,7 +9,9 @@
 @endphp
 <section class="t-section t-voice" data-gtm-view="view_reviews">
   <div class="t-wrap">
-    <p class="t-eyebrow">通ってくださっている方の言葉より</p>
+    @if ($reviews->isNotEmpty())
+      <p class="t-eyebrow">通ってくださっている方の言葉より</p>
+    @endif
     <h2 class="t-heading">
       @if ($reviews->isNotEmpty())
         {{ config('top.reviews_heading') }}

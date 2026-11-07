@@ -55,7 +55,7 @@ body.t-body {
 .t-heading::after { content: ""; display: block; width: 32px; height: 3px; margin-top: 12px; border-radius: 2px; background: var(--t-teal); }
 .t-eyebrow { font-size: 13px; color: var(--t-ink-3); margin-bottom: -12px; }
 .t-hand { font-family: var(--t-hand); font-weight: 600; }
-.t-small { font-size: 13px; color: var(--t-ink-3); }
+.t-small { font-size: 14px; color: var(--t-ink-3); }
 .t-link { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; }
 .t-note-box { padding: 16px 18px; border-radius: 20px; background: var(--t-mint); color: #1F4A44; font-size: 15px; }
 
@@ -91,7 +91,7 @@ body.t-body {
 .t-hero__photo { border-radius: 150px 150px 28px 28px; overflow: hidden; aspect-ratio: 4 / 3; max-height: 300px; }
 .t-hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; }
 .t-hero__text { display: flex; flex-direction: column; gap: 10px; }
-.t-hero__place { font-size: 13px; color: var(--t-ink-3); letter-spacing: .06em; }
+.t-hero__place { font-size: 14px; color: var(--t-ink-3); letter-spacing: .06em; }
 .t-hero__title { font-family: var(--t-mincho); font-weight: 700; font-size: 29px; line-height: 1.6; letter-spacing: .04em; }
 .t-hero__lead { font-size: 18px; color: var(--t-teal); line-height: 1.8; }
 .t-hero__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
@@ -125,7 +125,14 @@ body.t-body {
 .t-values__text { font-size: 15px; color: var(--t-ink-2); line-height: 1.8; }
 .t-care__sub { margin-top: 20px; }
 .t-services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px; }
-.t-services__item { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.t-services__item { display: flex; flex-direction: column; gap: 6px; min-width: 0; position: relative; }
+.t-services__name a { color: inherit; text-decoration: none; }
+.t-services__name a::before { content: ""; position: absolute; inset: 0; z-index: 1; } /* カード全体を押せるようにする */
+.t-services__name a::after { content: "›"; margin-left: 6px; font-family: var(--t-maru); }
+.t-services__item:hover .t-services__name a { text-decoration: underline; text-underline-offset: 4px; }
+.t-services__name a:focus-visible { outline: none; }
+.t-services__item:has(.t-services__name a:focus-visible) { outline: 2px solid var(--t-teal); outline-offset: 4px; border-radius: 16px; }
+.t-services__sub { position: relative; z-index: 2; align-self: flex-start; font-size: 14px; color: var(--t-teal-dark); text-underline-offset: 3px; }
 .t-services__photo { border-radius: 52px 52px 16px 16px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--t-white); }
 .t-services__photo img { width: 100%; height: 100%; object-fit: cover; }
 .t-services__item--apricot .t-services__photo { box-shadow: 0 0 0 3px var(--t-apricot-soft); }
@@ -180,7 +187,7 @@ body.t-body {
 .t-letter p { color: var(--t-ink-2); font-size: 15px; }
 .t-letter .t-letter__sign { align-self: flex-end; font-size: 18px; color: var(--t-ink); }
 .t-letter__buttons { display: flex; flex-direction: column; gap: 10px; }
-.t-letter .t-letter__tel { text-align: center; font-size: 13px; color: var(--t-ink-3); }
+.t-letter .t-letter__tel { text-align: center; font-size: 15px; color: var(--t-ink-2); }
 .t-letter__more { align-self: center; }
 
 /* ---------- フッター ---------- */
