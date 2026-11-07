@@ -1,12 +1,10 @@
-{{-- キャンペーンページ。内容は config/campaign.php、はじめての方の料金は config/menus.php の first_price から作る。 --}}
+{{-- キャンペーンページ。内容はすべて config/campaign.php から作る。 --}}
 @extends('layouts.renewal')
 @php
   $yen = fn ($n) => number_format($n) . '円';
-  // はじめての方の料金があるメニューを、メニューページのデータから集める
-  $firstItems = collect(config('menus.pages'))->flatMap(fn ($page, $slug) => collect($page['groups'])
-      ->flatMap(fn ($group) => $group['items'])
-      ->filter(fn ($item) => !empty($item['first_price']))
-      ->map(fn ($item) => $item + ['slug' => $slug, 'photo' => $page['groups'][0]['photo']]))->values();
+  // 'show' => false のキャンペーン（終了したもの）は表示しない
+  $groups = collect(config('campaign.groups'))->filter(fn ($group) => $group['show'] ?? true);
+  $firstItems = collect(config('campaign.first_items'));
 @endphp
 @section('title', 'キャンペーン')
 @section('description', 'リオ鍼灸サロンのキャンペーン。期間限定のメニューと、はじめての方の料金をご案内します。')
@@ -22,7 +20,7 @@
       <h1 class="p-head__title">期間限定のメニュー</h1>
       <nav class="p-tabs" aria-label="キャンペーンの種類">
         <ul>
-          @foreach (config('campaign.groups') as $group)
+          @foreach ($groups as $group)
             <li><a href="#{{ $group['id'] }}">{{ $group['title'] }}</a></li>
           @endforeach
           @if ($firstItems->isNotEmpty())
@@ -33,7 +31,7 @@
     </div>
   </section>
 
-  @foreach (config('campaign.groups') as $group)
+  @foreach ($groups as $group)
     <section class="t-section p-campaign" id="{{ $group['id'] }}">
       <div class="t-wrap">
         <h2 class="t-heading">{{ $group['title'] }}</h2>
@@ -74,12 +72,10 @@
             <li class="p-item">
               <h3 class="p-item__name">{{ $item['name'] }}</h3>
               <div class="p-item__price">
-                <s class="p-item__regular">{{ $yen($item['price']) }}</s><span class="p-item__arrow" aria-hidden="true">→</span>
-                <span class="p-item__yen">{{ $yen($item['first_price']) }}</span>
+                <s class="p-item__regular">{{ $yen($item['regular']) }}</s><span class="p-item__arrow" aria-hidden="true">→</span>
+                <span class="p-item__yen">{{ $yen($item['price']) }}</span>
               </div>
-              @if ($item['concept'])
-                <p class="p-item__text">{{ $item['concept'] }}</p>
-              @endif
+              <p class="p-item__text">{{ $item['text'] }}</p>
               <a class="p-item__reserve" href="{{ url('menu/' . $item['slug']) }}" data-gtm-event="select_menu" data-gtm-menu-name="{{ $item['name'] }}" data-gtm-cta-position="campaign_page">メニューの詳しい内容</a>
             </li>
           @endforeach
