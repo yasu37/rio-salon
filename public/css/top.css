@@ -103,6 +103,10 @@ body.t-body {
 .t-greeting__foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 12px; }
 .t-greeting__sign { font-size: 20px; color: var(--t-ink); }
 
+/* ---------- はじめての方へ ---------- */
+.t-first__photo { border-radius: 24px; overflow: hidden; aspect-ratio: 16 / 9; }
+.t-first__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+
 /* ---------- お悩み ---------- */
 .t-concerns__list { display: flex; flex-direction: column; gap: 12px; }
 .t-concerns__list li { display: flex; gap: 12px; align-items: flex-start; }

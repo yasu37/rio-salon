@@ -1,7 +1,7 @@
 <section class="t-hero">
   <div class="t-wrap t-hero__inner">
     <div class="t-hero__photo">
-      <x-top.photo name="about" alt="院長がお客様とカウンセリングをしている様子" :eager="true" />
+      <x-top.photo name="course1" alt="美容鍼を受けて、くつろいでいるお客様" :eager="true" />
     </div>
     <div class="t-hero__text">
       <p class="t-hero__place">水戸市米沢町の鍼灸サロンです</p>
