@@ -185,6 +185,8 @@
   background: #ebffeb;
 }
 .p-article .column_guide a, .p-article .column_owner_body a, .p-article .column_reserve_more {
+  /* 2行になるときは行の長さをそろえ、「見る」だけが次の行に残らないようにする */
+  text-wrap: balance;
   color: #008475;
   font-size: 14px;
   font-weight: bold;
@@ -298,3 +300,39 @@
 .p-article .column_facts > div { display: grid; grid-template-columns: 7em minmax(0, 1fr); gap: 10px; padding: 12px 0; border-bottom: 1px dashed var(--t-mint-line); }
 .p-article .column_facts dt { font-weight: 700; color: var(--t-teal-dark); font-size: 14.5px; }
 .p-article .column_facts dd { margin: 0; color: var(--t-ink); line-height: 1.8; }
+
+/* ---------- トップページのルールに合わせる（2026-11） ----------
+   見出しは明朝体＋金の細い線、差し色は金、箱は角のほぼ直角な白地・薄い緑地、点線は実線にする */
+.p-article h1, .p-article h2, .p-article h3 { font-weight: 500; letter-spacing: .08em; }
+.p-article h1 { line-height: 1.6; border-bottom: 1px solid var(--t-gold-line); }
+.p-article .headline h2 { border-bottom: 1px solid var(--t-gold-line); font-size: 21px; line-height: 1.6; padding: 0 0 12px; }
+.p-article .subheading h3 { border-left: 1px solid var(--t-gold-line); padding: 0 0 0 12px; font-size: 17px; }
+.p-article .contents { border: 1px solid var(--t-mint-line); background: var(--t-white); }
+.p-article .contents p { font-family: var(--t-en); letter-spacing: .3em; text-transform: uppercase; color: var(--t-gold-text); }
+.p-article .contents a { color: var(--t-ink-2); }
+.p-article .point1 { border-radius: 2px; box-shadow: none; border: 1px solid var(--t-mint-line); background: var(--t-white); }
+.p-article .point1 li:before, .p-article .column_summary li::before { color: var(--t-gold-line); }
+.p-article .point2 { background: var(--t-white); border: 1px solid var(--t-mint-line); }
+.p-article .button a { background: var(--t-teal); border-radius: 2px; font-weight: 500; letter-spacing: .14em; }
+.p-article .button a:hover { background: var(--t-teal-dark); }
+.p-article .says { border-radius: 2px; background: var(--t-mint); }
+.p-article .says:after { border-right-color: var(--t-mint); }
+.p-article .review .faceicon img { border-color: var(--t-mint); }
+.p-article .column_summary { border-radius: 2px; border-left: 1px solid var(--t-gold-line); }
+.p-article .column_summary_title { font-weight: 400; letter-spacing: .12em; color: var(--t-gold-text); }
+.p-article .column_faq > div { border-radius: 2px; border-color: #E1E8E5; }
+.p-article .column_faq dt { font-family: var(--t-mincho); font-weight: 500; }
+.p-article .column_faq dt::before { font-family: var(--t-en); color: var(--t-teal); }
+.p-article .column_facts > div { border-bottom-style: solid; }
+.p-article .column_facts dt { font-weight: 400; color: var(--t-gold-text); }
+.p-article .column_guide { border-radius: 2px; background: var(--t-mint); }
+.p-article .column_guide a, .p-article .column_owner_body a, .p-article .column_reserve_more { color: var(--t-teal); font-weight: 500; }
+.p-article .column_end { border-top: 1px solid var(--t-gold-line); }
+.p-article .column_owner_name { font-family: var(--t-mincho); font-weight: 500; letter-spacing: .1em; color: var(--t-ink); }
+.p-article .column_links { border-top-color: var(--t-mint-line); }
+.p-article .column_links li { border-bottom-color: var(--t-mint-line); }
+.p-article .column_links a { color: var(--t-ink) !important; }
+.p-article .column_links a::after { color: var(--t-gold-line); }
+.p-article .column_reserve_buttons a { border-radius: 2px; font-weight: 500; letter-spacing: .14em; }
+.p-article .column_reserve_primary { background: var(--t-teal); }
+.p-article .column_reserve_secondary { color: var(--t-teal) !important; border: 1px solid var(--t-teal); }

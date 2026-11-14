@@ -21,8 +21,8 @@
   ];
 @endphp
 @section('title', 'はじめての方へ')
-@section('full_title', 'はじめての方へ（施術の流れ・鍼の刺激）｜水戸市のリオ鍼灸サロン')
-@section('description', 'リオ鍼灸サロンにはじめてお越しの方へ。ご来店から施術までの流れ、鍼の刺激について、服装や駐車場、お支払い方法をご案内します。')
+@section('full_title', 'はじめての方へ（施術の流れ・鍼の刺激）｜水戸市のRIO鍼灸サロン')
+@section('description', 'RIO鍼灸サロンにはじめてお越しの方へ。ご来店から施術までの流れ、鍼の刺激について、服装や駐車場、お支払い方法をご案内します。')
 @section('canonical', 'first-visit')
 @section('og_image', 'about.jpg')
 
@@ -31,7 +31,7 @@
 <main>
   <section class="p-head">
     <div class="t-wrap">
-      <p class="p-head__eyebrow">はじめての方へ</p>
+      <p class="p-head__eyebrow" aria-hidden="true">First Visit</p>
       <h1 class="p-head__title">はじめてでも、<br>安心してお越しください。</h1>
     </div>
   </section>
@@ -48,7 +48,10 @@
 
   <section class="t-section t-bg-mint">
     <div class="t-wrap">
-      <h2 class="t-heading">ご来店から施術までの流れ</h2>
+      <div class="t-head t-head--center">
+        <p class="t-en" aria-hidden="true">Flow</p>
+        <h2 class="t-heading">ご来店から施術までの流れ</h2>
+      </div>
       <ol class="p-flow">
         @foreach ($flow as [$title, $text])
           <li><span class="p-flow__num">{{ $loop->iteration }}</span><div><p class="p-flow__title">{{ $title }}</p><p>{{ $text }}</p></div></li>
@@ -59,7 +62,10 @@
 
   <section class="t-section">
     <div class="t-wrap t-narrow">
-      <h2 class="t-heading">ご来店の前に</h2>
+      <div class="t-head t-head--center">
+        <p class="t-en" aria-hidden="true">Before Your Visit</p>
+        <h2 class="t-heading">ご来店の前に</h2>
+      </div>
       <dl class="p-qa">
         @foreach ($notes as [$title, $text])
           <div><dt>{{ $title }}</dt><dd>{{ $text }}</dd></div>

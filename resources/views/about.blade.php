@@ -1,8 +1,8 @@
 {{-- リオについて --}}
 @extends('layouts.renewal')
 @section('title', 'リオについて')
-@section('full_title', 'リオについて・院長紹介｜水戸市のリオ鍼灸サロン')
-@section('description', 'リオ鍼灸サロンのご挨拶と院長紹介。筋肉・神経・リンパなどの西洋医学的な知見と東洋医学的な視点を組み合わせた施術をご提案しています。')
+@section('full_title', 'リオについて・院長紹介｜水戸市のRIO鍼灸サロン')
+@section('description', 'RIO鍼灸サロンのご挨拶と院長紹介。筋肉・神経・リンパなどの西洋医学的な知見と東洋医学的な視点を組み合わせた施術をご提案しています。')
 @section('canonical', 'about')
 @section('og_image', 'location.jpg')
 
@@ -11,7 +11,7 @@
 <main>
   <section class="p-head">
     <div class="t-wrap">
-      <p class="p-head__eyebrow">リオについて</p>
+      <p class="p-head__eyebrow" aria-hidden="true">About</p>
       <h1 class="p-head__title">からだの内側から、<br>健やかさと美しさを。</h1>
     </div>
   </section>
@@ -29,7 +29,10 @@
     <div class="t-wrap">
       <div class="p-split__photo p-split__photo--portrait"><x-top.photo name="location5" alt="窓のある明るい施術室" width="960" height="1280" /></div>
       <div class="p-split__text">
-        <h2 class="t-heading">気軽に集い、癒される場所に</h2>
+        <div class="t-head">
+          <p class="t-en" aria-hidden="true">Concept</p>
+          <h2 class="t-heading">気軽に集い、癒される場所に</h2>
+        </div>
         <p>東洋医学の分野である鍼灸、漢方、もみほぐしなどを通じて、からだのバランスを整えるお手伝いをしています。皆さまが気軽に集い、癒され、笑顔で過ごしていただける場所になるよう、心をこめておもてなしいたします。</p>
       </div>
     </div>
@@ -42,7 +45,10 @@
   ])
   <section class="t-section p-salon">
     <div class="t-wrap">
-      <h2 class="t-heading">サロンの様子</h2>
+      <div class="t-head t-head--center">
+        <p class="t-en" aria-hidden="true">Salon</p>
+        <h2 class="t-heading">サロンの様子</h2>
+      </div>
       <ul class="p-salon__list">
         @foreach ($salonPhotos as $photo)
           <li>
@@ -59,7 +65,10 @@
   @foreach (collect(config('staff'))->where('status', 'active')->sortBy('order') as $member)
     <section class="t-section p-staff" data-gtm-view="view_staff">
       <div class="t-wrap">
-        <h2 class="t-heading">院長のご紹介</h2>
+        <div class="t-head t-head--center">
+          <p class="t-en" aria-hidden="true">Staff</p>
+          <h2 class="t-heading">院長のご紹介</h2>
+        </div>
         <div class="p-staff__inner">
           <div class="p-staff__photo"><x-top.photo :name="$member['photo']" :alt="'院長 ' . $member['name']" /></div>
           <div class="p-staff__body">
@@ -77,7 +86,6 @@
             <div><dt>出勤日</dt><dd>{{ $member['work_days'] }}</dd></div>
           @endif
         </dl>
-        <a class="t-link" href="{{ url('menu/menu1') }}" data-gtm-event="select_content" data-gtm-cta-position="about_page">メニューと料金を見る</a>
       </div>
     </section>
   @endforeach

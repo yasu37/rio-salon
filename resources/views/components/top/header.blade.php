@@ -1,7 +1,7 @@
 <header class="t-header">
   <div class="t-header__inner">
     <a class="t-header__logo" href="{{ url('/') }}">
-      <span class="t-header__name">{{ config('salon.name') }}</span>
+      <x-top.photo name="logo-rio" :alt="config('salon.name')" width="912" height="280" :eager="true" />
     </a>
     <nav class="t-nav" id="t-nav" aria-label="サイト内メニュー">
       <ul class="t-nav__list">

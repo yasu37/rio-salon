@@ -7,8 +7,8 @@
   $firstItems = collect(config('campaign.first_items'));
 @endphp
 @section('title', 'キャンペーン')
-@section('full_title', 'キャンペーン・はじめての方の料金｜水戸市のリオ鍼灸サロン')
-@section('description', '水戸市米沢町のリオ鍼灸サロンのキャンペーン。美容鍼、フェイシャルエステ、カッピング、オイルマッサージの期間限定メニューと、はじめての方の料金をご案内します。')
+@section('full_title', 'キャンペーン・はじめての方の料金｜水戸市のRIO鍼灸サロン')
+@section('description', '水戸市米沢町のRIO鍼灸サロンのキャンペーン。美容鍼、フェイシャルエステ、カッピング、オイルマッサージの期間限定メニューと、はじめての方の料金をご案内します。')
 @section('canonical', 'campaign/term')
 @section('og_image', 'campaign/winter-01.jpg')
 
@@ -17,12 +17,12 @@
 <main>
   <section class="p-head">
     <div class="t-wrap">
-      <p class="p-head__eyebrow">キャンペーン</p>
+      <p class="p-head__eyebrow" aria-hidden="true">Campaign</p>
       <h1 class="p-head__title">期間限定のメニュー</h1>
       <nav class="p-tabs" aria-label="キャンペーンの種類">
         <ul>
           @foreach ($groups as $group)
-            <li><a href="#{{ $group['id'] }}">{{ $group['title'] }}</a></li>
+            <li><a href="#{{ $group['id'] }}">{!! \App\Support\Text::wbr($group['title']) !!}</a></li>
           @endforeach
           @if ($firstItems->isNotEmpty())
             <li><a href="#first">はじめての方</a></li>
@@ -35,7 +35,10 @@
   @foreach ($groups as $group)
     <section class="t-section p-campaign" id="{{ $group['id'] }}">
       <div class="t-wrap">
-        <h2 class="t-heading u-phrase">{!! \App\Support\Text::wbr($group['title']) !!}</h2>
+        <div class="t-head t-head--center">
+          <p class="t-en" aria-hidden="true">Limited</p>
+          <h2 class="t-heading u-phrase">{!! \App\Support\Text::wbr($group['title']) !!}</h2>
+        </div>
         <dl class="p-campaign__meta">
           <div><dt>対象</dt><dd>{{ $group['target'] }}</dd></div>
           <div><dt>期間</dt><dd>{{ $group['period'] ?? '期間限定' }}</dd></div>
@@ -58,7 +61,7 @@
                 <span class="p-item__yen">{{ $yen($item['price']) }}</span>
               </div>
               <p class="p-item__text">{{ $item['text'] }}</p>
-              <a class="p-item__reserve" href="{{ url('reserve') }}" data-gtm-event="begin_booking" data-gtm-menu-name="{{ $item['name'] }}" data-gtm-cta-position="campaign_page">このメニューを予約する</a>
+              <a class="p-item__reserve" href="{{ url('reserve') }}" data-gtm-event="begin_booking" data-gtm-menu-name="{{ $item['name'] }}" data-gtm-cta-position="campaign_page">このメニューで予約する</a>
             </li>
           @endforeach
         </ul>
@@ -69,8 +72,11 @@
   @if ($firstItems->isNotEmpty())
     <section class="t-section t-bg-mint p-campaign" id="first">
       <div class="t-wrap">
-        <h2 class="t-heading">はじめての方の料金</h2>
-        <p>はじめてご来店の方は、次のメニューをお得にお試しいただけます。</p>
+        <div class="t-head t-head--center">
+          <p class="t-en" aria-hidden="true">First Visit</p>
+          <h2 class="t-heading">はじめての方の料金</h2>
+          <p class="t-head__lead">はじめてご来店の方は、次のメニューをお得にお試しいただけます。</p>
+        </div>
         <ul class="p-items">
           @foreach ($firstItems as $item)
             <li class="p-item">
@@ -90,8 +96,11 @@
 
   <section class="t-section t-bg-mint p-options">
     <div class="t-wrap">
-      <h2 class="t-heading">組み合わせできるオプション</h2>
-      <p>キャンペーンのメニューにも追加できます。オプションだけのご利用はできません。</p>
+      <div class="t-head t-head--center">
+        <p class="t-en" aria-hidden="true">Option</p>
+        <h2 class="t-heading">組み合わせできるオプション</h2>
+        <p class="t-head__lead">キャンペーンのメニューにも追加できます。オプションだけのご利用はできません。</p>
+      </div>
       <ul class="p-options__list">
         @foreach (config('menus.options') as $option)
           <li>

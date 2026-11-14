@@ -53,12 +53,12 @@
 <main data-gtm-view="view_menu" data-gtm-menu-name="{{ $page['nav'] }}">
   <section class="p-head">
     <div class="t-wrap">
-      <p class="p-head__eyebrow">メニューと料金</p>
+      <p class="p-head__eyebrow" aria-hidden="true">Menu</p>
       <h1 class="p-head__title">{{ $page['h1'] ?? $page['nav'] }}</h1>
       <nav class="p-tabs" aria-label="メニューの種類">
         <ul>
           @foreach ($pages as $key => $item)
-            <li><a href="{{ url('menu/' . $key) }}" @if ($key === $slug) aria-current="page" @endif>{{ $item['nav'] }}</a></li>
+            <li><a href="{{ url('menu/' . $key) }}" @if ($key === $slug) aria-current="page" @endif>{!! \App\Support\Text::wbr($item['nav']) !!}</a></li>
           @endforeach
         </ul>
       </nav>
@@ -74,10 +74,11 @@
           </div>
           <div class="p-group__text">
             {{-- ページ名と同じ名前のまとまりは、見出しが重ならないよう「美容鍼灸とは？」などの説明見出しを h2 にする --}}
+            <p class="t-en" aria-hidden="true">Treatment</p>
             @if ($group['name'] === $page['nav'] && $group['heading'])
-              <h2 class="t-heading">{{ $group['heading'] }}</h2>
+              <h2 class="t-heading u-phrase">{!! \App\Support\Text::wbr($group['heading']) !!}</h2>
             @else
-              <h2 class="t-heading">{{ $group['name'] }}</h2>
+              <h2 class="t-heading u-phrase">{!! \App\Support\Text::wbr($group['name']) !!}</h2>
               @if ($group['heading'] && $group['heading'] !== $group['name'])
                 <p class="p-group__label">{{ $group['heading'] }}</p>
               @endif
@@ -160,7 +161,7 @@
               @foreach ($item['notes'] as $note)
                 <p class="p-item__note">{{ $note }}</p>
               @endforeach
-              <a class="p-item__reserve" href="{{ url('reserve') }}" data-gtm-event="begin_booking" data-gtm-menu-name="{{ $item['name'] }}" data-gtm-cta-position="menu_page">このメニューを予約する</a>
+              <a class="p-item__reserve" href="{{ url('reserve') }}" data-gtm-event="begin_booking" data-gtm-menu-name="{{ $item['name'] }}" data-gtm-cta-position="menu_page">このメニューで予約する</a>
             </li>
           @endforeach
         </ul>
@@ -183,8 +184,11 @@
   @if ($page['show_options'] ?? true)
     <section class="t-section t-bg-mint p-options">
       <div class="t-wrap">
-        <h2 class="t-heading">組み合わせできるオプション</h2>
-        <p>ほかのメニューに追加できます。オプションだけのご利用はできません。</p>
+        <div class="t-head t-head--center">
+          <p class="t-en" aria-hidden="true">Option</p>
+          <h2 class="t-heading">組み合わせできるオプション</h2>
+          <p class="t-head__lead">ほかのメニューに追加できます。オプションだけのご利用はできません。</p>
+        </div>
         <ul class="p-options__list">
           @foreach (config('menus.options') as $option)
             <li>
@@ -205,7 +209,10 @@
   @if ($relatedColumns->isNotEmpty())
     <section class="t-section p-related">
       <div class="t-wrap">
-        <h2 class="t-heading">関連する記事</h2>
+        <div class="t-head t-head--center">
+          <p class="t-en" aria-hidden="true">Column</p>
+          <h2 class="t-heading">関連する記事</h2>
+        </div>
         <ul class="p-related__list">
           @foreach ($relatedColumns as $columnSlug => $column)
             <li><a href="{{ url('column/' . $columnSlug) }}" data-gtm-event="select_content" data-gtm-cta-position="menu_related_column">{{ $column['title'] }}</a></li>

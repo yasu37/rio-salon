@@ -2,8 +2,8 @@
 @extends('layouts.renewal')
 @php($hours = config('salon.business_hours'))
 @section('title', 'ご予約・お問い合わせ')
-@section('full_title', 'ご予約・お問い合わせ｜水戸市のリオ鍼灸サロン')
-@section('description', 'リオ鍼灸サロンのご予約方法。Web予約（Square）、LINE、HotPepper、お電話から、ご都合に合わせてお選びいただけます。')
+@section('full_title', 'ご予約・お問い合わせ｜水戸市のRIO鍼灸サロン')
+@section('description', 'RIO鍼灸サロンのご予約方法。Web予約（Square）、LINE、HotPepper、お電話から、ご都合に合わせてお選びいただけます。')
 @section('canonical', 'reserve')
 
 @section('content')
@@ -11,7 +11,7 @@
 <main>
   <section class="p-head">
     <div class="t-wrap">
-      <p class="p-head__eyebrow">ご予約・お問い合わせ</p>
+      <p class="p-head__eyebrow" aria-hidden="true">Reservation</p>
       <h1 class="p-head__title">ご都合に合わせて、<br>お選びください。</h1>
     </div>
   </section>
@@ -36,7 +36,10 @@
   </section>
   <section class="t-section t-bg-mint">
     <div class="t-wrap t-narrow">
-      <h2 class="t-heading">営業時間</h2>
+      <div class="t-head t-head--center">
+        <p class="t-en" aria-hidden="true">Hours</p>
+        <h2 class="t-heading">営業時間</h2>
+      </div>
       <dl class="p-dl">
         <div><dt>営業時間</dt><dd>{{ $hours['open'] }}〜{{ $hours['close'] }}@if ($hours['last_reception'])（最終受付 {{ $hours['last_reception'] }}）@endif</dd></div>
         <div><dt>定休日</dt><dd>{{ $hours['closed_day_label'] }}</dd></div>

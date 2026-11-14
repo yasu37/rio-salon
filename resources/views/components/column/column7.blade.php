@@ -3,12 +3,12 @@
   // よくある質問。画面の表示と、検索エンジン向けの構造化データ（FAQPage）を同じ内容から作る。
   $faqs = [
     ['美容鍼とエステは、どっちがいいですか？', 'どちらがよい、ということはなく、気になっていることによって選び方が変わります。表情のこわばりやフェイスラインなど、お顔の土台が気になる方は美容鍼、くすみや毛穴、ごわつきなど、肌の表面が気になる方はフェイシャルエステを選ぶ方が多いです。迷ったときは、施術の前に相談してみましょう。'],
-    ['美容鍼とフェイシャルエステは、同じ日に受けてもいいですか？', 'はい、同じ日に受けられるお店もあります。リオ鍼灸サロンでは、美容鍼灸とハーブピーリング、美容鍼灸と炭酸パックを組み合わせたコースをご用意しています。お肌の状態によっては、日を分けた方がよい場合もあるので、施術の前にご相談ください。'],
+    ['美容鍼とフェイシャルエステは、同じ日に受けてもいいですか？', 'はい、同じ日に受けられるお店もあります。RIO鍼灸サロンでは、美容鍼灸とハーブピーリング、美容鍼灸と炭酸パックを組み合わせたコースをご用意しています。お肌の状態によっては、日を分けた方がよい場合もあるので、施術の前にご相談ください。'],
     ['美容鍼とエステを併用するなら、どのくらいの間隔がいいですか？', 'お肌の状態や、受ける施術の内容によって変わります。ピーリングなど角質のケアをしたあとは、お肌が敏感になっていることがあるので、次の施術はお肌の様子を見てから決めるのが安心です。通うペースは、施術者と相談しながら決めていきましょう。'],
     ['美容鍼は痛いですか？エステの方が痛くないですか？', '美容鍼は髪の毛ほどの細い鍼を使いますが、チクッとした刺激を感じることがあります。フェイシャルエステは鍼を使わないので、刺激が少ないと感じる方が多いです。ただし、ピーリングなどでピリピリ感を感じることもあります。感じ方には個人差があります。'],
     ['鍼がこわいのですが、エステからはじめてもいいですか？', 'はい。まずはフェイシャルエステで、お店の雰囲気や施術者との相性を知ってから、美容鍼を試してみる方もいらっしゃいます。'],
     ['美容鍼とエステは、資格に違いがありますか？', '美容鍼は鍼を使う施術なので、はり師（国家資格）が行います。フェイシャルエステには国家資格がなく、民間の資格やお店の研修で技術を身につけている方が多くいます。どちらを受けるときも、事前の説明やカウンセリングがあるかを見ておくと安心です。'],
-    ['男性も美容鍼やフェイシャルエステを受けられますか？', '男性の方も受けられるお店が多くあります。リオ鍼灸サロンでも、男性の方にご利用いただけます。'],
+    ['男性も美容鍼やフェイシャルエステを受けられますか？', '男性の方も受けられるお店が多くあります。RIO鍼灸サロンでも、男性の方にご利用いただけます。'],
   ];
   // メニューと料金は config/menus.php から読む。名前が変わったら、ここの名前も合わせる
   $menuItems = fn ($page) => collect(config("menus.pages.{$page}.groups"))->flatMap(fn ($group) => $group['items'])->keyBy('name');
@@ -292,8 +292,8 @@
       <div class="column_reserve">
         <p>どのメニューが合うかわからない方も、まずはLINEでお気軽にご相談ください。</p>
         <div class="column_reserve_buttons">
-          <a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_primary" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="column_end">LINEで相談する</a>
-          <a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_secondary" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="column_end">Webで予約する</a>
+          <a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_primary" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="column_end">Webで予約する</a>
+          <a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_secondary" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="column_end">LINEで相談する</a>
         </div>
         <a href="{{ url('reserve') }}" class="column_reserve_more" data-gtm-event="begin_booking" data-gtm-cta-position="column_end">お電話・HotPepperでのご予約はこちら</a>
       </div>

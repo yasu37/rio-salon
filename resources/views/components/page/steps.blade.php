@@ -14,7 +14,7 @@
 @if ($steps)
   <ol class="p-steps">
     @foreach ($steps as $step)
-      <li><span class="p-steps__num" aria-hidden="true">{{ $loop->iteration }}</span><span>{{ $step }}</span></li>
+      <li><span class="p-steps__num" aria-hidden="true">{{ $loop->iteration }}</span><span class="u-phrase">{!! \App\Support\Text::wbr($step) !!}</span></li>
     @endforeach
   </ol>
 @else
