@@ -11,8 +11,8 @@
   ];
 @endphp
 @section('title', 'よくある質問')
-@section('full_title', 'よくある質問（美容鍼・鍼灸）｜水戸市のリオ鍼灸サロン')
-@section('description', 'リオ鍼灸サロンによく寄せられるご質問。美容鍼灸について、鍼の刺激、通うペース、施術後の過ごし方などをご案内します。')
+@section('full_title', 'よくある質問（美容鍼・鍼灸）｜水戸市のRIO鍼灸サロン')
+@section('description', 'RIO鍼灸サロンによく寄せられるご質問。美容鍼灸について、鍼の刺激、通うペース、施術後の過ごし方などをご案内します。')
 @section('canonical', 'question')
 @push('head')
 <script type="application/ld+json">
@@ -29,7 +29,7 @@
 <main data-gtm-view="view_faq">
   <section class="p-head">
     <div class="t-wrap">
-      <p class="p-head__eyebrow">よくある質問</p>
+      <p class="p-head__eyebrow" aria-hidden="true">FAQ</p>
       <h1 class="p-head__title">よくいただくご質問</h1>
     </div>
   </section>

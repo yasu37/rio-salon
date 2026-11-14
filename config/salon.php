@@ -3,7 +3,7 @@
 return [
 
     // 正式名称。画面表示は「name」を基準とし、alt属性等で英字併記が必要な場合のみ name_en を使う
-    'name' => 'リオ鍼灸サロン',
+    'name' => 'RIO鍼灸サロン',
     'name_en' => 'RIO鍼灸サロン',
 
     'address' => [

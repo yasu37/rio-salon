@@ -6,6 +6,7 @@
 ])
 <section class="t-section t-concerns">
   <div class="t-wrap t-narrow">
+    <p class="t-en" aria-hidden="true">Concerns</p>
     <h2 class="t-heading">こんなこと、ありませんか？</h2>
     <ul class="t-concerns__list">
       @foreach ($concerns as $concern)

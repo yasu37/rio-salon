@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
-  <title>@yield('title') | リオ鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
+  <title>@yield('title') | RIO鍼灸サロン-茨城県水戸市の美容鍼＆エステ＆マッサージ-</title>
   <style>
     * { box-sizing: border-box; }
     body {

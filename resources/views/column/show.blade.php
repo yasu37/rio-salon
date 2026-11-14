@@ -1,13 +1,13 @@
 {{-- コラムの記事ページ。題名・説明文などは config/columns.php、本文は components/column/{slug}、本文のスタイルは css/column/article.css。 --}}
 @extends('layouts.renewal')
 @section('title', 'コラム')
-@section('full_title', $column['title'] . '｜水戸市のリオ鍼灸サロン')
+@section('full_title', $column['title'] . '｜水戸市のRIO鍼灸サロン')
 @section('description', $column['description'])
 @section('canonical', 'column/' . $slug)
 @section('og_image', $column['image'])
 @section('og_type', 'article')
 @push('head')
-<link rel="stylesheet" href="{{ asset('css/column/article.css') }}">
+<link rel="stylesheet" href="{{ asset('css/column/article.css') }}?v={{ filemtime(public_path('css/column/article.css')) }}">
 {{-- 構造化データ：記事。書き手はサロン名（個人名は載せない） --}}
 <script type="application/ld+json">{!! json_encode([
   '@context' => 'https://schema.org',

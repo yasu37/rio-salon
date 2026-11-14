@@ -40,7 +40,7 @@
     @if ($type === 'schedule')
       <ol class="p-schedule">
         @foreach ($value as [$round, $content])
-          <li><span class="p-schedule__round">{{ $round }}</span><span>{{ $content }}</span></li>
+          <li><span class="p-schedule__round">{{ $round }}</span><span class="u-phrase">{!! \App\Support\Text::wbr($content) !!}</span></li>
         @endforeach
       </ol>
     @elseif ($type === 'bullet')

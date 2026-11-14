@@ -5,8 +5,8 @@
     ['美容鍼は誰でも施術できるのですか？', '鍼を使った施術は、医師を除くと「はり師」の国家資格を持つ人しか仕事として行うことができません。美容鍼を受けるときは、はり師（鍼灸師）が施術しているかを確認すると安心です。'],
     ['美容鍼は痛くないですか？', '髪の毛ほどの細い鍼を使いますが、部位やその日の体調によって、チクッとした刺激を感じることがあります。刺激が気になるときは、施術中でも遠慮なく伝えてください。'],
     ['はじめての美容鍼は、どのコースを選べばいいですか？', 'まずはお顔を中心にした基本のコースで、刺激の感じ方や施術の流れを知るのがおすすめです。肩こりや冷えなど、からだのことも気になる方は、お顔とからだを一緒にケアするコースも選べます。迷ったときは、事前にお店に相談してみましょう。'],
-    ['男性も美容鍼を受けられますか？', 'はい、男性の方も受けられるお店が多くあります。リオ鍼灸サロンでも、男性の方にご利用いただいています。'],
-    ['当日の予約はできますか？', 'お店によって異なります。リオ鍼灸サロンでは、空きがあれば当日のご予約も承っています。Web予約やLINEで空き状況をご確認ください。'],
+    ['男性も美容鍼を受けられますか？', 'はい、男性の方も受けられるお店が多くあります。RIO鍼灸サロンでも、男性の方にご利用いただいています。'],
+    ['当日の予約はできますか？', 'お店によって異なります。RIO鍼灸サロンでは、空きがあれば当日のご予約も承っています。Web予約やLINEで空き状況をご確認ください。'],
   ];
   $menu = config('menus.pages.menu1');
   $items = collect($menu['groups'])->flatMap(fn ($group) => $group['items'])->keyBy('name');
@@ -202,8 +202,8 @@
       <div class="column_reserve">
         <p>どのメニューが合うかわからない方も、まずはLINEでお気軽にご相談ください。</p>
         <div class="column_reserve_buttons">
-          <a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_primary" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="column_end">LINEで相談する</a>
-          <a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_secondary" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="column_end">Webで予約する</a>
+          <a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_primary" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="column_end">Webで予約する</a>
+          <a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_secondary" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="column_end">LINEで相談する</a>
         </div>
         <a href="{{ url('reserve') }}" class="column_reserve_more" data-gtm-event="begin_booking" data-gtm-cta-position="column_end">お電話・HotPepperでのご予約はこちら</a>
       </div>

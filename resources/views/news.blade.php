@@ -5,14 +5,14 @@
   $news = collect([
     ['date' => '2022-01-11', 'title' => 'スタッフ紹介', 'url' => 'about'],
     ['date' => '2022-01-11', 'title' => 'オープンキャンペーン', 'url' => null],
-    ['date' => '2022-01-11', 'title' => 'リオ鍼灸サロンオープン', 'url' => null],
+    ['date' => '2022-01-11', 'title' => 'RIO鍼灸サロンオープン', 'url' => null],
   ])->merge(\App\Support\Columns::published()->map(fn ($column, $slug) => [
     'date' => $column['published'], 'title' => 'コラム「' . $column['title'] . '」', 'url' => 'column/' . $slug,
   ])->values())->sortByDesc('date')->values();
 @endphp
 @section('title', 'お知らせ')
-@section('full_title', 'お知らせ｜水戸市のリオ鍼灸サロン')
-@section('description', '水戸市米沢町のリオ鍼灸サロンからのお知らせ。オープンのご案内や、コラムの公開などをお知らせしています。')
+@section('full_title', 'お知らせ｜水戸市のRIO鍼灸サロン')
+@section('description', '水戸市米沢町のRIO鍼灸サロンからのお知らせ。オープンのご案内や、コラムの公開などをお知らせしています。')
 @section('canonical', 'news')
 
 @section('content')
@@ -20,7 +20,7 @@
 <main>
   <section class="p-head">
     <div class="t-wrap">
-      <p class="p-head__eyebrow">お知らせ</p>
+      <p class="p-head__eyebrow" aria-hidden="true">News</p>
       <h1 class="p-head__title">リオからのお知らせ</h1>
     </div>
   </section>

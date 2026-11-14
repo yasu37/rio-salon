@@ -3,7 +3,7 @@
   // よくある質問。画面の表示と、検索エンジン向けの構造化データ（FAQPage）を同じ内容から作る。
   $faqs = [
     ['ブライダル美容鍼はいつから始めればいいですか？', '挙式の数か月前から始めると、肌の反応を確かめながら、無理のないペースで準備しやすいと言われています。短い期間で集中してケアする方もいらっしゃいます。前撮りがある方は、前撮りの日から逆算して考えましょう。'],
-    ['ブライダル美容鍼は何回くらい受ければいいですか？', '回数に決まりはありません。変化の感じ方には個人差があるため、挙式までの期間やお肌の様子に合わせてご相談しながら決めていきます。リオ鍼灸サロンでは、期間に合わせたコースをご用意しています。'],
+    ['ブライダル美容鍼は何回くらい受ければいいですか？', '回数に決まりはありません。変化の感じ方には個人差があるため、挙式までの期間やお肌の様子に合わせてご相談しながら決めていきます。RIO鍼灸サロンでは、期間に合わせたコースをご用意しています。'],
     ['結婚式の直前に美容鍼を受けても大丈夫ですか？', '美容鍼では、まれに小さな内出血が出ることがあります。とくに美容鍼がはじめての方は、挙式の直前にはじめて受けるのは避け、早めに一度受けて、ご自身の肌の反応を知っておくと安心です。'],
     ['最後の美容鍼は、挙式の何日前に受けるのがいいですか？', 'まれに内出血が出ることを考えて、挙式の直前は避け、日にちに余裕をもって受けておくと安心です。これまでに美容鍼を受けていて肌の反応がわかっている方は、ご予約のときにご相談ください。'],
     ['美容鍼で内出血が出たら、結婚式までに消えますか？', '内出血が目立たなくなるまでの日数には、個人差があります。そのため、大切な日の直前は避けて計画するのがおすすめです。'],
@@ -290,8 +290,8 @@
       <div class="column_reserve">
         <p>挙式までの日数に合うコースがわからない方も、まずはLINEでお気軽にご相談ください。</p>
         <div class="column_reserve_buttons">
-          <a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_primary" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="column_end">LINEで相談する</a>
-          <a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_secondary" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="column_end">Webで予約する</a>
+          <a href="{{ config('salon.reservation.square.url') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_primary" data-gtm-event="reservation_square_click" data-gtm-provider="square" data-gtm-customer-type="new" data-gtm-cta-position="column_end">Webで予約する</a>
+          <a href="{{ config('salon.sns.line') }}" target="_blank" rel="noopener noreferrer" class="column_reserve_secondary" data-gtm-event="reservation_line_click" data-gtm-provider="line" data-gtm-cta-position="column_end">LINEで相談する</a>
         </div>
         <a href="{{ url('reserve') }}" class="column_reserve_more" data-gtm-event="begin_booking" data-gtm-cta-position="column_end">お電話・HotPepperでのご予約はこちら</a>
       </div>

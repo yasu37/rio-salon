@@ -8,14 +8,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="@yield('description')">
-  <meta name="theme-color" content="#0B7D72">
+  <meta name="theme-color" content="#0F6B61">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&family=Zen+Maru+Gothic:wght@500;700&family=Klee+One:wght@600&display=swap">
-  <link rel="stylesheet" href="{{ asset('css/top.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/page.css') }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:wght@500&display=swap">
+  {{-- ?v= にファイルの更新日時を付け、CSSを更新したときにブラウザが古いCSSを使い続けないようにする --}}
+  <link rel="stylesheet" href="{{ asset('css/top.css') }}?v={{ filemtime(public_path('css/top.css')) }}">
+  <link rel="stylesheet" href="{{ asset('css/page.css') }}?v={{ filemtime(public_path('css/page.css')) }}">
   {{-- full_title があればそのまま使う（コラムなど、店名を付けない題名のページ用） --}}
-  @php($pageTitle = View::hasSection('full_title') ? View::yieldContent('full_title') : View::yieldContent('title') . '｜リオ鍼灸サロン')
+  @php($pageTitle = View::hasSection('full_title') ? View::yieldContent('full_title') : View::yieldContent('title') . '｜RIO鍼灸サロン')
   <title>{{ $pageTitle }}</title>
   <link rel="canonical" href="https://rio-salon.com/@yield('canonical')">
   {{-- コラムなどの記事ページは @section('og_type', 'article') を指定する --}}
@@ -23,7 +24,7 @@
   <meta property="og:url" content="https://rio-salon.com/@yield('canonical')">
   <meta property="og:title" content="{{ $pageTitle }}">
   <meta property="og:description" content="@yield('description')">
-  <meta property="og:site_name" content="リオ鍼灸サロン">
+  <meta property="og:site_name" content="RIO鍼灸サロン">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:image" content="https://rio-salon.com/img/@yield('og_image', 'course1.jpg')">
   <meta name="twitter:card" content="summary_large_image">
